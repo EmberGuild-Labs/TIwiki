@@ -1,9 +1,12 @@
+# build output (the .8xp itself is committed on purpose)
 obj/
-bin/*.obj
-bin/*.map
-bin/*.8xv
-tools/hostsim/*.o
-tools/hostsim/sim
-tools/hostsim/sim_asan
-tools/hostsim/*.dSYM/
+*.obj
+*.map
+*.8xv
+
+# host simulator binaries
+engine/tools/hostsim/sim-*
+engine/tools/hostsim/*.o
+engine/tools/hostsim/*.dSYM/
+
 .DS_Store

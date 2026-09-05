@@ -1,0 +1,220 @@
+@CATEGORY Optics and Light
+
+@ARTICLE Electromagnetic Waves
+# Speed of light
+  c = 3.00e8 m/s in vacuum
+  c = f * lambda
+Light is a transverse wave of oscillating
+electric and magnetic fields at right
+angles to each other and to the direction
+of travel. It needs no medium.
+
+# The spectrum, long to short
+  radio, microwave, infrared, visible,
+  ultraviolet, X-ray, gamma
+Longer wavelength means lower frequency
+and lower photon energy.
+
+# Visible light
+  about 400 nm (violet) to 700 nm (red)
+Red has the longest wavelength and the
+lowest energy of the visible colours.
+
+# Photon energy
+  E = h*f = h*c/lambda
+  h = 6.626e-34 J*s
+
+# Intensity
+  I = P/A
+Falls off as an inverse square from a
+point source.
+
+@ARTICLE Reflection and Mirrors
+# Law of reflection
+  angle of incidence = angle of
+  reflection
+Both measured from the normal.
+
+# Plane mirror
+The image is virtual, upright, the same
+size, and as far behind the mirror as the
+object is in front. It is laterally
+inverted.
+
+# Concave mirror (converging)
+  f = R/2, positive
+- Object beyond C: real, inverted,
+smaller
+- Between C and F: real, inverted, larger
+- Inside F: virtual, upright, larger (a
+shaving or make-up mirror)
+
+# Convex mirror (diverging)
+  f is negative
+Always virtual, upright and smaller, with
+a wide field of view. Used for security
+mirrors and passenger side mirrors, hence
+"objects are closer than they appear".
+
+# Ray rules for mirrors
+- A ray parallel to the axis reflects
+through F.
+- A ray through F reflects parallel.
+- A ray to the vertex reflects
+symmetrically.
+
+@ARTICLE Refraction and Snell's Law
+# Index of refraction
+  n = c/v
+  n >= 1 always
+  vacuum 1.00, air 1.00, water 1.33,
+  glass ~1.5, diamond 2.42
+
+# Snell's law
+  n1*sin(theta1) = n2*sin(theta2)
+
+# Bending direction
+Entering a denser medium (larger n) the
+light slows and bends TOWARD the normal.
+Leaving into a less dense medium it bends
+away.
+
+# What changes
+The speed and the wavelength change; the
+frequency never does.
+  lambda_n = lambda_vacuum/n
+
+# Everyday effects
+A straw looks bent in a glass, pools look
+shallower than they are, and stars twinkle
+as air of varying density refracts their
+light.
+
+# Dispersion
+n depends slightly on wavelength, so violet
+bends more than red. A prism separates
+white light, and raindrops make rainbows.
+
+@ARTICLE Total Internal Reflection
+Happens only when going from a denser to a
+less dense medium (n1 > n2).
+
+# Critical angle
+  sin(theta_c) = n2/n1
+At exactly theta_c the refracted ray grazes
+along the surface. Beyond it, no light
+escapes at all: it is 100% reflected.
+
+# Water to air
+  theta_c = 48.8 degrees
+
+# Applications
+- Optical fibres carry light for
+kilometres by repeated total internal
+reflection.
+- Diamonds sparkle because their high n
+gives a tiny critical angle of 24 degrees,
+trapping light inside.
+- Prisms in binoculars replace mirrors.
+- Mirages: hot air near the road is less
+dense, and light from the sky curves up
+into your eye.
+
+@ARTICLE Lenses
+# Converging (convex) lens
+  f is positive
+Thicker in the middle. Brings parallel
+rays to a focus.
+- Object beyond 2f: real, inverted,
+smaller (a camera)
+- At 2f: real, inverted, same size
+- Between f and 2f: real, inverted, larger
+(a projector)
+- Inside f: virtual, upright, larger (a
+magnifying glass)
+
+# Diverging (concave) lens
+  f is negative
+Thinner in the middle. The image is always
+virtual, upright and smaller.
+
+# Ray rules for lenses
+- A ray parallel to the axis refracts
+through F on the far side.
+- A ray through the center goes straight
+on.
+- A ray through the near F emerges
+parallel.
+
+# The eye
+Nearsighted eyes focus in front of the
+retina and are corrected with a diverging
+lens; farsighted eyes need a converging
+one.
+
+# Power of a lens
+  P = 1/f   (dioptres, f in metres)
+
+@ARTICLE Mirror and Lens Equations
+# The equation (mirrors and lenses)
+  1/f = 1/d_o + 1/d_i
+
+# Magnification
+  m = -d_i/d_o = h_i/h_o
+  |m| > 1 enlarged
+  |m| < 1 reduced
+  m negative: inverted and real
+  m positive: upright and virtual
+
+# Sign conventions
+  f > 0: converging lens, concave
+         mirror
+  f < 0: diverging lens, convex mirror
+  d_i > 0: real image (far side for a
+           lens, front for a mirror)
+  d_i < 0: virtual image
+
+# Reading the answer
+A negative d_i always means a virtual,
+upright image on the same side as the
+object. Let the signs do the work rather
+than deciding the answer in advance.
+
+@ARTICLE Interference and Diffraction
+# Double slit
+  d*sin(theta) = n*lambda    (bright)
+  d*sin(theta) = (n+1/2)lambda  (dark)
+  y = n*lambda*L/d
+d is the slit separation and L the
+distance to the screen.
+
+# What it proves
+Only waves interfere, so Young's
+experiment established the wave nature of
+light.
+
+# Diffraction grating
+  d*sin(theta) = n*lambda
+Same relation but with thousands of slits,
+giving very sharp, widely spaced maxima.
+  d = 1/(lines per metre)
+
+# Single slit (dark fringes)
+  a*sin(theta) = n*lambda,  n = 1,2,3
+The central bright band is twice as wide
+as the others. Narrower slits spread the
+pattern MORE.
+
+# Thin films
+An extra 180 degree phase shift occurs on
+reflection from a denser medium. This is
+why soap bubbles and oil slicks show
+colour, and how anti-reflective coatings
+work.
+
+# Polarisation
+  I = I0*cos^2(theta)   (Malus's law)
+Unpolarised light through a first filter
+drops to half its intensity. Only
+transverse waves can be polarised, so this
+proves light is transverse.

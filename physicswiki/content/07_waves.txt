@@ -1,0 +1,223 @@
+@CATEGORY Oscillations and Waves
+
+@ARTICLE Simple Harmonic Motion
+SHM happens when the restoring force is
+proportional to the displacement:
+  F = -kx
+
+# Position, velocity, acceleration
+  x = A*cos(omega*t)
+  v = -A*omega*sin(omega*t)
+  a = -A*omega^2*cos(omega*t)
+  a = -omega^2 * x
+
+# Angular frequency
+  omega = 2*pi*f = 2*pi/T
+
+# Amplitude and period
+A is the maximum displacement. For an
+ideal oscillator the period does NOT
+depend on the amplitude.
+
+# Where things are extreme
+- At x = 0: speed is maximum,
+acceleration is zero
+- At x = +-A: speed is zero,
+acceleration is maximum
+
+# Maximum values
+  v_max = A*omega
+  a_max = A*omega^2
+
+# Energy
+  E = (1/2)k*A^2  (constant)
+  KE + PE = E at every instant
+
+@ARTICLE Mass-Spring and Pendulum
+# Mass on a spring
+  T = 2*pi*sqrt(m/k)
+  omega = sqrt(k/m)
+More mass means a slower oscillation; a
+stiffer spring means a faster one. The
+period does not depend on gravity, so it
+is the same on the Moon.
+
+# Simple pendulum (small angles)
+  T = 2*pi*sqrt(L/g)
+  omega = sqrt(g/L)
+The period does not depend on the mass,
+and only on the length and g. The small
+angle approximation sin(theta) ~ theta
+needs roughly theta < 15 degrees.
+
+# Physical pendulum
+  T = 2*pi*sqrt(I/(m*g*d))
+d is the distance from the pivot to the
+center of mass.
+
+# Damping
+Friction gradually reduces the amplitude.
+The period is nearly unchanged for light
+damping.
+
+# Resonance
+Driving an oscillator at its natural
+frequency produces a large amplitude.
+This is how a swing is pumped, and why
+soldiers break step on bridges.
+
+@ARTICLE Wave Basics
+# Wave equation
+  v = f * lambda
+  f = 1/T
+
+# Terms
+  amplitude   maximum displacement
+  wavelength  distance between crests
+  frequency   cycles per second, Hz
+  period      seconds per cycle
+
+# Transverse vs longitudinal
+Transverse: the medium moves
+perpendicular to the wave (light, waves
+on a string).
+Longitudinal: the medium moves along the
+wave (sound), making compressions and
+rarefactions.
+
+# What sets the speed
+The speed is a property of the MEDIUM,
+not of the source.
+  string: v = sqrt(F_T/mu)
+where mu is mass per unit length.
+
+# Crossing into a new medium
+The frequency stays the same; the speed
+and wavelength change together.
+
+# Wave function
+  y = A*sin(k*x - omega*t)
+  k = 2*pi/lambda
+  v = omega/k
+
+@ARTICLE Superposition and Interference
+# Principle of superposition
+When waves overlap, the displacements
+add. Afterwards each wave carries on
+unchanged.
+
+# Constructive interference
+Crests line up with crests. The path
+difference is a whole number of
+wavelengths:
+  path difference = n*lambda
+
+# Destructive interference
+A crest meets a trough. The path
+difference is a half-odd number of
+wavelengths:
+  path difference = (n + 1/2)*lambda
+
+# Phase
+In phase means the crests coincide; out
+of phase by 180 degrees means they
+cancel.
+
+# Beats
+Two slightly different frequencies
+produce a slow throbbing:
+  f_beat = |f1 - f2|
+Piano tuners listen for the beats to
+vanish.
+
+@ARTICLE Standing Waves
+Formed when a wave interferes with its
+own reflection. Nodes stay still,
+antinodes swing the most.
+
+# String fixed at both ends
+  lambda_n = 2L/n,  n = 1, 2, 3...
+  f_n = n*v/(2L) = n*f1
+All harmonics are present.
+
+# Pipe open at both ends
+  lambda_n = 2L/n
+  f_n = n*v/(2L)
+Same pattern as the string; antinodes at
+both open ends.
+
+# Pipe closed at one end
+  lambda_n = 4L/n,  n = 1, 3, 5...
+  f_n = n*v/(4L)
+Only ODD harmonics. The fundamental is
+an octave lower than an open pipe of the
+same length.
+
+# Node spacing
+Adjacent nodes are half a wavelength
+apart.
+
+# Fundamental and harmonics
+  f1 is the fundamental
+  f2 = 2*f1 is the second harmonic
+
+@ARTICLE Sound
+# Speed of sound in air
+  v = 343 m/s at 20 degrees C
+  v = 331 + 0.6*T   (T in Celsius)
+Faster in liquids, faster still in
+solids.
+
+# What we hear
+  pitch     <- frequency
+  loudness  <- amplitude / intensity
+  quality   <- harmonic content
+Human hearing spans about 20 Hz to
+20,000 Hz.
+
+# Intensity
+  I = P/(4*pi*r^2)
+Follows an inverse square law from a
+point source.
+
+# Decibels
+  dB = 10*log(I/I0)
+  I0 = 1e-12 W/m^2
+Every 10 dB is a factor of 10 in
+intensity, heard as roughly twice as
+loud.
+
+# Echo and distance
+  d = v*t/2
+The sound travels there and back.
+
+@ARTICLE Doppler Effect
+The observed frequency shifts when the
+source or observer moves.
+
+  f' = f * (v +- v_o)/(v -+ v_s)
+
+# Choosing signs
+Use the signs that push the frequency in
+the direction physical sense demands:
+- Approaching: higher frequency, so use
++v_o on top or -v_s on the bottom.
+- Receding: lower frequency.
+
+# Everyday version
+A siren rises in pitch as it comes toward
+you and drops as it passes. The pitch
+does not fall gradually the whole time;
+it drops at the moment of passing.
+
+# Light and redshift
+Light shows the same effect. Galaxies
+moving away are redshifted, which is the
+core evidence for the expansion of the
+universe.
+
+# Sonic boom
+When v_s equals v the waves pile up into
+a shock front; beyond it the source is
+supersonic and drags a cone of sound
+behind it.

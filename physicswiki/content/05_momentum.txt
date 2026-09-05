@@ -1,0 +1,135 @@
+@CATEGORY Momentum
+
+@ARTICLE Momentum and Impulse
+# Momentum
+  p = m*v
+A vector, in kg*m/s, pointing along the
+velocity.
+
+# Impulse
+  J = F*t = change in p
+  J = m*v_f - m*v_i
+Impulse is also a vector, in N*s.
+
+# Impulse-momentum theorem
+  F_avg * t = m*(v_f - v_i)
+A larger contact time means a smaller
+force for the same change in momentum.
+That is the physics of airbags, crumple
+zones, catching a ball by pulling your
+hands back, and bending your knees on
+landing.
+
+# From a graph
+  impulse = area under an F vs t graph
+
+# Newton's second law, general form
+  F = dp/dt
+This form still works when the mass
+changes, such as for a rocket.
+
+@ARTICLE Conservation of Momentum
+If the net external force on a system is
+zero, the total momentum is constant.
+  p_before = p_after
+  m1*v1i + m2*v2i = m1*v1f + m2*v2f
+
+# Why it holds
+Internal forces come in third-law pairs
+that cancel within the system.
+
+# It is a vector law
+Conserve x and y momentum separately.
+
+# Momentum vs energy
+Momentum is conserved in EVERY collision.
+Kinetic energy is conserved only in
+elastic ones.
+
+# Explosions and recoil
+Starting from rest, the total momentum
+stays zero:
+  0 = m1*v1 + m2*v2
+  v1 = -m2*v2/m1
+The lighter piece moves faster. This is
+recoil of a gun, or a rocket.
+
+@ARTICLE Collisions
+# Elastic
+Both momentum and kinetic energy are
+conserved. Objects bounce apart.
+  m1*v1i + m2*v2i = m1*v1f + m2*v2f
+  v1i - v2i = -(v1f - v2f)
+The second equation says the relative
+speed of approach equals the relative
+speed of separation.
+
+# Perfectly inelastic
+The objects stick together and move with
+one final velocity. Kinetic energy is
+lost, momentum is not.
+  m1*v1i + m2*v2i = (m1 + m2)*v_f
+
+# Inelastic
+Momentum is conserved, some kinetic
+energy is lost, but the objects do not
+stick.
+
+# Energy lost
+  lost = KE_before - KE_after
+It becomes heat, sound and deformation.
+
+# Special elastic cases
+- Equal masses: they swap velocities.
+- Heavy hits light at rest: the light one
+leaves at nearly 2*v.
+- Light hits heavy at rest: the light one
+bounces back at nearly the same speed.
+
+@ARTICLE Ballistic Pendulum
+A two-stage problem, and a classic trap.
+
+# Stage 1: the collision
+Momentum is conserved, energy is not:
+  m*v = (m + M)*V
+
+# Stage 2: the swing
+Energy is conserved, momentum is not
+(gravity is external):
+  (1/2)(m + M)*V^2 = (m + M)*g*h
+
+# Result
+  v = ((m + M)/m) * sqrt(2gh)
+
+# The lesson
+Do not apply conservation of energy
+across the collision, and do not apply
+conservation of momentum across the
+swing. Split the problem at the moment
+the collision ends.
+
+@ARTICLE Center of Mass
+  x_cm = (m1*x1 + m2*x2 + ...)/(sum m)
+Do the same separately for y.
+
+# Motion
+  v_cm = (sum of m*v)/(sum of m)
+With no external force, the center of
+mass moves at constant velocity no matter
+what happens inside the system. An
+exploding shell's center of mass keeps
+following the original parabola.
+
+# Uniform shapes
+The center of mass is at the geometric
+center of a uniform symmetric object.
+
+# Stability
+An object tips over when its center of
+mass passes outside its base of support.
+
+# Two-body systems
+The center of mass lies on the line
+between them, closer to the heavier one,
+dividing the distance in inverse
+proportion to the masses.

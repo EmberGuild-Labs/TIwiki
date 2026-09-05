@@ -1,0 +1,247 @@
+@CATEGORY Reference and Constants
+
+@ARTICLE Physical Constants
+  g = 9.8 m/s^2 (Earth surface)
+  G = 6.674e-11 N*m^2/kg^2
+  c = 3.00e8 m/s
+  e = 1.602e-19 C
+  k = 8.99e9 N*m^2/C^2
+  epsilon0 = 8.85e-12 C^2/(N*m^2)
+  mu0 = 4*pi*1e-7 T*m/A
+  h = 6.626e-34 J*s
+  k_B = 1.381e-23 J/K
+  R = 8.314 J/(mol*K)
+  N_A = 6.022e23 /mol
+
+# Masses
+  electron = 9.11e-31 kg
+  proton   = 1.673e-27 kg
+  neutron  = 1.675e-27 kg
+  1 u = 1.661e-27 kg = 931.5 MeV/c^2
+
+# Astronomical
+  Earth mass = 5.97e24 kg
+  Earth radius = 6.37e6 m
+  Sun mass = 1.99e30 kg
+  Earth-Sun distance = 1.50e11 m
+  Moon distance = 3.84e8 m
+
+# Handy combinations
+  h*c = 1240 eV*nm
+  1 eV = 1.602e-19 J
+  speed of sound (20 C) = 343 m/s
+  water density = 1000 kg/m^3
+  1 atm = 1.013e5 Pa
+
+@ARTICLE SI Units
+# Base units
+  length        metre      m
+  mass          kilogram   kg
+  time          second     s
+  current       ampere     A
+  temperature   kelvin     K
+  amount        mole       mol
+
+# Derived units
+  force      newton   N = kg*m/s^2
+  energy     joule    J = N*m
+  power      watt     W = J/s
+  pressure   pascal   Pa = N/m^2
+  charge     coulomb  C = A*s
+  voltage    volt     V = J/C
+  resistance ohm      = V/A
+  capacitance farad   F = C/V
+  magnetic B tesla    T = N/(A*m)
+  frequency  hertz    Hz = 1/s
+
+# Prefixes
+  pico   p   1e-12
+  nano   n   1e-9
+  micro  u   1e-6
+  milli  m   1e-3
+  centi  c   1e-2
+  kilo   k   1e3
+  mega   M   1e6
+  giga   G   1e9
+  tera   T   1e12
+
+@ARTICLE Unit Conversions
+# Length
+  1 in = 2.54 cm
+  1 ft = 0.3048 m
+  1 mi = 1609 m
+  1 nm = 1e-9 m
+
+# Speed
+  1 m/s = 3.6 km/h
+  1 mi/h = 0.447 m/s
+  60 mi/h = 26.8 m/s
+
+# Mass and force
+  1 kg weighs 9.8 N
+  1 lb = 4.45 N
+  1 u = 1.661e-27 kg
+
+# Energy
+  1 cal = 4.186 J
+  1 Cal (food) = 4186 J
+  1 kWh = 3.6e6 J
+  1 eV = 1.602e-19 J
+
+# Power
+  1 hp = 746 W
+
+# Pressure
+  1 atm = 101.3 kPa = 760 mmHg
+
+# Angle
+  1 rad = 57.3 degrees
+  180 degrees = pi rad
+
+@ARTICLE Dimensional Analysis
+Every equation must balance in units.
+Checking them catches most algebra
+mistakes for free.
+
+# Base dimensions
+  M mass, L length, T time
+
+# Common dimensions
+  velocity      L/T
+  acceleration  L/T^2
+  force         M*L/T^2
+  energy        M*L^2/T^2
+  power         M*L^2/T^3
+  pressure      M/(L*T^2)
+  momentum      M*L/T
+
+# Using it
+If a result comes out in m/s and you
+wanted a force, something is wrong. If an
+exam answer is 10^6 times too big, look
+for a prefix you forgot to convert.
+
+# Deriving a formula's shape
+The pendulum period can only be built
+from L and g:
+  sqrt(L/g) has units of seconds
+which gives T = 2*pi*sqrt(L/g) up to the
+dimensionless constant.
+
+# Rules
+- Only quantities with the same dimensions
+can be added.
+- Arguments of sin, ln and e^x must be
+dimensionless.
+
+@ARTICLE Vectors in Physics
+# Components
+  A_x = A*cos(theta)
+  A_y = A*sin(theta)
+theta measured from the +x axis.
+
+# Magnitude and direction
+  A = sqrt(A_x^2 + A_y^2)
+  theta = arctan(A_y/A_x)
+Check the quadrant: the calculator's
+arctan only returns -90 to +90 degrees,
+so add 180 degrees for the second and
+third quadrants.
+
+# Adding vectors
+Add the components separately, then
+recombine. Never add magnitudes unless the
+vectors are parallel.
+
+# Scalars vs vectors
+  scalars: mass, time, speed, energy,
+  temperature, charge, work, power
+  vectors: displacement, velocity,
+  acceleration, force, momentum,
+  E field, B field, torque
+
+# Dot product
+  A . B = A*B*cos(theta)
+Gives a scalar. Work is F . d.
+
+# Cross product
+  |A x B| = A*B*sin(theta)
+Gives a vector perpendicular to both.
+Torque is r x F.
+
+@ARTICLE Problem Solving
+# A reliable order
+1. Draw a picture, label the knowns.
+2. Choose a system and a sign convention.
+3. Name the physics: is it kinematics,
+forces, energy, or momentum?
+4. Write the equation symbolically.
+5. Solve for the unknown BEFORE putting
+numbers in.
+6. Substitute with units.
+7. Check the size, the sign and the units.
+
+# Choosing the tool
+  time or acceleration involved: forces
+  and kinematics
+  speed and height, no time: energy
+  a collision or explosion: momentum
+  rotation: torque and angular momentum
+
+# Sanity checks
+- Does the answer have the right units?
+- Is the sign meaningful?
+- Is the size plausible? A car does not
+weigh 3 N and a person does not run at
+100 m/s.
+- Do the limiting cases behave? Set an
+angle to 0 or 90 degrees and see whether
+the formula still makes sense.
+
+# Common errors
+- Degrees vs radians in the wrong MODE.
+- Forgetting that g is downward.
+- Using kinematic equations when the
+acceleration is not constant.
+- Adding vector magnitudes directly.
+- Leaving temperatures in Celsius in a
+gas law.
+
+@ARTICLE About This App
+PHYSWIKI is an offline physics reference
+for the TI-84 Plus CE Python, built from
+the same engine as MATHWIKI.
+
+# Controls
+  UP / DOWN     move the selection
+  LEFT / RIGHT  page up / page down
+  2ND or ENTER  open the selection
+  CLEAR or DEL  go back
+  Y=            search all articles
+  ZOOM          list every article
+  MODE          quit to the OS
+
+In any list, pressing a letter key jumps
+to the first entry starting with it.
+
+# In an article
+  UP / DOWN     scroll one line
+  LEFT / RIGHT  scroll one screen
+  WINDOW        jump to the top
+  GRAPH         jump to the end
+  TRACE         next article
+  CLEAR or DEL  back to the list
+
+# In search
+Type letters with the ordinary ALPHA
+key labels (no need to press ALPHA).
+  DEL     backspace
+  0       space
+  CLEAR   exit search
+
+# Adding your own articles
+Edit the plain text files in
+physicswiki/content/, rebuild, and send
+the new .8xp back to the calculator. The
+format is documented in the project
+README.

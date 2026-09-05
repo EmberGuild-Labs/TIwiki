@@ -1,23 +1,28 @@
-# MATHWIKI — an offline math wiki for the TI-84 Plus CE
+# TIwiki — offline reference wikis for the TI-84 Plus CE
 
-A Wikipedia-style math reference that runs natively on the TI-84 Plus CE /
-CE Python. Browse 93 articles across 13 categories, jump straight to any
-article A–Z, or search titles by typing on the ALPHA key labels — all offline,
-in flash, with no internet and no notes app.
+Wikipedia-style reference apps that run natively on the TI-84 Plus CE /
+CE Python. Browse by category, list every article A–Z, or search titles by
+typing on the ALPHA key labels — all offline, in flash.
 
-Written in C with the [CE C/C++ toolchain](https://ce-programming.github.io/toolchain/),
-so it is a real native program (`MATHWIKI.8xp`), not TI-BASIC. That is what
-makes the fast full-screen text rendering, instant search and smooth scrolling
-possible.
+| App | File | Articles | Size |
+|---|---|---|---|
+| **MATHWIKI** | `mathwiki/bin/MATHWIKI.8xp` | 93 across 13 categories | 35 KB |
+| **PHYSWIKI** | `physicswiki/bin/PHYSWIKI.8xp` | 89 across 14 categories | 42 KB |
+
+Both are built from **one shared engine** (`engine/main.c`); only the content
+differs. Written in C with the
+[CE C/C++ toolchain](https://ce-programming.github.io/toolchain/), so these are
+real native programs, not TI-BASIC — which is what makes the full-screen text
+rendering, instant search and smooth scrolling possible.
 
 ```
 +--------------------------------------+
-|MATHWIKI                         1/13 |
-|>Forms of a Function            15    |
-| Algebra                        11    |
-| Geometry                        6    |
-| Conic Sections                  5    |
-| Trigonometry                   11    |
+|PHYSWIKI                        1/14  |
+|>Kinematics                      6    |
+| Forces and Newton's Laws        8    |
+| Circular Motion and Gravity     5    |
+| Work and Energy                 6    |
+| Momentum                        5    |
 | ...                                  |
 |2ND open  Y= search  ZOOM all  CLEAR  |
 +--------------------------------------+
@@ -25,60 +30,32 @@ possible.
 
 ---
 
-## What's in it
-
-| Category | Articles | Covers |
-|---|---|---|
-| Forms of a Function | 15 | linear, quadratic, polynomial, rational, exponential, log, radical, absolute value, piecewise, trig, transformations, inverses, symmetry, composition, domain/range |
-| Algebra | 11 | exponent & log rules, factoring, special products, completing the square, polynomial division, rational expressions, radicals, inequalities, systems, complex numbers |
-| Geometry | 6 | area/perimeter, volume/surface area, triangles, circles, coordinate geometry, angles |
-| Conic Sections | 5 | circle, parabola, ellipse, hyperbola, identifying a conic |
-| Trigonometry | 11 | right triangle trig, unit circle, exact values, identities, sum/difference, double/half angle, laws of sines & cosines, graphs, inverse trig, solving, polar |
-| Sequences and Series | 5 | arithmetic, geometric, sigma notation, convergence, binomial theorem |
-| Vectors and Matrices | 5 | vectors, dot/cross product, matrix ops, determinants/inverses, solving systems |
-| Limits and Continuity | 4 | limit basics, special limits, continuity, L'Hôpital |
-| Derivatives | 7 | definition, rules, common derivatives, implicit, applications, motion/related rates, linearization |
-| Integrals | 7 | antiderivatives, FTC, u-sub, by parts, area/volume, Riemann sums, applications |
-| Statistics and Probability | 7 | descriptive stats, normal distribution, probability rules, counting, discrete distributions, regression, confidence & tests |
-| TI-84 CE Tips | 5 | solvers, graphing tricks, nDeriv/fnInt, lists & stats, modes and error fixes |
-| Reference Tables | 5 | constants, number sets, symbols, unit conversions, in-app help |
-
-93 articles, ~2,200 lines, about 46 KB of text.
-
----
-
 ## Installing on the calculator
 
-You need **two files** on the calculator:
+You need the app(s) you want plus **`clibs.8xg`** — the shared C libraries
+(graphx, keypadc) every CE toolchain program links against. Send it once; both
+wikis and any other CE program share it.
 
-| File | What it is |
-|---|---|
-| `bin/MATHWIKI.8xp` | the app itself (35 KB) |
-| `clibs.8xg` | the shared C libraries (graphx, keypadc) that every CE toolchain program links against |
-
-**Steps**
-
-1. Connect the calculator by USB and open **TI Connect CE**.
-2. Drag both `MATHWIKI.8xp` and `clibs.8xg` into the *Calculator Explorer* window.
-   `clibs.8xg` is a group — it unpacks into several `AppVar`s automatically.
-   You only ever need to send it once; other CE programs share it.
-3. Launch it with whatever loader your jailbreak gives you:
-   - **arTIfiCE** (OS 5.5+): run the exploit (e.g. through Cabri™ Jr.), then
-     pick `MATHWIKI` from the program list.
-   - **A shell such as Cesium**: `MATHWIKI` appears in the program list; press
-     enter on it.
-   - **OS 5.2 and older**, where the `Asm(` token still exists:
-     `Asm(prgmMATHWIKI)` from the home screen.
+1. Connect by USB and open **TI Connect CE**.
+2. Drag `clibs.8xg` and whichever `.8xp` files you want into *Calculator
+   Explorer*. `clibs.8xg` is a group and unpacks into several AppVars
+   automatically — click **Replace** if it asks; the libraries are versioned and
+   backward compatible, so the newest set is always the right one to keep.
+3. Launch through your jailbreak's loader:
+   - **arTIfiCE** (OS 5.5+): run the exploit (e.g. via Cabri™ Jr.), then pick
+     the program.
+   - **A shell such as Cesium**: press enter on it in the program list.
+   - **OS 5.2 and older**: `Asm(prgmMATHWIKI)` from the home screen.
 
 **Notes**
 
-- The program is flagged archived, so it lives in flash and survives a RAM
-  clear. Keep `clibs` archived too.
-- It ships zx7-compressed (35 KB file) and expands to roughly 67 KB in RAM when
-  it runs, so leave a reasonable amount of free RAM. `2nd + (MEM) > 2` will show
-  you what you have.
-- Nothing is written to the calculator while the app runs — it only reads its
-  own flash, so it cannot corrupt your variables or programs.
+- Both programs are flagged archived, so they live in flash and survive a RAM
+  clear. Keep the `clibs` AppVars archived too.
+- They ship zx7-compressed and expand in RAM to run: MATHWIKI to ~63 KB,
+  PHYSWIKI to ~78 KB, against roughly 150 KB of user RAM. Both fit with room to
+  spare, but `2nd + (MEM) > 2` will tell you what you have.
+- Neither writes anything to the calculator — they only read their own flash,
+  so they cannot disturb your variables or programs.
 
 ---
 
@@ -88,7 +65,7 @@ You need **two files** on the calculator:
 
 | Key | Action |
 |---|---|
-| `UP` / `DOWN` | move the selection (wraps around, auto-repeats when held) |
+| `UP` / `DOWN` | move the selection (wraps, auto-repeats when held) |
 | `LEFT` / `RIGHT` | page up / page down |
 | `2ND` or `ENTER` | open |
 | `CLEAR` / `DEL` | back (`CLEAR` on the main menu quits) |
@@ -113,23 +90,116 @@ Type using the letters *printed on the keys* — `MATH` is A, `APPS` is B, `SIN`
 is E, and so on. You do **not** press `ALPHA` first; the app reads the raw
 keypad. `0` types a space, `DEL` backspaces, `CLEAR` exits. Matching is
 case-insensitive, matches anywhere inside a title, and also matches category
-names (so typing `INTEGRAL` finds everything in the Integrals category).
+names (so `INTEGRAL` finds everything in the Integrals category).
+
+---
+
+## What's in them
+
+### MATHWIKI — 93 articles
+
+| Category | N | Covers |
+|---|---|---|
+| Forms of a Function | 15 | linear, quadratic, polynomial, rational, exponential, log, radical, absolute value, piecewise, trig, transformations, inverses, symmetry, composition, domain/range |
+| Algebra | 11 | exponent & log rules, factoring, special products, completing the square, polynomial division, rational expressions, radicals, inequalities, systems, complex numbers |
+| Geometry | 6 | area/perimeter, volume/surface area, triangles, circles, coordinate geometry, angles |
+| Conic Sections | 5 | circle, parabola, ellipse, hyperbola, identifying a conic |
+| Trigonometry | 11 | right triangle trig, unit circle, exact values, identities, sum/difference, double/half angle, laws of sines & cosines, graphs, inverse trig, solving, polar |
+| Sequences and Series | 5 | arithmetic, geometric, sigma notation, convergence, binomial theorem |
+| Vectors and Matrices | 5 | vectors, dot/cross product, matrix ops, determinants/inverses, solving systems |
+| Limits and Continuity | 4 | limit basics, special limits, continuity, L'Hôpital |
+| Derivatives | 7 | definition, rules, common derivatives, implicit, applications, motion/related rates, linearization |
+| Integrals | 7 | antiderivatives, FTC, u-sub, by parts, area/volume, Riemann sums, applications |
+| Statistics and Probability | 7 | descriptive stats, normal distribution, probability rules, counting, discrete distributions, regression, confidence & tests |
+| TI-84 CE Tips | 5 | solvers, graphing tricks, nDeriv/fnInt, lists & stats, modes and error fixes |
+| Reference Tables | 5 | constants, number sets, symbols, unit conversions, in-app help |
+
+### PHYSWIKI — 89 articles
+
+| Category | N | Covers |
+|---|---|---|
+| Kinematics | 6 | motion basics, kinematic equations, free fall, motion graphs, projectiles, relative motion |
+| Forces and Newton's Laws | 8 | the three laws, free-body diagrams, weight & normal force, friction, inclines, tension & pulleys, springs, drag & terminal velocity |
+| Circular Motion and Gravity | 5 | uniform circular motion, centripetal force, vertical circles & banking, gravitation, orbits & Kepler |
+| Work and Energy | 6 | work, kinetic energy, potential energy, conservation, power, springs |
+| Momentum | 5 | impulse, conservation, collisions, ballistic pendulum, center of mass |
+| Rotational Motion | 7 | angular kinematics, torque, moment of inertia, dynamics, rotational energy, angular momentum, statics |
+| Oscillations and Waves | 7 | SHM, spring & pendulum, wave basics, superposition, standing waves, sound, Doppler |
+| Fluids and Thermodynamics | 8 | pressure, buoyancy, fluid flow, thermal expansion, calorimetry, ideal gas, the laws, engines & entropy |
+| Electrostatics | 6 | charge, Coulomb's law, electric field, Gauss's law, potential, capacitors |
+| Circuits | 6 | current & resistance, Ohm's law & power, series/parallel, Kirchhoff, real batteries & meters, RC circuits |
+| Magnetism | 5 | force on a charge, force on a wire, sources of field, induction & Faraday, inductance & AC |
+| Optics and Light | 7 | EM waves, reflection & mirrors, refraction, total internal reflection, lenses, mirror/lens equations, interference & diffraction |
+| Modern Physics | 6 | photoelectric effect, duality, atomic models & spectra, nuclear physics, radioactive decay, relativity |
+| Reference and Constants | 7 | constants, SI units, conversions, dimensional analysis, vectors, problem solving, in-app help |
+
+---
+
+## Repo layout
+
+```
+engine/
+  main.c              the entire app: UI, navigation, search, rendering.
+                      Content-agnostic; shared by every wiki.
+  tools/
+    build_content.py  <wiki>/content/*.txt -> <wiki>/src/content.{c,h}
+    make_icon.py      writes <wiki>/icon.png
+    hostsim/          desktop simulator (see below)
+
+mathwiki/
+  content/*.txt       the wiki, as editable plain text (the source of truth)
+  src/content.c/.h    GENERATED - do not edit by hand
+  makefile            NAME=MATHWIKI, pulls in ../engine/main.c
+  icon.png
+  bin/MATHWIKI.8xp    the built program
+
+physicswiki/          same shape, NAME=PHYSWIKI
+
+clibs.8xg             C libraries to send to the calculator
+```
+
+Each wiki's makefile pulls the shared engine in with
+`EXTRA_CSOURCES = ../engine/main.c`, and the toolchain puts `<wiki>/src` on the
+include path, so `main.c` picks up that wiki's generated `content.h`. The app
+title on the main menu comes from the `@WIKI` directive in the content, via a
+generated `WIKI_TITLE` define — the engine has no wiki-specific code in it.
+
+---
+
+## Building
+
+**Requirements:** the CE C/C++ toolchain (v15.0 used here). On macOS, download
+`CEdev-macOS-arm.dmg` (or `-intel`) from the
+[toolchain releases](https://github.com/CE-Programming/toolchain/releases),
+mount it, and copy the `CEdev` folder to `~/CEdev`.
+
+```sh
+export PATH="$HOME/CEdev/bin:$PATH"
+
+python3 engine/tools/build_content.py            # rebuild every wiki's content
+python3 engine/tools/build_content.py mathwiki   # or just one
+
+cd mathwiki && make          # -> bin/MATHWIKI.8xp
+cd physicswiki && make       # -> bin/PHYSWIKI.8xp
+```
+
+`build_content.py` with no arguments compiles every directory that has a
+`content/` folder, so adding a third wiki needs no changes to it.
 
 ---
 
 ## Adding your own articles
 
-The wiki content is plain text in `content/`, not C. Editing it is the whole
-point — add your teacher's formulas, a unit you're studying, whatever.
-
-Format:
+The content is plain text, not C — that's the point. Add your teacher's
+formulas, a unit you're studying, whatever.
 
 ```
-@CATEGORY Algebra
-@ARTICLE Quadratic Formula
-# A heading, shown in blue with an underline
+@WIKI PHYSWIKI                     (optional, sets the main-menu title)
+@CATEGORY Kinematics
+@ARTICLE Projectile Motion
+# A heading, shown in the accent colour with an underline
 Ordinary prose. Consecutive lines are joined and re-wrapped to fit the
-screen, so you do not have to worry about where your line breaks fall.
+screen, so it does not matter where your line breaks fall.
 
   Two leading spaces = a formula. Kept exactly as typed, shown in orange
   on a grey band. Max 37 characters, never re-wrapped.
@@ -138,116 +208,87 @@ screen, so you do not have to worry about where your line breaks fall.
   to the same bullet.
 ```
 
-Rules of thumb:
-
 - Blank lines separate paragraphs; runs of blanks collapse to one.
-- Headings and formula lines must be **≤ 37 characters** — the build reports
-  the file and line number of anything too long and refuses to finish.
+- Headings and formula lines must be **≤ 37 characters** — the build reports the
+  file and line number of anything too long and exits non-zero.
 - File name order (`01_`, `02_`, …) sets category order in the menu.
-- Articles keep their authored order inside a category; the A–Z list and
-  search are sorted separately at build time.
+- Articles keep their authored order within a category; the A–Z list and search
+  are sorted separately at build time.
 
-Then rebuild and re-send:
-
-```sh
-python3 tools/build_content.py     # content/*.txt -> src/content.{c,h}
-make                               # -> bin/MATHWIKI.8xp
-```
-
----
-
-## Building from source
-
-**Requirements:** the CE C/C++ toolchain (v15.0 was used here). On macOS,
-download `CEdev-macOS-arm.dmg` (or `-intel`) from the
-[toolchain releases](https://github.com/CE-Programming/toolchain/releases),
-mount it, and copy the `CEdev` folder to `~/CEdev`.
+### Starting a whole new wiki
 
 ```sh
-export PATH="$HOME/CEdev/bin:$PATH"
-python3 tools/build_content.py     # regenerate content tables (optional)
-python3 tools/make_icon.py         # regenerate icon.png (optional)
-make                               # -> bin/MATHWIKI.8xp
-make clean
+mkdir -p chemwiki/content
+# write chemwiki/content/*.txt, starting with "@WIKI CHEMWIKI"
+sed 's/PHYSWIKI/CHEMWIKI/g' physicswiki/makefile > chemwiki/makefile
+# then edit DESCRIPTION in chemwiki/makefile
+python3 engine/tools/build_content.py chemwiki
+python3 engine/tools/make_icon.py chemwiki
+cd chemwiki && make
 ```
 
-### Project layout
-
-```
-content/            the wiki, as editable plain text (the source of truth)
-tools/
-  build_content.py  content/*.txt  ->  src/content.c + src/content.h
-  make_icon.py      writes the 16x16 icon.png
-  hostsim/          desktop simulator, see below
-src/
-  main.c            the whole app: UI, navigation, search, rendering
-  content.c/.h      GENERATED - do not edit by hand
-makefile            CE toolchain makefile
-clibs.8xg           C libraries to send to the calculator
-bin/MATHWIKI.8xp    the built program
-```
+(Add a colour theme for it in `make_icon.py` if you want a distinct icon;
+otherwise it falls back to the MATHWIKI blue.)
 
 ---
 
 ## The desktop simulator
 
-`tools/hostsim/` compiles **the real `src/main.c`** against stub `graphx.h` /
-`keypadc.h` headers so the app runs on a Mac/Linux box. Text drawn by the app
-lands in an ASCII grid that is printed once per frame, and keypresses come from
-a script on the command line. This means content and UI changes can be checked
-without a calculator in hand.
+`engine/tools/hostsim/` compiles **the real `engine/main.c`** against stub
+`graphx.h` / `keypadc.h` headers so a wiki runs on a Mac/Linux box. Text drawn
+by the app lands in an ASCII grid printed once per frame, and keypresses come
+from a script on the command line. Content and UI changes can be checked without
+a calculator in hand.
 
 ```sh
-cd tools/hostsim
-cc -std=c11 -I. -I../../src -Dmain=wiki_main -c ../../src/main.c -o main_sim.o
-cc -std=c11 -I. -c ../../src/content.c -o content_sim.o
-cc -std=c11 -I. -I../../src -c sim.c -o sim.o
-cc main_sim.o content_sim.o sim.o -o sim
+cd engine/tools/hostsim
+./build.sh physicswiki              # -> ./sim-physicswiki
+./build.sh physicswiki --asan       # -> ./sim-physicswiki-asan
 
-./sim ""                       # the main menu
-./sim "2nd down 2nd" --frame 4 # open a category, then an article
-./sim "y= q u a d"             # search for "quad"
+./sim-physicswiki ""                     # the main menu
+./sim-physicswiki "2nd down 2nd" --frame 4
+./sim-physicswiki "y= d o p enter"       # search for "dop" and open the hit
 ```
 
 Key tokens: `up down left right enter 2nd clear del mode y= window zoom trace
 graph`, a single letter `a`–`z`, or `_` for a space. `--frame N` prints only
-frame N. The script quits the app when it runs out of keys.
+frame N. The app quits when the script runs out of keys.
 
 ---
 
 ## Notes and decisions
 
 **Why native C and not TI-BASIC or Python.** A `.8xp` can be either a BASIC
-program or a native eZ80 one. BASIC would have made a 46 KB text corpus painful
-(strings are slow, program size is awkward, there is no real full-screen text
-control) and CE Python stores scripts as `.8xv` AppVars and only draws in its
-shell. Since the calculator is jailbroken, native C was the right call: full
-320×240 control, instant search across all 93 titles, and the whole corpus in
-flash.
+program or a native eZ80 one. BASIC would have made a 45–60 KB text corpus
+painful (strings are slow, program size is awkward, there is no real
+full-screen text control) and CE Python stores scripts as `.8xv` AppVars and
+only draws in its shell. Since the calculator is jailbroken, native C was the
+right call.
 
-**Content is data, not code.** The articles live in `content/*.txt` and are
-compiled into C tables. Wrapping, hyphen-free reflow, style tagging and the
+**One engine, many wikis.** `engine/main.c` contains no subject-specific code.
+Everything it displays — including the app's own title — comes from the
+generated `content.c`/`content.h` of whichever wiki is being built. Adding a
+subject means writing text files and a three-line makefile, and a UI fix lands
+in every wiki at once.
+
+**Content is data, not code.** Wrapping, reflow, style tagging and the
 37-column limit are all enforced at build time, so the calculator never does
-text layout at runtime — it just prints pre-wrapped lines. That also makes the
-wiki easy to extend without touching any C.
+text layout at runtime — it just prints pre-wrapped lines.
 
 **One string per article, indexed on open.** Each article body is a single
 `\n`-separated string with a one-byte style prefix per line (`0` body,
-`1` heading, `2` formula, `3` bullet). Storing one pointer per line instead
-would have cost ~3 bytes × 2,235 lines ≈ 6.7 KB of extra flash. The app scans
-for line starts once when you open an article (at most 47 lines) and scrolling
-is then just an array index.
+`1` heading, `2` formula, `3` bullet). One pointer per line would have cost
+~3 bytes × ~2,200 lines ≈ 6.7 KB of extra flash per wiki. The app scans for
+line starts once when you open an article and scrolling is then an array index.
 
-**Compressed, single file.** Uncompressed, the program is ~67 KB, which exceeds
-the 64 KB limit on a single calculator variable — the toolchain would split it
-into a loader plus two AppVars. With `COMPRESSED = YES` it is one 35 KB `.8xp`
-that expands into RAM at launch. Fewer files to send, and it fits in flash
-comfortably.
+**Compressed, single file.** Uncompressed, either program exceeds the 64 KB
+limit on a single calculator variable and the toolchain would split it into a
+loader plus AppVars. With `COMPRESSED = YES` each is one `.8xp` that expands
+into RAM at launch.
 
-**Explicit palette.** The app defines all 15 of its colors with
+**Explicit palette.** The engine defines all 15 of its colours with
 `gfx_RGBTo1555` at startup rather than relying on the default palette's index
-meanings, and reserves index 0 as the text-transparency key. Colors are then
-guaranteed regardless of toolchain defaults.
+meanings, and reserves index 0 as the text-transparency key.
 
 **ASCII-only glyphs.** The UI uses plain ASCII (`>` for the selection marker,
 `UP/DN`, `L/R` in hints) rather than the TI font's control-code arrow glyphs,
@@ -255,13 +296,14 @@ whose positions are not guaranteed across font variants.
 
 ### Testing
 
-- Every article was opened, scrolled to the end, paged back and forth and
-  advanced through, plus search overflow/backspace-past-empty and list
-  wraparound — 877 frames — under AddressSanitizer and UndefinedBehaviorSanitizer
-  in the host simulator. Clean.
+- Every article in both wikis was opened, scrolled to the end, paged back and
+  forth and advanced through — 877 frames for MATHWIKI, 844 for PHYSWIKI — plus
+  search overflow, backspace-past-empty and list wraparound, all under
+  AddressSanitizer and UndefinedBehaviorSanitizer in the host simulator. Clean.
 - The content build fails loudly on any heading or formula wider than 37
-  columns, so layout regressions can't sneak into a release.
-- The final `.8xp` was built and its size verified, but it has **not** been run
-  on real hardware or in an emulator (CEmu needs a ROM dump from your own
-  calculator). If anything looks off on device, the simulator is the fastest
+  columns, so layout regressions can't reach a release.
+- The `.8xp` files were built and their RAM footprints checked against the map
+  files (63 KB and 78 KB against ~150 KB available), but they have **not** been
+  run on real hardware or in an emulator (CEmu needs a ROM dump from your own
+  calculator). If something looks wrong on device, the simulator is the fastest
   place to reproduce it.

@@ -11,6 +11,7 @@
 #define STYLE_BULLET  '3'
 #define BULLET_CONT   '\x01'  /* wrapped continuation of a bullet */
 
+#define WIKI_TITLE "MATHWIKI"
 #define WIKI_COLS 37
 #define WIKI_MAX_LINES 43  /* longest article, for the runtime line index */
 

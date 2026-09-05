@@ -1,0 +1,168 @@
+@WIKI PHYSWIKI
+@CATEGORY Kinematics
+
+@ARTICLE Motion Basics
+# Distance vs displacement
+Distance is the total path length, a
+scalar, never negative. Displacement is
+the straight line change in position, a
+vector.
+  displacement = x_f - x_i
+
+# Speed vs velocity
+  average speed = distance / time
+  average velocity = displacement/time
+Speed is a scalar, velocity is a vector.
+A round trip has zero average velocity
+but nonzero average speed.
+
+# Acceleration
+  a_avg = (v_f - v_i)/t
+Acceleration is a change in velocity, so
+it happens when speeding up, slowing
+down, OR turning.
+
+# Signs
+Sign means direction, not "getting
+faster". If v and a have the same sign
+the object speeds up; opposite signs
+means it slows down.
+
+@ARTICLE Kinematic Equations
+For constant acceleration only:
+  v = v0 + at
+  x = x0 + v0*t + (1/2)a*t^2
+  v^2 = v0^2 + 2a(x - x0)
+  x = x0 + (1/2)(v0 + v)t
+
+# Choosing one
+Each equation is missing one variable.
+List what you know, find what you want,
+then pick the equation without the
+variable you neither know nor want.
+
+# Variables
+  x  position       v0 initial velocity
+  v  final velocity a  acceleration
+  t  time
+
+# Cautions
+- They fail if a is not constant.
+- Set up a sign convention first and
+keep it for the whole problem.
+- Each axis is handled separately.
+
+@ARTICLE Free Fall
+Free fall means gravity is the only
+force acting. Air resistance is ignored.
+  a = -g = -9.8 m/s^2  (up is +)
+
+# Equations
+  v = v0 - g*t
+  y = y0 + v0*t - (1/2)g*t^2
+  v^2 = v0^2 - 2g(y - y0)
+
+# Key facts
+- Mass does not matter. A feather and a
+hammer fall together in a vacuum.
+- At the top of the path v = 0 but
+a is still g downward.
+- Motion up and motion down are
+symmetric: the speed at a given height
+is the same going up and coming down.
+
+# Time to the top
+  t_up = v0/g
+Total time in the air (same launch and
+landing height) is 2*v0/g.
+
+# Maximum height
+  h_max = v0^2/(2g)
+
+@ARTICLE Motion Graphs
+# Position vs time
+  slope = velocity
+Straight line means constant velocity.
+Curved means accelerating.
+
+# Velocity vs time
+  slope = acceleration
+  area under the curve = displacement
+Area below the axis counts as negative
+displacement.
+
+# Acceleration vs time
+  area under the curve = change in
+  velocity
+
+# Reading shapes
+- Horizontal line on a v-t graph:
+constant velocity, zero acceleration.
+- Straight sloped line on v-t: constant
+acceleration.
+- Where a v-t graph crosses zero, the
+object reverses direction.
+- A maximum or minimum on an x-t graph
+is where v = 0.
+
+@ARTICLE Projectile Motion
+Horizontal and vertical motion are
+independent and share only the time.
+
+# Horizontal (no acceleration)
+  x = v0x * t
+  v_x is constant
+
+# Vertical (free fall)
+  v_y = v0y - g*t
+  y = y0 + v0y*t - (1/2)g*t^2
+
+# Components of the launch
+  v0x = v0*cos(theta)
+  v0y = v0*sin(theta)
+
+# Launched horizontally
+v0y = 0, so the time to fall is set by
+the height alone:
+  t = sqrt(2h/g)
+A ball rolled off a table and one
+dropped from the table land at the same
+moment.
+
+# Range (level ground)
+  R = v0^2 * sin(2*theta)/g
+Maximum range at 45 degrees. Angles that
+add to 90 degrees give the same range.
+
+# Time of flight (level ground)
+  T = 2*v0*sin(theta)/g
+
+@ARTICLE Relative Motion
+Velocity depends on the reference frame.
+
+# Notation
+  v_AC = v_AB + v_BC
+Read the subscripts as "A relative to
+C equals A relative to B plus B
+relative to C". Inner subscripts cancel.
+
+# Reversing
+  v_AB = -v_BA
+
+# Common setups
+Boat crossing a river:
+  v_boat,ground = v_boat,water
+                  + v_water,ground
+Add the vectors, do not just add the
+speeds, unless they are along the same
+line.
+
+# Crossing straight across
+Aim upstream so the upstream component
+cancels the current:
+  sin(theta) = v_current / v_boat
+
+# Time to cross
+The downstream current does not change
+the crossing time; only the component
+straight across the river does.

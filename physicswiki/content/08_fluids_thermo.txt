@@ -1,0 +1,257 @@
+@CATEGORY Fluids and Thermodynamics
+
+@ARTICLE Density and Pressure
+# Density
+  rho = m/V
+  water: 1000 kg/m^3 = 1 g/cm^3
+
+# Pressure
+  P = F/A
+  1 Pa = 1 N/m^2
+  1 atm = 101325 Pa = 101.3 kPa
+
+# Pressure in a fluid
+  P = P0 + rho*g*h
+Depends only on the depth, not on the
+shape or the amount of the container.
+Every point at the same depth in a
+connected fluid is at the same pressure.
+
+# Gauge vs absolute
+  P_gauge = P_absolute - P_atmosphere
+A tyre gauge reads gauge pressure.
+
+# Pascal's principle
+Pressure applied to an enclosed fluid is
+transmitted undiminished throughout.
+  F1/A1 = F2/A2
+This is the hydraulic lift: a small force
+on a small piston lifts a large load, at
+the cost of a much longer stroke.
+
+@ARTICLE Buoyancy
+# Archimedes' principle
+The buoyant force equals the weight of
+the fluid displaced.
+  F_b = rho_fluid * V_displaced * g
+
+# Float, sink or hover
+  rho_object < rho_fluid : floats
+  rho_object > rho_fluid : sinks
+  equal: hovers at any depth
+
+# Floating object
+The buoyant force equals the weight:
+  rho_obj*V_obj = rho_fluid*V_sub
+  V_sub/V_obj = rho_obj/rho_fluid
+Ice is about 0.92 as dense as water, so
+roughly 92% of an iceberg is underwater.
+
+# Apparent weight
+  W_apparent = W_actual - F_b
+This is how the density of an irregular
+object is measured.
+
+# Common trap
+The buoyant force does not depend on the
+depth (for an incompressible fluid) or on
+the mass of the object, only on the
+volume displaced and the fluid density.
+
+@ARTICLE Fluid Flow
+# Continuity equation
+  A1*v1 = A2*v2
+Volume flow rate is constant, so a fluid
+speeds up through a narrow section. This
+is why a thumb over a hose makes a fast
+jet.
+
+# Flow rate
+  Q = A*v   (m^3/s)
+
+# Bernoulli's equation
+  P + (1/2)rho*v^2 + rho*g*h = constant
+Energy conservation per unit volume for
+an ideal fluid.
+
+# The key consequence
+Where the speed is high, the pressure is
+low. This explains lift on a wing, a
+curveball, a shower curtain pulled
+inward, and two passing ships drawn
+together.
+
+# Torricelli's theorem
+Speed of fluid leaving a hole at depth h:
+  v = sqrt(2gh)
+The same as an object dropped that far.
+
+# Assumptions
+Ideal fluid: incompressible, no
+viscosity, steady and non-turbulent flow.
+Real fluids lose pressure to friction.
+
+@ARTICLE Temperature and Expansion
+# Scales
+  C = (5/9)(F - 32)
+  F = (9/5)C + 32
+  K = C + 273.15
+Absolute zero is 0 K = -273.15 C. Use
+kelvin in every gas law.
+
+# Thermal expansion
+  linear:  dL = alpha*L0*dT
+  area:    dA = 2*alpha*A0*dT
+  volume:  dV = beta*V0*dT
+  with beta ~ 3*alpha
+
+# Consequences
+Bridges need expansion joints, rails need
+gaps, and a bimetallic strip bends
+because the two metals expand by
+different amounts.
+
+# A hole expands too
+A hole in a heated plate gets bigger, not
+smaller. The material expands as if the
+hole were made of the same stuff.
+
+# Water is strange
+Water expands when it freezes and is
+densest at 4 degrees C, so ice floats and
+lakes freeze from the top down.
+
+@ARTICLE Heat and Calorimetry
+# Heat vs temperature
+Heat is energy in transit because of a
+temperature difference. Temperature
+measures average molecular kinetic
+energy.
+
+# Specific heat
+  Q = m*c*dT
+  water: c = 4186 J/(kg*C)
+Water's large specific heat moderates
+coastal climates.
+
+# Phase changes
+  Q = m*L
+  L_f water = 3.34e5 J/kg  (fusion)
+  L_v water = 2.26e6 J/kg  (boiling)
+The temperature does NOT change during a
+phase change; the energy goes into
+breaking bonds.
+
+# Calorimetry
+In an insulated container,
+  Q_lost = Q_gained
+  sum of m*c*dT = 0
+
+# Heat transfer
+- Conduction: contact, through a solid
+- Convection: bulk motion of a fluid
+- Radiation: electromagnetic waves, no
+medium required
+
+# Conduction rate
+  Q/t = k*A*dT/L
+
+@ARTICLE Ideal Gas Law
+  PV = nRT
+  R = 8.314 J/(mol*K)
+
+# Molecule form
+  PV = N*k_B*T
+  k_B = 1.381e-23 J/K
+
+# Combined gas law
+  P1*V1/T1 = P2*V2/T2
+Temperature must be in kelvin.
+
+# Special cases
+  Boyle:   P1*V1 = P2*V2      (T fixed)
+  Charles: V1/T1 = V2/T2      (P fixed)
+  Gay-Lussac: P1/T1 = P2/T2   (V fixed)
+
+# Kinetic theory
+  KE_avg = (3/2)k_B*T
+  v_rms = sqrt(3*k_B*T/m)
+  v_rms = sqrt(3*R*T/M)
+Temperature IS average translational
+kinetic energy. Lighter molecules move
+faster at the same temperature.
+
+# Moles
+  n = m/M
+  1 mol = 6.022e23 particles
+
+@ARTICLE Laws of Thermodynamics
+# Zeroth law
+If A and B are each in thermal
+equilibrium with C, they are in
+equilibrium with each other. This is what
+makes a thermometer meaningful.
+
+# First law
+  dU = Q - W
+Energy conservation for a gas. Q is heat
+added TO the gas, W is work done BY the
+gas.
+  W = P*dV   (constant pressure)
+  W = area under a PV curve
+
+# Sign conventions
+  Q > 0 heat added
+  W > 0 gas expands and does work
+  dU > 0 temperature rises
+
+# Named processes
+  isothermal:  dT = 0, so dU = 0, Q = W
+  adiabatic:   Q = 0, so dU = -W
+  isobaric:    P constant, W = P*dV
+  isochoric:   dV = 0, so W = 0, dU = Q
+
+# Internal energy of an ideal gas
+  U = (3/2)n*R*T   (monatomic)
+It depends on the temperature alone.
+
+# Second law
+Heat flows spontaneously from hot to
+cold, never the reverse without work. No
+engine can be perfectly efficient.
+
+# Third law
+Absolute zero cannot be reached in a
+finite number of steps.
+
+@ARTICLE Heat Engines and Entropy
+# Efficiency
+  e = W/Q_H = 1 - Q_C/Q_H
+Always less than 1: some heat must be
+dumped to the cold reservoir.
+
+# Carnot efficiency (the ceiling)
+  e_carnot = 1 - T_C/T_H
+Temperatures in kelvin. No real engine
+beats this, and no engine reaches it.
+
+# Refrigerators and heat pumps
+Work is put in to move heat from cold to
+hot.
+  COP_fridge = Q_C/W
+  COP_pump = Q_H/W
+
+# Entropy
+  dS = Q/T
+A measure of disorder, or of how many
+microscopic arrangements match the state.
+
+# Second law by entropy
+The entropy of an isolated system never
+decreases. It stays constant only for a
+reversible process.
+
+# Direction of time
+Entropy is why a broken cup never
+reassembles even though every underlying
+collision is reversible.

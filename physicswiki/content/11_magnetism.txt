@@ -1,0 +1,162 @@
+@CATEGORY Magnetism
+
+@ARTICLE Magnetic Force on a Charge
+  F = q*v*B*sin(theta)
+theta is the angle between v and B. Units
+of B are teslas.
+  1 T = 10^4 gauss
+
+# Direction: right hand rule
+Point the fingers along v, curl them
+toward B, and the thumb gives F for a
+POSITIVE charge. Reverse it for a
+negative charge.
+
+# Key features
+- No force on a stationary charge.
+- No force if v is parallel to B.
+- The force is always perpendicular to v,
+so it changes direction but never speed.
+- Therefore a magnetic force does NO work.
+
+# Circular motion in a field
+  q*v*B = m*v^2/r
+  r = m*v/(q*B)
+  T = 2*pi*m/(q*B)
+The period does not depend on the speed,
+which is the principle of the cyclotron.
+
+# Velocity selector
+Crossed E and B fields let through only
+one speed:
+  qE = qvB,  so  v = E/B
+
+@ARTICLE Force on a Wire
+  F = B*I*L*sin(theta)
+A current-carrying wire in a magnetic
+field feels a force, because it is a
+stream of moving charges.
+
+# Direction
+Right hand rule again, with the fingers
+pointing along the conventional current.
+
+# Motors
+The forces on the two sides of a current
+loop are opposite, so the loop
+experiences a torque and spins. A
+commutator flips the current twice per
+revolution to keep it turning.
+
+# Torque on a loop
+  tau = N*B*I*A*sin(theta)
+N is the number of turns and A the loop
+area.
+
+# Two parallel wires
+  F/L = mu0*I1*I2/(2*pi*d)
+Currents in the same direction attract;
+opposite directions repel. This is the
+definition of the ampere.
+
+@ARTICLE Sources of Magnetic Field
+  mu0 = 4*pi*1e-7 T*m/A
+
+# Long straight wire
+  B = mu0*I/(2*pi*r)
+Circular field lines around the wire.
+Grip the wire with the right hand, thumb
+along the current, and the fingers curl
+the way B points.
+
+# Center of a loop
+  B = mu0*I/(2*R)
+For N turns, multiply by N.
+
+# Solenoid
+  B = mu0*n*I
+n is turns per metre. The field inside is
+nearly uniform and outside it is close to
+zero.
+
+# Ampere's law
+  sum of B*dL = mu0 * I_enclosed
+The magnetic analogue of Gauss's law,
+used for symmetric current arrangements.
+
+# No magnetic monopoles
+Field lines always form closed loops.
+Cutting a magnet in half gives two
+magnets, never an isolated north pole.
+
+@ARTICLE Induction and Faraday's Law
+# Magnetic flux
+  flux = B*A*cos(theta)
+Units webers.
+
+# Faraday's law
+  emf = -N * (change in flux)/(time)
+A CHANGING flux induces a voltage. A
+steady field, however strong, induces
+nothing.
+
+# Three ways to change the flux
+- Change B (move a magnet)
+- Change A (squeeze the loop)
+- Change theta (rotate the loop, which is
+how a generator works)
+
+# Lenz's law
+The minus sign. The induced current
+opposes the change that produced it.
+
+# Using Lenz's law
+Push a magnet toward a coil and the coil
+pushes back; pull it away and the coil
+pulls it back. This is conservation of
+energy, and it is why generators are hard
+to turn under load.
+
+# Motional emf
+  emf = B*L*v
+for a rod of length L sliding at speed v
+across a field.
+
+@ARTICLE Inductance and AC
+# Self inductance
+  emf = -L * (change in I)/(time)
+Units henries. An inductor resists
+CHANGES in current, much as mass resists
+changes in velocity.
+
+# Energy stored
+  U = (1/2)L*I^2
+
+# Transformers
+  V_s/V_p = N_s/N_p
+  I_s/I_p = N_p/N_s
+  P_in = P_out   (ideal)
+Step up the voltage and the current steps
+down. Transformers only work on AC,
+because they need a changing flux.
+
+# Why the grid uses high voltage
+Power loss in the lines is I^2*R, so
+raising V and lowering I for the same
+delivered power cuts the losses sharply.
+
+# AC quantities
+  V_rms = V_peak/sqrt(2)
+  I_rms = I_peak/sqrt(2)
+Mains voltage quoted as 120 V or 230 V is
+the rms value.
+
+# Reactance
+  X_L = 2*pi*f*L
+  X_C = 1/(2*pi*f*C)
+Inductors block high frequencies,
+capacitors block low ones.
+
+# Resonance in an LC circuit
+  f = 1/(2*pi*sqrt(L*C))
+This is how a radio is tuned.

@@ -1,8 +1,15 @@
 #!/usr/bin/env python3
-"""Compile the plain-text wiki sources in content/ into C tables in src/.
+"""Compile a wiki's plain-text sources into C tables the engine can read.
 
-Source format (see content/*.txt):
+    python3 engine/tools/build_content.py mathwiki
 
+Reads <project>/content/*.txt and writes <project>/src/content.{c,h}. The
+same engine (engine/main.c) is compiled against whichever content.c you
+point the makefile at, so one code base serves every wiki.
+
+Source format (see any content/*.txt):
+
+    @WIKI MATHWIKI          (optional: title on the main menu)
     @CATEGORY Algebra
     @ARTICLE Quadratic Formula
     # Heading line
@@ -26,9 +33,7 @@ import textwrap
 
 WIDTH = 37  # characters that fit beside the scrollbar at 8px monospace
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CONTENT_DIR = os.path.join(ROOT, "content")
-SRC_DIR = os.path.join(ROOT, "src")
+REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 STYLE_BODY, STYLE_HEAD, STYLE_FORM, STYLE_BULLET = "0", "1", "2", "3"
 
@@ -72,6 +77,9 @@ class Block:
         self.words = []
 
 
+WIKI_TITLE = [None]   # set by the @WIKI directive
+
+
 def parse_file(path, categories, problems):
     category = None
     article = None
@@ -81,6 +89,9 @@ def parse_file(path, categories, problems):
         line = raw.rstrip("\n").rstrip()
         where = "%s:%d" % (os.path.basename(path), lineno)
 
+        if line.startswith("@WIKI "):
+            WIKI_TITLE[0] = line[len("@WIKI "):].strip()
+            continue
         if line.startswith("@CATEGORY "):
             if article:
                 block.flush(article)
@@ -155,7 +166,7 @@ def c_ident(text):
     return re.sub(r"[^A-Za-z0-9]+", "_", text).strip("_").lower() or "x"
 
 
-def emit(categories, problems):
+def emit(categories, problems, src_dir, title):
     for cat in categories:
         for art in cat.articles:            # trim blank lines at both ends
             while art.lines and art.lines[0] == STYLE_BODY:
@@ -230,6 +241,7 @@ def emit(categories, problems):
         "#define STYLE_BULLET  '3'",
         "#define BULLET_CONT   '\\x01'  /* wrapped continuation of a bullet */",
         "",
+        '#define WIKI_TITLE %s' % c_string(title),
         "#define WIKI_COLS %d" % WIDTH,
         "#define WIKI_MAX_LINES %d  /* longest article, for the runtime line index */"
         % max([len(a.lines) for c in categories for a in c.articles] + [1]),
@@ -260,13 +272,16 @@ def emit(categories, problems):
         "",
     ]
 
-    with open(os.path.join(SRC_DIR, "content.c"), "w") as f:
+    if not os.path.isdir(src_dir):
+        os.makedirs(src_dir)
+    with open(os.path.join(src_dir, "content.c"), "w") as f:
         f.write("\n".join(out))
-    with open(os.path.join(SRC_DIR, "content.h"), "w") as f:
+    with open(os.path.join(src_dir, "content.h"), "w") as f:
         f.write("\n".join(header))
 
-    print("categories: %d   articles: %d   lines: %d   text: %.1f KB"
-          % (len(categories), total_articles, total_lines, total_bytes / 1024.0))
+    print("%-12s categories: %d   articles: %d   lines: %d   text: %.1f KB"
+          % (title, len(categories), total_articles, total_lines,
+             total_bytes / 1024.0))
     if problems:
         print("\n%d formatting problem(s):" % len(problems))
         for p in problems:
@@ -275,14 +290,34 @@ def emit(categories, problems):
     return 0
 
 
-def main():
+def build(project):
+    """Compile one wiki. Returns the number of formatting problems found."""
+    root = project if os.path.isabs(project) else os.path.join(REPO, project)
+    content_dir = os.path.join(root, "content")
+    if not os.path.isdir(content_dir):
+        sys.exit("no such content directory: %s" % content_dir)
+
+    WIKI_TITLE[0] = None
     categories, problems = [], []
-    files = sorted(f for f in os.listdir(CONTENT_DIR) if f.endswith(".txt"))
+    files = sorted(f for f in os.listdir(content_dir) if f.endswith(".txt"))
     if not files:
-        sys.exit("no content/*.txt files found")
+        sys.exit("no content/*.txt files in %s" % content_dir)
     for name in files:
-        parse_file(os.path.join(CONTENT_DIR, name), categories, problems)
-    sys.exit(emit(categories, problems))
+        parse_file(os.path.join(content_dir, name), categories, problems)
+
+    title = WIKI_TITLE[0] or os.path.basename(os.path.normpath(root)).upper()
+    return emit(categories, problems, os.path.join(root, "src"), title)
+
+
+def main():
+    projects = sys.argv[1:]
+    if not projects:
+        projects = sorted(
+            d for d in os.listdir(REPO)
+            if os.path.isdir(os.path.join(REPO, d, "content")))
+        if not projects:
+            sys.exit("usage: build_content.py <project> [project ...]")
+    sys.exit(max(build(p) for p in projects))
 
 
 if __name__ == "__main__":

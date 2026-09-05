@@ -1,0 +1,185 @@
+@CATEGORY Circuits
+
+@ARTICLE Current and Resistance
+# Current
+  I = Q/t
+  1 A = 1 C/s
+Conventional current flows from + to -,
+which is opposite to the actual drift of
+the electrons.
+
+# Resistance
+  R = rho*L/A
+  units: ohms
+Longer wires and thinner wires have more
+resistance. rho is the resistivity, a
+property of the material.
+
+# Temperature
+For metals, resistance rises with
+temperature. For semiconductors it falls.
+
+# Drift velocity
+Electrons drift astonishingly slowly,
+under a millimetre per second, but the
+field that pushes them travels at nearly
+the speed of light, so the lamp lights up
+at once.
+
+# Superconductors
+Below a critical temperature the
+resistance is exactly zero and a current
+persists with no source.
+
+@ARTICLE Ohm's Law and Power
+  V = I*R
+  I = V/R
+  R = V/I
+
+# Power
+  P = I*V
+  P = I^2 * R
+  P = V^2/R
+Units watts. Pick the version that uses
+the two quantities you already know.
+
+# Energy used
+  E = P*t
+  1 kWh = 3.6e6 J
+Electricity bills are in kilowatt hours.
+
+# Ohmic vs non-ohmic
+An ohmic device has constant R, so its
+V-I graph is a straight line through the
+origin. Filament lamps and diodes are not
+ohmic.
+
+# Heating
+All the power dissipated in a resistor
+becomes heat, which is the basis of
+kettles, toasters and fuses.
+
+# Fuses and breakers
+Rated by current. A fuse melts when the
+current exceeds its rating, breaking the
+circuit before the wiring overheats.
+
+@ARTICLE Series and Parallel
+# Series
+  R_eq = R1 + R2 + ...
+  I is the same through each
+  V divides, and adds to the total
+One break stops everything. Adding
+resistors in series raises the total
+resistance.
+
+# Parallel
+  1/R_eq = 1/R1 + 1/R2 + ...
+  V is the same across each
+  I divides, and adds to the total
+The equivalent resistance is always
+SMALLER than the smallest branch. Each
+branch works independently, which is how
+house wiring is done.
+
+# Two resistors in parallel
+  R_eq = R1*R2/(R1 + R2)
+
+# N identical resistors in parallel
+  R_eq = R/N
+
+# Voltage divider
+  V1 = V * R1/(R1 + R2)
+
+# Strategy for a network
+Collapse the innermost series or parallel
+groups into single resistors, work back
+out to the total, then expand again to
+find the individual currents and voltages.
+
+@ARTICLE Kirchhoff's Rules
+# Junction rule (charge conservation)
+  sum I_in = sum I_out
+The current into any node equals the
+current out.
+
+# Loop rule (energy conservation)
+  sum of V around a closed loop = 0
+
+# Signs when walking a loop
+- Through a resistor with the current:
+-IR (a drop)
+- Through a resistor against the current:
++IR
+- Through a battery from - to +: +emf
+- Through a battery from + to -: -emf
+
+# Method
+1. Label a current in every branch and
+pick a direction; a wrong guess just
+comes out negative.
+2. Write junction equations.
+3. Write loop equations until you have as
+many equations as unknowns.
+4. Solve the system.
+
+# On the TI-84
+Put the system in a matrix and use
+rref([A]) or [A]^-1[B] from 2nd MATRIX.
+
+@ARTICLE Real Batteries and Meters
+# EMF and internal resistance
+  V_terminal = emf - I*r
+A real battery has internal resistance r,
+so the terminal voltage sags under load.
+It reads the full emf only when no
+current flows.
+
+# Maximum current
+  I_max = emf/r   (short circuit)
+
+# Why batteries get warm
+The power wasted inside is I^2*r.
+
+# Ammeter
+Measures current, so it goes in SERIES,
+and must have a very LOW resistance so it
+does not disturb the circuit.
+
+# Voltmeter
+Measures potential difference, so it goes
+in PARALLEL, and must have a very HIGH
+resistance so it draws almost no current.
+
+# Ohmmeter
+Only ever used on an unpowered circuit.
+
+@ARTICLE RC Circuits
+A resistor and capacitor in series give
+exponential charging and discharging.
+
+# Time constant
+  tau = R*C
+in seconds. After one tau the capacitor
+has covered about 63% of its change;
+after 5 tau it is effectively finished.
+
+# Charging
+  Q = Q_max(1 - e^(-t/tau))
+  I = I0 * e^(-t/tau)
+  V_c = V(1 - e^(-t/tau))
+
+# Discharging
+  Q = Q0 * e^(-t/tau)
+  V_c = V0 * e^(-t/tau)
+
+# Behaviour at the ends
+At t = 0 an uncharged capacitor acts like
+a plain wire, so the current is at its
+maximum. After a long time it acts like a
+break, so the current is zero.
+
+# Uses
+Timing circuits, camera flashes, smoothing
+in power supplies, and the blink rate of
+turn signals.

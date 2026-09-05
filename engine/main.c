@@ -1,9 +1,14 @@
 /*
- * MATHWIKI -- an offline math reference for the TI-84 Plus CE.
+ * Shared wiki engine for the TI-84 Plus CE.
  *
  * Browse by category, list every article at once, or search titles by typing
  * on the ALPHA key labels. Articles are stored as newline separated, style
- * prefixed lines (see tools/build_content.py) and indexed on open.
+ * prefixed lines and indexed on open.
+ *
+ * This file is content agnostic: everything it displays comes from the
+ * generated content.c / content.h of whichever wiki is being built (see
+ * engine/tools/build_content.py). Each wiki's makefile pulls this in with
+ * EXTRA_CSOURCES.
  */
 
 #include <graphx.h>
@@ -886,7 +891,7 @@ static void render(void)
 {
     switch (screen) {
     case S_CATS:
-        draw_list("MATHWIKI", wiki_num_categories, cat_sel, cat_top,
+        draw_list(WIKI_TITLE, wiki_num_categories, cat_sel, cat_top,
                   cat_item, "2ND open  Y= search  ZOOM all  CLEAR");
         break;
 

@@ -1,0 +1,161 @@
+@CATEGORY Work and Energy
+
+@ARTICLE Work
+  W = F*d*cos(theta)
+theta is the angle between the force and
+the displacement. Work is a scalar
+measured in joules.
+  1 J = 1 N*m
+
+# Sign
+- theta = 0: positive work, energy added
+- theta = 90: zero work
+- theta = 180: negative work, energy
+removed (friction, braking)
+
+# Zero work situations
+- Carrying a box horizontally: the lift
+force is perpendicular to the motion.
+- Centripetal force does no work.
+- Pushing a wall that does not move.
+
+# Variable force
+  W = area under an F vs x graph
+  W = integral of F dx
+
+# Net work
+  W_net = sum of the work by each force
+        = F_net * d * cos(theta)
+
+@ARTICLE Kinetic Energy
+  KE = (1/2)m*v^2
+Always positive, a scalar, in joules.
+
+# Work-energy theorem
+  W_net = change in KE
+        = (1/2)m*v_f^2 - (1/2)m*v_i^2
+Net work speeds an object up; negative
+net work slows it down.
+
+# Scaling
+KE depends on v squared. Doubling the
+speed quadruples the kinetic energy, and
+quadruples the braking distance.
+
+# Stopping distance
+  (1/2)m*v^2 = f*d
+  d = v^2/(2*mu_k*g)
+Independent of mass on a flat road.
+
+@ARTICLE Potential Energy
+Stored energy that depends on position.
+
+# Gravitational, near the surface
+  U = mgh
+h is measured from a reference level you
+choose. Only changes in U matter, so the
+choice of zero is free.
+
+# Gravitational, general
+  U = -G*M*m/r
+
+# Elastic (spring)
+  U = (1/2)k*x^2
+
+# Conservative forces
+Gravity and spring forces are
+conservative: the work they do depends
+only on the endpoints, and is zero around
+a closed loop. Potential energy can only
+be defined for these.
+
+# Non-conservative forces
+Friction and drag are not conservative.
+They convert mechanical energy into
+thermal energy along the path.
+
+# Force from potential energy
+  F = -dU/dx
+The force points downhill on the
+potential energy curve.
+
+@ARTICLE Conservation of Energy
+# With no friction
+  KE_i + PE_i = KE_f + PE_f
+  (1/2)m*v_i^2 + m*g*h_i
+    = (1/2)m*v_f^2 + m*g*h_f
+
+# With friction
+  KE_i + PE_i = KE_f + PE_f + E_thermal
+  E_thermal = f_k * d
+
+# General statement
+  E_i + W_external = E_f
+Energy is never created or destroyed,
+only transferred or converted.
+
+# Dropped from rest through height h
+  v = sqrt(2gh)
+Same result as the kinematic equation,
+and independent of mass.
+
+# Pendulum or ramp
+  mgh = (1/2)m*v^2
+  v = sqrt(2gh)
+The speed at the bottom depends only on
+the height dropped, not the path taken,
+when friction is negligible.
+
+# When to use energy vs forces
+Use energy when the question involves
+speed and position and you do not care
+about time. Use forces when you need
+acceleration or time.
+
+@ARTICLE Power
+  P = W/t
+  P = F*v
+Power is the rate of doing work, in
+watts.
+  1 W = 1 J/s
+
+# Useful conversions
+  1 hp = 746 W
+  1 kWh = 3.6e6 J
+
+# Instantaneous power
+  P = F*v*cos(theta)
+
+# Efficiency
+  efficiency = P_out/P_in * 100%
+Always less than 100% in real machines;
+the difference becomes heat.
+
+# Climbing at constant speed
+  P = mgh/t = mg*v_vertical
+
+@ARTICLE Energy in Springs
+# Elastic potential energy
+  U = (1/2)k*x^2
+x is measured from the natural length.
+
+# Launching a mass
+  (1/2)k*x^2 = (1/2)m*v^2
+  v = x*sqrt(k/m)
+
+# Onto a vertical spring
+  mgh = (1/2)k*x^2
+for a mass dropped from height h above
+the spring, at maximum compression x
+(measure h to the compressed point).
+
+# Graph
+The force vs stretch graph is a straight
+line of slope k, and the area under it is
+the stored energy, hence the factor 1/2.
+
+# Energy in SHM
+Energy trades between kinetic and elastic
+but the total stays constant:
+  E = (1/2)k*A^2
+  v_max = A*sqrt(k/m)

@@ -1,0 +1,226 @@
+@CATEGORY Forces and Newton's Laws
+
+@ARTICLE Newton's Laws
+# First law (inertia)
+An object at rest stays at rest, and an
+object in motion stays in motion at
+constant velocity, unless acted on by a
+net external force.
+Inertia is measured by mass.
+
+# Second law
+  F_net = m*a
+The acceleration is in the direction of
+the net force. Apply it one axis at a
+time:
+  sum F_x = m*a_x
+  sum F_y = m*a_y
+
+# Third law
+For every force there is an equal and
+opposite reaction force.
+  F_AB = -F_BA
+The pair acts on DIFFERENT objects, so
+the two never cancel each other on a
+single free-body diagram.
+
+# Equilibrium
+  F_net = 0 means a = 0
+That is either at rest or moving at
+constant velocity.
+
+# Units
+  1 N = 1 kg*m/s^2
+
+@ARTICLE Free-Body Diagrams
+A free-body diagram shows every force on
+ONE object.
+
+# Steps
+1. Isolate the object as a dot or box.
+2. Draw only forces acting ON it.
+3. Label each: weight, normal, friction,
+tension, applied.
+4. Choose axes; tilt them along the
+motion for an incline.
+5. Break forces into components.
+6. Write sum F = ma for each axis.
+
+# Forces that always appear
+- Weight mg, always straight down.
+- Normal force, perpendicular to the
+surface. It is NOT always mg.
+- Friction, parallel to the surface and
+opposing relative sliding.
+
+# Common mistakes
+- Drawing ma as if it were a force. It
+is the result, not a force.
+- Including forces the object exerts on
+something else.
+- Assuming N = mg on an incline or in an
+elevator.
+
+@ARTICLE Weight and Normal Force
+# Weight
+  W = mg
+Mass is constant; weight depends on g.
+  g = 9.8 m/s^2 on Earth
+
+# Normal force on level ground
+  N = mg           (no vertical accel)
+  N = mg + ma      (accelerating up)
+  N = mg - ma      (accelerating down)
+
+# Apparent weight in an elevator
+The scale reads N, not mg.
+- Accelerating up: feels heavier
+- Accelerating down: feels lighter
+- Free fall: N = 0, weightless
+
+# On an incline of angle theta
+  N = mg*cos(theta)
+  component along slope = mg*sin(theta)
+
+# Pushing at an angle
+Pushing down at an angle increases N,
+which increases friction. Pulling up at
+an angle decreases N.
+
+@ARTICLE Friction
+# Kinetic (sliding)
+  f_k = mu_k * N
+Constant, opposes the motion, and does
+not depend on speed or contact area.
+
+# Static (not yet sliding)
+  f_s <= mu_s * N
+Static friction takes whatever value is
+needed to prevent sliding, up to its
+maximum. Usually mu_s > mu_k, which is
+why it is harder to start a box moving
+than to keep it moving.
+
+# Deciding which applies
+Compare the applied force to mu_s*N. If
+it is smaller the object stays put and
+f_s equals the applied force.
+
+# Coefficient
+  mu = f/N
+Dimensionless, typically 0.1 to 1.0.
+
+# On an incline: when does it slide?
+It begins to slide when
+  tan(theta) = mu_s
+so the angle of repose does not depend
+on the mass.
+
+@ARTICLE Inclined Planes
+Tilt the axes so x runs along the slope.
+
+# Components of weight
+  along the slope:  mg*sin(theta)
+  into the surface: mg*cos(theta)
+
+# Normal force
+  N = mg*cos(theta)
+
+# Frictionless incline
+  a = g*sin(theta)
+Independent of mass.
+
+# With friction, sliding down
+  a = g(sin(theta) - mu_k*cos(theta))
+
+# With friction, pushed up the slope
+  a = g(sin(theta) + mu_k*cos(theta))
+deceleration while it moves up.
+
+# Checks
+At theta = 0, sin = 0 so a = 0. At
+theta = 90, a = g. If your formula does
+not do that, the sine and cosine are
+swapped.
+
+@ARTICLE Tension and Pulleys
+# Tension
+The pull transmitted by a rope. For an
+ideal massless rope the tension is the
+same everywhere along it.
+
+# Ideal pulley
+Massless and frictionless: it changes
+the direction of the tension without
+changing its size.
+
+# Two masses over a pulley (Atwood)
+  a = (m2 - m1)g/(m1 + m2)
+  T = 2*m1*m2*g/(m1 + m2)
+with m2 > m1.
+
+# Mass on a table, mass hanging
+  a = m2*g/(m1 + m2)
+  T = m1*m2*g/(m1 + m2)
+m1 on the table, m2 hanging, no friction
+
+# Method
+Write sum F = ma for each mass
+separately, using the same magnitude of
+a for both, then solve the two equations
+together.
+
+# Hanging at an angle
+For a sign hung by two ropes,
+  sum F_x = 0 and sum F_y = 0
+Solve the two component equations.
+
+@ARTICLE Springs and Hooke's Law
+  F = -kx
+The minus sign says the force is a
+restoring force, pointing back toward
+the equilibrium position.
+
+# Spring constant k
+Units N/m. Larger k means a stiffer
+spring.
+
+# Magnitude for problem solving
+  F = kx
+where x is the distance stretched or
+compressed from the natural length.
+
+# Elastic potential energy
+  U = (1/2)k*x^2
+
+# Combining springs
+  in parallel: k_eff = k1 + k2
+  in series: 1/k_eff = 1/k1 + 1/k2
+
+# Hanging mass at rest
+  kx = mg,  so  x = mg/k
+
+@ARTICLE Drag and Terminal Velocity
+Air resistance grows with speed, so it
+is not constant like sliding friction.
+
+# Models
+  low speed:  F_drag = b*v
+  high speed: F = (1/2)*C*rho*A*v^2
+
+# Terminal velocity
+Reached when drag balances weight, so
+the net force and acceleration are zero
+and the speed stops changing.
+  mg = (1/2)*C*rho*A*v_t^2
+  v_t = sqrt(2mg/(C*rho*A))
+
+# Behaviour
+Acceleration starts at g and decreases
+toward zero. The velocity graph rises and
+flattens out at v_t; it never exceeds it.
+
+# Consequences
+- Heavier objects of the same shape have
+a higher terminal velocity.
+- A larger area (a parachute) lowers it.

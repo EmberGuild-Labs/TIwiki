@@ -1,0 +1,199 @@
+@CATEGORY Rotational Motion
+
+@ARTICLE Angular Kinematics
+# Angular quantities
+  theta  angle, in radians
+  omega  angular velocity, rad/s
+  alpha  angular acceleration, rad/s^2
+
+# Equations (constant alpha)
+  omega = omega0 + alpha*t
+  theta = omega0*t + (1/2)alpha*t^2
+  omega^2 = omega0^2 + 2*alpha*theta
+These mirror the linear equations
+exactly, one symbol at a time.
+
+# Linear and angular links
+  s = r*theta
+  v = r*omega
+  a_tangential = r*alpha
+  a_centripetal = r*omega^2
+Radians are required for all of these.
+
+# Conversions
+  1 rev = 2*pi rad = 360 degrees
+  1 rpm = 2*pi/60 rad/s
+
+# Two accelerations
+A point on a spinning, speeding-up wheel
+has both a tangential and a centripetal
+acceleration, at right angles:
+  a_total = sqrt(a_t^2 + a_c^2)
+
+@ARTICLE Torque
+  tau = r*F*sin(theta)
+  tau = F * (lever arm)
+The lever arm is the perpendicular
+distance from the axis to the line of
+the force. Units N*m.
+
+# Maximum torque
+Push perpendicular to the lever
+(theta = 90) and as far from the axis as
+possible. A force aimed at the axis makes
+no torque.
+
+# Sign convention
+Counterclockwise is usually positive,
+clockwise negative. Any consistent choice
+works.
+
+# Net torque
+  tau_net = sum of all torques
+Choose the axis wherever you like; a good
+choice puts an unknown force at the axis
+so its torque is zero.
+
+# Rotational second law
+  tau_net = I*alpha
+
+@ARTICLE Moment of Inertia
+The rotational analogue of mass: how hard
+it is to change a rotation.
+  I = sum of m*r^2
+Depends on the mass AND on how far that
+mass sits from the axis.
+
+# Common bodies (about the center)
+  point mass:        I = m*r^2
+  hoop / thin ring:  I = m*r^2
+  solid disk:        I = (1/2)m*r^2
+  solid sphere:      I = (2/5)m*r^2
+  hollow sphere:     I = (2/3)m*r^2
+  rod, center:       I = (1/12)m*L^2
+  rod, end:          I = (1/3)m*L^2
+
+# Parallel axis theorem
+  I = I_cm + m*d^2
+d is the distance from the center of mass
+axis to the new parallel axis.
+
+# Why shape matters
+Mass far from the axis counts much more.
+A hoop is harder to spin than a disk of
+the same mass, so it also rolls downhill
+more slowly.
+
+@ARTICLE Rotational Dynamics
+# Newton's second law for rotation
+  tau_net = I*alpha
+
+# Translation and rotation together
+Write both equations and link them:
+  F_net = m*a
+  tau_net = I*alpha
+  a = r*alpha   (if rolling without
+                 slipping)
+
+# Pulley with mass
+The tension is no longer the same on both
+sides. The difference in tensions supplies
+the torque that angularly accelerates the
+pulley:
+  (T1 - T2)*R = I*alpha
+
+# Rolling without slipping
+  v_cm = r*omega
+  a_cm = r*alpha
+The contact point is instantaneously at
+rest, so static friction acts and does no
+work.
+
+# Rolling down an incline
+  a = g*sin(theta)/(1 + I/(m*r^2))
+Every solid sphere beats every disk,
+which beats every hoop, regardless of
+mass and radius.
+
+@ARTICLE Rotational Energy
+# Rotational kinetic energy
+  KE_rot = (1/2)I*omega^2
+
+# Rolling object
+  KE_total = (1/2)m*v^2
+             + (1/2)I*omega^2
+Translation plus rotation.
+
+# Rolling from a height
+  mgh = (1/2)m*v^2 + (1/2)I*omega^2
+Substituting omega = v/r gives
+  v = sqrt(2gh/(1 + I/(m*r^2)))
+
+# Fractions of the energy
+  solid sphere: 2/7 rotational
+  disk:         1/3 rotational
+  hoop:         1/2 rotational
+The more energy tied up in rotation, the
+slower it arrives at the bottom.
+
+# Work by a torque
+  W = tau * theta
+  P = tau * omega
+
+@ARTICLE Angular Momentum
+  L = I*omega
+  L = m*v*r*sin(theta)   (point mass)
+Units kg*m^2/s, a vector along the axis.
+
+# Conservation
+With no net external torque, L is
+constant.
+  I1*omega1 = I2*omega2
+
+# The classic examples
+- A spinning skater pulls her arms in,
+which lowers I, so omega rises.
+- A diver tucks to spin faster.
+- A planet speeds up near the Sun, which
+is Kepler's second law.
+
+# Rotational impulse
+  tau * t = change in L
+
+# Why a bike stays up
+A spinning wheel has angular momentum
+that resists changes in direction, so the
+bike is stable while it rolls.
+
+@ARTICLE Static Equilibrium
+An object is in static equilibrium when
+it is at rest and stays that way.
+
+# Both conditions must hold
+  sum F = 0      (in every direction)
+  sum tau = 0    (about any axis)
+
+# Strategy
+1. Draw the free-body diagram with each
+force at its actual location.
+2. Write sum F_x = 0 and sum F_y = 0.
+3. Pick the axis at an unknown force to
+delete it from the torque equation.
+4. Write sum tau = 0 and solve.
+
+# Seesaw / balance
+  m1*g*d1 = m2*g*d2
+
+# Beam supported at both ends
+The supports carry more of the load the
+closer they are to it.
+
+# Ladder against a wall
+Friction at the floor supplies the
+horizontal force; the wall pushes back
+horizontally. Take torques about the base
+to find the wall force.
+
+# Center of gravity
+For torque purposes, treat the whole
+weight as acting at the center of gravity.

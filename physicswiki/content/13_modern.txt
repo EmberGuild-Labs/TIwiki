@@ -1,0 +1,222 @@
+@CATEGORY Modern Physics
+
+@ARTICLE Photons and the Photoelectric Effect
+# Photon energy
+  E = h*f = h*c/lambda
+  h = 6.626e-34 J*s
+  h*c = 1240 eV*nm
+That last form is the fastest way to get
+a photon energy in eV from a wavelength
+in nanometres.
+
+# Photoelectric effect
+Light shone on a metal ejects electrons,
+but only above a threshold frequency.
+  KE_max = h*f - phi
+phi is the work function, the minimum
+energy needed to free an electron.
+
+# Threshold
+  f0 = phi/h
+Below f0 NO electrons come out, however
+bright the light. This is what classical
+wave theory cannot explain, and it is why
+Einstein won the Nobel Prize.
+
+# Intensity vs frequency
+- Brighter light: more electrons, same
+maximum energy each.
+- Higher frequency: more energy per
+electron.
+
+# Stopping voltage
+  e*V_stop = KE_max
+
+@ARTICLE Wave-Particle Duality
+# De Broglie wavelength
+  lambda = h/p = h/(m*v)
+Every particle has a wavelength. It is
+utterly negligible for everyday objects
+and decisive for electrons.
+
+# Evidence
+Electrons diffract through crystals just
+as X-rays do, which is the basis of the
+electron microscope. Its resolution beats
+a light microscope because the electron
+wavelength is far shorter.
+
+# Light is both
+Interference and diffraction show waves;
+the photoelectric effect and Compton
+scattering show particles. Which face
+appears depends on the experiment.
+
+# Uncertainty principle
+  dx * dp >= h/(4*pi)
+  dE * dt >= h/(4*pi)
+Position and momentum cannot both be
+known exactly. This is a property of
+nature, not a limit of our instruments.
+
+# Compton effect
+X-rays scattering off electrons lose
+energy and gain wavelength, exactly as
+billiard-ball photons would.
+
+@ARTICLE Atomic Models and Spectra
+# Development
+- Thomson: plum pudding
+- Rutherford: gold foil scattering showed
+a tiny dense positive nucleus
+- Bohr: quantised orbits
+- Quantum mechanics: probability clouds
+
+# Bohr model of hydrogen
+  E_n = -13.6/n^2  eV
+n = 1 is the ground state. The energies
+are negative because the electron is
+bound.
+
+# Photon from a transition
+  E_photon = E_high - E_low
+  hf = E_i - E_f
+Absorption lifts an electron up; emission
+drops it down and releases a photon.
+
+# Why spectra are line spectra
+Only certain energies are allowed, so
+only certain photon energies appear. Each
+element has its own fingerprint, which is
+how the composition of stars is known.
+
+# Ionisation energy of hydrogen
+  13.6 eV, from n = 1 to n = infinity
+
+# Emission vs absorption
+A hot thin gas emits bright lines. A cool
+gas in front of a continuous source
+absorbs the very same lines, leaving dark
+gaps.
+
+@ARTICLE Nuclear Physics
+# Notation
+  A = mass number (protons + neutrons)
+  Z = atomic number (protons)
+  N = A - Z (neutrons)
+Isotopes share Z and differ in N.
+
+# Mass defect and binding energy
+The nucleus weighs less than its parts.
+  E = m*c^2
+  1 u = 931.5 MeV/c^2
+The missing mass is the binding energy
+that holds it together.
+
+# Binding energy per nucleon
+Peaks near iron-56. That is why fusing
+light nuclei releases energy, and so does
+splitting heavy ones.
+
+# Fission
+A heavy nucleus splits, releasing energy
+and more neutrons, which can sustain a
+chain reaction. This is a nuclear reactor
+or a fission bomb.
+
+# Fusion
+Light nuclei merge. This powers the Sun,
+which fuses hydrogen into helium, and it
+releases more energy per kilogram than
+fission.
+
+# The strong force
+Binds nucleons but has an extremely short
+range, so very large nuclei are unstable.
+
+@ARTICLE Radioactive Decay
+# Alpha decay
+Emits a helium nucleus.
+  A decreases by 4, Z by 2
+Stopped by paper or skin.
+
+# Beta minus decay
+A neutron becomes a proton and an
+electron.
+  A unchanged, Z increases by 1
+Stopped by a few millimetres of aluminium.
+
+# Beta plus decay
+A proton becomes a neutron and a positron.
+  A unchanged, Z decreases by 1
+
+# Gamma decay
+A photon from a nucleus dropping to a
+lower state.
+  A and Z unchanged
+Needs thick lead or concrete.
+
+# Half life
+  N = N0 * (1/2)^(t/T_half)
+  A = A0 * (1/2)^(t/T_half)
+After n half lives, the fraction left is
+(1/2)^n.
+
+# Decay constant
+  N = N0 * e^(-lambda*t)
+  T_half = ln(2)/lambda = 0.693/lambda
+
+# Carbon dating
+Living things hold a steady ratio of
+carbon-14; once dead it decays with a half
+life of 5730 years, giving the age.
+
+# Conservation rules
+A and Z each balance across a nuclear
+equation. Use that to identify the missing
+particle.
+
+@ARTICLE Special Relativity
+# The two postulates
+1. The laws of physics are the same in
+every inertial frame.
+2. The speed of light in vacuum is the
+same for every observer, whatever their
+motion.
+
+# Lorentz factor
+  gamma = 1/sqrt(1 - v^2/c^2)
+gamma is 1 at rest and grows without limit
+as v approaches c.
+
+# Time dilation
+  t = gamma * t_proper
+Moving clocks run slow. Proper time is
+measured in the frame where the two events
+happen at the same place.
+
+# Length contraction
+  L = L_proper/gamma
+Lengths shrink along the direction of
+motion only.
+
+# Evidence
+Muons created high in the atmosphere reach
+the ground even though they should decay
+first. In our frame their clocks run slow;
+in theirs the atmosphere is contracted.
+
+# Relativistic energy
+  E = gamma*m*c^2
+  E_rest = m*c^2
+  KE = (gamma - 1)*m*c^2
+
+# Why c is a limit
+Accelerating a mass to c would take
+infinite energy, so only massless
+particles travel at c.
+
+# When it matters
+At v = 0.1c gamma is only 1.005. Below
+about 10% of c the classical formulas are
+fine.

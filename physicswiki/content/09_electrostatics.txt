@@ -1,0 +1,204 @@
+@CATEGORY Electrostatics
+
+@ARTICLE Electric Charge
+# Basics
+  elementary charge e = 1.602e-19 C
+  electron: -e     proton: +e
+Charge is quantised: every charge is a
+whole number of e.
+
+# Rules
+Like charges repel, opposite charges
+attract. Charge is conserved; it is moved
+around, never created.
+
+# Conductors vs insulators
+In a conductor, charge moves freely and
+spreads over the outside surface. In an
+insulator it stays put.
+
+# Charging methods
+- Friction: electrons rub off one object
+onto another.
+- Conduction: touching shares charge, so
+both end up with the same sign.
+- Induction: a nearby charge pushes
+electrons to one side; ground it, remove
+the ground, then remove the charge. The
+result is the OPPOSITE sign.
+
+# Polarisation
+A neutral object is attracted to a
+charged one because its charges shift
+slightly, putting the opposite sign
+nearer. This is why a balloon sticks to a
+wall.
+
+@ARTICLE Coulomb's Law
+  F = k*q1*q2/r^2
+  k = 8.99e9 N*m^2/C^2
+  k = 1/(4*pi*epsilon0)
+  epsilon0 = 8.85e-12 C^2/(N*m^2)
+
+# Using it
+Put the magnitudes in, get the magnitude
+out, then decide the direction from
+attract-or-repel. Do not fight with the
+signs inside the formula.
+
+# Inverse square
+Doubling the separation quarters the
+force, exactly like gravity. Coulomb's
+law is far stronger: the electric force
+between two protons is about 10^36 times
+their gravitational attraction.
+
+# Several charges
+Superposition: work out each pairwise
+force separately and add them as vectors.
+
+# Equilibrium point
+Between two like charges there is a point
+where the net force on a third charge is
+zero. Set the two magnitudes equal and
+solve for the distance.
+
+@ARTICLE Electric Field
+  E = F/q
+  E = k*Q/r^2   (point charge)
+Units N/C or V/m. A vector.
+
+# Direction
+Field lines point away from positive
+charge and toward negative. The field is
+defined by the force on a POSITIVE test
+charge.
+
+# Force on a charge in a field
+  F = qE
+Positive charges are pushed along the
+field, negative charges against it.
+
+# Field lines
+- They start on + and end on -.
+- They never cross.
+- Closer lines mean a stronger field.
+
+# Uniform field (parallel plates)
+  E = V/d
+Constant between the plates, so a charge
+there has constant acceleration and moves
+just like a projectile.
+
+# Inside a conductor
+The field is zero inside a conductor in
+equilibrium, and just outside it is
+perpendicular to the surface. This is why
+a car is a safe place in a lightning
+storm (a Faraday cage).
+
+@ARTICLE Gauss's Law
+  flux = E*A*cos(theta)
+  total flux = Q_enclosed/epsilon0
+
+# Meaning
+The electric flux through any closed
+surface depends only on the charge inside
+it, not on where that charge sits or what
+else is outside.
+
+# Choosing a surface
+Pick a surface matching the symmetry so
+E is constant and perpendicular:
+- sphere for a point charge
+- cylinder for a long line of charge
+- pillbox for a large flat sheet
+
+# Standard results
+  point charge:  E = k*Q/r^2
+  line charge:   E = 2*k*lambda/r
+  sheet: E = sigma/(2*epsilon0)
+  between plates: E = sigma/epsilon0
+
+# Notice
+The field of an infinite sheet does not
+fall off with distance at all, and a line
+charge falls off as 1/r rather than
+1/r^2.
+
+# Shells
+Inside a uniform spherical shell of
+charge the field is exactly zero. Outside
+it looks like a point charge at the
+center.
+
+@ARTICLE Electric Potential
+# Potential energy
+  U = k*q1*q2/r
+A scalar. Positive for like charges,
+negative for opposite ones.
+
+# Potential (voltage)
+  V = U/q
+  V = k*Q/r    (point charge)
+  1 V = 1 J/C
+A scalar, so add the contributions of
+several charges as plain numbers, with
+signs, and no vectors.
+
+# Potential difference
+  dV = V_b - V_a
+  W = q*dV
+The work done moving a charge between two
+points.
+
+# Field and potential
+  E = -dV/dx
+  V = E*d   (uniform field)
+The field points from high to low
+potential, in the direction V falls
+fastest.
+
+# Equipotentials
+Surfaces of constant V. They are always
+perpendicular to the field lines, and no
+work is done moving along one.
+
+# Electron volt
+  1 eV = 1.602e-19 J
+The energy an electron gains crossing 1
+volt.
+
+@ARTICLE Capacitors
+  C = Q/V
+  1 F = 1 C/V
+A farad is huge; real capacitors are
+usually microfarads or picofarads.
+
+# Parallel plates
+  C = epsilon0*A/d
+  C = kappa*epsilon0*A/d   (dielectric)
+kappa is the dielectric constant, always
+greater than 1, so a dielectric raises
+the capacitance.
+
+# Energy stored
+  U = (1/2)C*V^2
+  U = (1/2)Q*V
+  U = Q^2/(2C)
+
+# Combinations
+Note these are the OPPOSITE of resistors:
+  parallel: C_eq = C1 + C2 + ...
+  series:   1/C_eq = 1/C1 + 1/C2 + ...
+
+# Reasoning about the combinations
+In parallel the plate area effectively
+adds, so the capacitance grows. In series
+the same charge sits on each, the voltages
+add, so the total capacitance falls.
+
+# Charged and disconnected
+Q stays fixed. Pulling the plates apart
+raises V and raises the stored energy;
+that energy comes from the work you do.

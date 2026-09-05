@@ -1,20 +1,23 @@
 #!/usr/bin/env python3
-"""Generate the 16x16 icon.png shown next to the program in a shell.
+"""Generate a wiki's 16x16 icon.png, shown next to the program in a shell.
 
-The icon is an open book: white pages, blue-grey spine, accent-blue text
-lines, on the same dark navy used by the app's header bar.
+    python3 engine/tools/make_icon.py mathwiki
+
+Each wiki gets an open book in its own accent colour, matching that app's
+header bar.
 """
 
 import os
 import struct
+import sys
 import zlib
 
-PALETTE = {
-    "B": (28, 42, 84),     # navy border / background
-    "W": (250, 250, 247),  # page
-    "S": (18, 96, 190),    # spine
-    "a": (120, 160, 210),  # lines of "text" on the page
+# project -> (border/background, page, spine, text lines)
+THEMES = {
+    "mathwiki":    ((28, 42, 84), (250, 250, 247), (18, 96, 190), (120, 160, 210)),
+    "physicswiki": ((26, 60, 54), (250, 250, 247), (10, 140, 110), (120, 200, 175)),
 }
+DEFAULT_THEME = THEMES["mathwiki"]
 
 ART = [
     "BBBBBBBBBBBBBBBB",
@@ -44,19 +47,24 @@ def chunk(tag, data):
 def main():
     assert len(ART) == 16 and all(len(r) == 16 for r in ART), "icon must be 16x16"
 
+    project = sys.argv[1] if len(sys.argv) > 1 else "mathwiki"
+    theme = THEMES.get(os.path.basename(os.path.normpath(project)), DEFAULT_THEME)
+    palette = dict(zip("BWSa", theme))
+
     raw = b""
     for row in ART:
         raw += b"\x00"  # filter type: none
         for c in row:
-            raw += bytes(PALETTE[c])
+            raw += bytes(palette[c])
 
     png = (b"\x89PNG\r\n\x1a\n" +
            chunk(b"IHDR", struct.pack(">IIBBBBB", 16, 16, 8, 2, 0, 0, 0)) +
            chunk(b"IDAT", zlib.compress(raw, 9)) +
            chunk(b"IEND", b""))
 
-    out = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                       "icon.png")
+    repo = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    root = project if os.path.isabs(project) else os.path.join(repo, project)
+    out = os.path.join(root, "icon.png")
     with open(out, "wb") as f:
         f.write(png)
     print("wrote %s (%d bytes)" % (out, len(png)))
