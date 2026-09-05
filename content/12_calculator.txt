@@ -1,0 +1,135 @@
+@CATEGORY TI-84 CE Tips
+
+@ARTICLE Solving Equations
+# Numeric solver
+MATH > B:Solve( or MATH > A:numSolve(
+on newer OS. Enter the equation as
+expression = 0, put a guess in X, then
+press ALPHA SOLVE.
+
+# Intersection of two graphs
+Enter both sides as Y1 and Y2, graph,
+then 2nd TRACE (CALC) > 5:intersect.
+Pick each curve and a guess.
+
+# Zeros of a function
+2nd TRACE > 2:zero. Give a left bound, a
+right bound, and a guess.
+
+# Polynomial root finder
+The Polynomial Root Finder app (PlySmlt2)
+solves polynomials up to degree 10 and
+linear systems.
+
+# Table of values
+2nd GRAPH after setting 2nd WINDOW
+(TBLSET) for the start and step.
+
+@ARTICLE Graphing Tips
+# Window shortcuts
+ZOOM 6: standard (-10 to 10)
+ZOOM 0: ZoomFit, fits y to the visible x
+ZOOM 4: ZDecimal, nice pixel spacing
+ZOOM 5: ZSquare, equal pixel scale
+ZOOM 7: ZTrig, good for trig graphs
+
+# Calculating on a graph
+2nd TRACE (CALC) gives:
+  1:value    2:zero     3:minimum
+  4:maximum  5:intersect
+  6:dy/dx    7:integral
+
+# Restricting a domain
+Divide by a condition:
+  Y1 = (x^2)/(x > 2)
+The graph only appears where the test is
+true.
+
+# Piecewise
+MATH > B:piecewise( on OS 5.3 and later
+graphs piecewise functions directly.
+
+# Turning off a plot
+If you see ERR:INVALID DIM, a stat plot
+is on with empty lists. 2nd Y= and turn
+the plots off.
+
+@ARTICLE Calculus on the Calculator
+# Numeric derivative
+  nDeriv(f(X), X, a)
+MATH > 8. Gives f'(a) numerically.
+
+# Numeric integral
+  fnInt(f(X), X, a, b)
+MATH > 9. Gives the definite integral.
+
+# On a graph
+2nd TRACE > 6:dy/dx for the slope at a
+point, and 7:integral for the area
+between two x values.
+
+# Limits
+The TI-84 has no symbolic limit. Use a
+table with 2nd GRAPH and a very small
+step, or evaluate near the point.
+
+# Caution
+nDeriv can return a wrong value at a
+corner or a discontinuity, because it
+uses a symmetric difference quotient.
+
+@ARTICLE Lists and Stats
+# Entering data
+STAT > 1:Edit puts you in the list
+editor. L1 through L6 are 2nd 1 to
+2nd 6.
+
+# Clearing a list
+STAT > 4:ClrList L1, or highlight the
+list name and press CLEAR then ENTER.
+
+# Sequences into lists
+  seq(expr, X, start, end, step)
+2nd LIST > OPS > 5:seq(
+
+# Useful list operations
+  sum(L1)      2nd LIST > MATH > 5
+  mean(L1)     2nd LIST > MATH > 3
+  median(L1)   2nd LIST > MATH > 4
+  SortA(L1)    STAT > 2
+
+# Plots
+2nd Y= (STAT PLOT) to set a scatter
+plot, histogram, or box plot, then ZOOM
+9:ZoomStat to frame the data.
+
+@ARTICLE Modes and Fixes
+# MODE screen highlights
+- RADIAN vs DEGREE: the most common
+source of wrong trig answers
+- FUNC / PAR / POL / SEQ graphing modes
+- MATHPRINT vs CLASSIC display
+- a+bi enables complex results
+
+# Common errors
+ERR:WINDOW RANGE - Xmin >= Xmax
+ERR:INVALID DIM - a stat plot is on, or
+a list dimension mismatch
+ERR:NONREAL ANS - switch MODE to a+bi
+ERR:DIVIDE BY 0 - check the denominator
+ERR:SYNTAX - usually a mismatched
+parenthesis or a minus sign used where
+you need the (-) negative key
+
+# Minus vs negative
+The blue (-) key is for negative
+numbers. The gray - key is subtraction.
+They are not interchangeable.
+
+# Resetting
+2nd + (MEM) > 7:Reset. Choose
+1:RAM only to keep archived programs.
+
+# Freeing memory
+2nd + (MEM) > 2:Mem Management to
+archive or delete variables.

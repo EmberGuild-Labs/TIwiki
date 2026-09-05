@@ -1,0 +1,117 @@
+@CATEGORY Sequences and Series
+
+@ARTICLE Arithmetic Sequences
+A constant difference d between terms.
+
+# Explicit formula
+  a_n = a_1 + (n - 1)d
+
+# Recursive formula
+  a_1 = given
+  a_n = a_(n-1) + d
+
+# Common difference
+  d = a_n - a_(n-1)
+
+# Sum of the first n terms
+  S_n = (n/2)(a_1 + a_n)
+  S_n = (n/2)(2a_1 + (n-1)d)
+
+# Arithmetic mean
+The term between a and b is (a + b)/2.
+
+@ARTICLE Geometric Sequences
+A constant ratio r between terms.
+
+# Explicit formula
+  a_n = a_1 * r^(n-1)
+
+# Recursive formula
+  a_1 = given
+  a_n = r * a_(n-1)
+
+# Common ratio
+  r = a_n / a_(n-1)
+
+# Sum of the first n terms
+  S_n = a_1(1 - r^n)/(1 - r)
+
+# Infinite geometric series
+  S = a_1/(1 - r),  only if |r| < 1
+If |r| >= 1 the series diverges.
+
+# Geometric mean
+The term between a and b is sqrt(ab).
+
+@ARTICLE Sigma Notation
+  sum from i=1 to n of a_i
+means a_1 + a_2 + ... + a_n.
+
+# Properties
+  sum(c*a_i) = c*sum(a_i)
+  sum(a_i + b_i) = sum a_i + sum b_i
+  sum of c, n times = n*c
+
+# Useful closed forms
+  sum i        = n(n+1)/2
+  sum i^2      = n(n+1)(2n+1)/6
+  sum i^3      = (n(n+1)/2)^2
+
+# On the TI-84
+Use sum(seq(expr, X, start, end)) from
+the LIST OPS and LIST MATH menus.
+
+@ARTICLE Series Convergence
+# Geometric series
+  sum a*r^n converges iff |r| < 1
+
+# p-series
+  sum 1/n^p converges iff p > 1
+p = 1 is the harmonic series, which
+diverges.
+
+# nth term test
+If the terms do not approach 0, the
+series diverges. (If they do approach 0
+the test is inconclusive.)
+
+# Alternating series test
+An alternating series converges if the
+terms decrease in absolute value and
+approach 0.
+
+# Ratio test
+Let L = lim |a_(n+1)/a_n|.
+- L < 1: converges absolutely
+- L > 1: diverges
+- L = 1: inconclusive
+
+# Comparison
+Compare with a known geometric or
+p-series.
+
+@ARTICLE Binomial Theorem
+  (a+b)^n = sum C(n,k) a^(n-k) b^k
+with k from 0 to n.
+
+# Binomial coefficient
+  C(n,k) = n!/(k!(n-k)!)
+Read as "n choose k". On the TI-84 it is
+nCr in the MATH PRB menu.
+
+# The (k+1)th term
+  C(n,k) * a^(n-k) * b^k
+
+# Pascal's triangle
+  1
+  1 1
+  1 2 1
+  1 3 3 1
+  1 4 6 4 1
+Each entry is the sum of the two above.
+Row n gives the coefficients of (a+b)^n.
+
+# Facts
+  C(n,0) = C(n,n) = 1
+  C(n,k) = C(n, n-k)
+  sum of row n = 2^n

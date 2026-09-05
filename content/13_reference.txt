@@ -1,0 +1,160 @@
+@CATEGORY Reference Tables
+
+@ARTICLE Constants
+  pi = 3.14159265358979
+  e  = 2.71828182845905
+  sqrt(2) = 1.41421356
+  sqrt(3) = 1.73205081
+  golden ratio = 1.61803399
+  ln(2) = 0.69314718
+  ln(10) = 2.30258509
+  180/pi = 57.2957795 deg per radian
+  pi/180 = 0.01745329 rad per degree
+
+# Powers of 2
+  2^5 = 32      2^10 = 1024
+  2^6 = 64      2^12 = 4096
+  2^7 = 128     2^16 = 65536
+  2^8 = 256     2^20 = 1048576
+
+# Squares
+  11^2=121  12^2=144  13^2=169
+  14^2=196  15^2=225  16^2=256
+  17^2=289  18^2=324  19^2=361
+  20^2=400  25^2=625
+
+# Cubes
+  2^3=8   3^3=27   4^3=64
+  5^3=125 6^3=216  7^3=343
+  8^3=512 9^3=729  10^3=1000
+
+@ARTICLE Number Sets
+# Natural numbers N
+  1, 2, 3, ...  (sometimes from 0)
+
+# Whole numbers
+  0, 1, 2, 3, ...
+
+# Integers Z
+  ..., -2, -1, 0, 1, 2, ...
+
+# Rational numbers Q
+Any ratio a/b of integers with b not 0.
+Decimals terminate or repeat.
+
+# Irrational numbers
+Cannot be written as a fraction. Their
+decimals go on forever without a
+pattern: pi, e, sqrt(2).
+
+# Real numbers R
+All rationals plus all irrationals.
+
+# Complex numbers C
+  a + bi, where i^2 = -1
+Every real number is complex with b = 0.
+
+# Nesting
+  N in Z in Q in R in C
+
+@ARTICLE Symbols and Notation
+  =    equals
+  ~=   approximately equal
+  !=   not equal
+  <, > less than, greater than
+  <=   less than or equal
+  in   is an element of
+  U    union (either)
+  n    intersection (both)
+  0/   empty set
+  inf  infinity
+  =>   implies
+  <=>  if and only if
+  |x|  absolute value
+  n!   factorial
+  sum  summation (sigma)
+  int  integral
+  D    delta, change in
+
+# Greek letters in math
+  alpha, beta, gamma: angles
+  theta: an angle
+  pi: 3.14159...
+  sigma: sum, or standard deviation
+  mu: population mean
+  delta: change
+  lambda: eigenvalue, wavelength
+  epsilon: a small quantity
+
+@ARTICLE Unit Conversions
+# Length
+  1 in = 2.54 cm exactly
+  1 ft = 12 in = 0.3048 m
+  1 mi = 5280 ft = 1.609344 km
+  1 m = 3.28084 ft
+
+# Area and volume
+  1 ft^2 = 144 in^2
+  1 gal = 3.785412 L
+  1 L = 1000 cm^3
+
+# Mass
+  1 lb = 16 oz = 0.4535924 kg
+  1 kg = 2.20462 lb
+  1 ton = 2000 lb
+
+# Time and speed
+  1 hr = 3600 s
+  1 mi/hr = 1.46667 ft/s
+  60 mi/hr = 88 ft/s
+
+# Temperature
+  F = (9/5)C + 32
+  C = (5/9)(F - 32)
+  K = C + 273.15
+
+# Metric prefixes
+  nano  10^-9    kilo  10^3
+  micro 10^-6    mega  10^6
+  milli 10^-3    giga  10^9
+  centi 10^-2    tera  10^12
+
+@ARTICLE About This App
+MATHWIKI is an offline math reference
+for the TI-84 Plus CE Python, written in
+C with the CE toolchain.
+
+# Controls
+  UP / DOWN     move the selection
+  LEFT / RIGHT  page up / page down
+  2ND or ENTER  open the selection
+  CLEAR or DEL  go back
+  Y=            search all articles
+  ZOOM          list every article
+  MODE          quit to the OS
+
+In any list, pressing a letter key jumps
+to the first entry starting with it.
+
+# In an article
+  UP / DOWN     scroll one line
+  LEFT / RIGHT  scroll one screen
+  WINDOW        jump to the top
+  GRAPH         jump to the end
+  TRACE         next article
+  CLEAR or DEL  back to the list
+
+# In search
+Type letters with the ordinary ALPHA
+key labels (no need to press ALPHA).
+  DEL     backspace
+  0       space
+  CLEAR   exit search
+Matching is case insensitive and looks
+anywhere inside a title.
+
+# Adding your own articles
+Edit the plain text files in content/,
+run the build, and send the new .8xp
+back to the calculator. The format is
+documented in the project README.

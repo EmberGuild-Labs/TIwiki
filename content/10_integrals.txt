@@ -1,0 +1,202 @@
+@CATEGORY Integrals
+
+@ARTICLE Basic Antiderivatives
+  int x^n dx = x^(n+1)/(n+1) + C
+(for n not -1)
+  int 1/x dx = ln|x| + C
+  int e^x dx = e^x + C
+  int a^x dx = a^x/ln a + C
+  int k dx = kx + C
+
+# Trig
+  int sin x dx = -cos x + C
+  int cos x dx = sin x + C
+  int sec^2 x dx = tan x + C
+  int csc^2 x dx = -cot x + C
+  int sec x tan x dx = sec x + C
+  int csc x cot x dx = -csc x + C
+  int tan x dx = -ln|cos x| + C
+  int sec x dx = ln|sec x + tan x| + C
+
+# Inverse trig forms
+  int dx/sqrt(a^2 - x^2)
+    = arcsin(x/a) + C
+  int dx/(a^2 + x^2)
+    = (1/a)arctan(x/a) + C
+
+# Never forget + C on indefinite
+integrals.
+
+@ARTICLE Fundamental Theorem
+# Part 1
+  d/dx int from a to x of f(t) dt
+    = f(x)
+Differentiation undoes integration.
+
+# With a chain rule
+  d/dx int from a to g(x) f(t) dt
+    = f(g(x)) * g'(x)
+
+# Part 2
+  int from a to b of f(x) dx
+    = F(b) - F(a)
+where F is any antiderivative of f.
+
+# Properties of definite integrals
+  int from a to a = 0
+  int from a to b = -int from b to a
+  int a to b + int b to c = int a to c
+  int of cf = c int of f
+
+# Net change
+  int from a to b of f'(x) dx
+    = f(b) - f(a)
+The integral of a rate gives the total
+change.
+
+@ARTICLE u-Substitution
+Reverses the chain rule.
+
+# Method
+1. Choose u = the inside function.
+2. Compute du = u' dx.
+3. Replace everything so no x remains.
+4. Integrate in u, then substitute back.
+
+# Choosing u
+Pick the inside of a composition, the
+thing under a root, an exponent, or a
+denominator. Its derivative should be
+present (up to a constant).
+
+# Example
+  int 2x(x^2 + 1)^5 dx
+  u = x^2 + 1, du = 2x dx
+  int u^5 du = u^6/6 + C
+  = (x^2 + 1)^6/6 + C
+
+# Definite integrals
+Either change the limits to u values, or
+substitute back before evaluating. If
+you change the limits, do NOT convert
+back.
+
+@ARTICLE Integration by Parts
+  int u dv = uv - int v du
+
+# LIATE (choose u in this order)
+  Logarithmic
+  Inverse trig
+  Algebraic
+  Trigonometric
+  Exponential
+The first type that appears becomes u.
+
+# Example
+  int x e^x dx
+  u = x, dv = e^x dx
+  du = dx, v = e^x
+  = x e^x - int e^x dx
+  = x e^x - e^x + C
+
+# Repeated use
+Sometimes you must apply it twice. For
+int e^x sin x dx the original integral
+reappears; solve for it algebraically.
+
+# Tabular method
+Good when u differentiates down to 0
+(like x^3 e^x). Alternate signs across
+the rows.
+
+@ARTICLE Area and Volume
+# Area under a curve
+  A = int from a to b of f(x) dx
+Signed: area below the axis counts as
+negative.
+
+# Area between curves
+  A = int from a to b of
+      (top - bottom) dx
+  A = int from c to d of
+      (right - left) dy
+Find the intersections first; they are
+your limits.
+
+# Disk method
+  V = pi int [R(x)]^2 dx
+Rotating a region against the axis.
+
+# Washer method
+  V = pi int ([R]^2 - [r]^2) dx
+R is the outer radius, r the inner.
+
+# Shell method
+  V = 2pi int (radius)(height) dx
+Useful when rotating around a line
+parallel to the strips.
+
+# Known cross sections
+  V = int A(x) dx
+Squares: A = s^2. Semicircles:
+A = (pi/8)s^2. Equilateral triangles:
+A = (sqrt3/4)s^2.
+
+@ARTICLE Riemann Sums
+Approximate the area with rectangles of
+width dx = (b - a)/n.
+
+# Left endpoint
+  sum f(x_i)*dx, i from 0 to n-1
+Underestimates when f is increasing.
+
+# Right endpoint
+  sum f(x_i)*dx, i from 1 to n
+Overestimates when f is increasing.
+
+# Midpoint
+Usually the most accurate of the three.
+
+# Trapezoid rule
+  T = (dx/2)[f0 + 2f1 + ... +
+      2f(n-1) + fn]
+Overestimates when concave up.
+
+# Simpson's rule (n even)
+  S = (dx/3)[f0 + 4f1 + 2f2 + 4f3
+      + ... + fn]
+Coefficients alternate 4 and 2.
+
+# Limit definition
+  int a to b f dx = lim n->inf
+    sum f(a + i*dx)*dx
+
+@ARTICLE More Applications
+# Average value of a function
+  avg = (1/(b-a)) int a to b f(x) dx
+
+# Mean value theorem for integrals
+There is a c in [a,b] where f(c) equals
+the average value.
+
+# Arc length
+  L = int sqrt(1 + [f'(x)]^2) dx
+
+# Surface area of revolution
+  S = 2pi int f(x)sqrt(1+[f'(x)]^2) dx
+
+# Work
+  W = int F(x) dx
+Spring: F = kx. Pumping a tank: slice it
+and integrate weight times distance.
+
+# Improper integrals
+Replace the infinite or undefined limit
+with a variable and take the limit. If
+the limit exists the integral converges.
+
+# Separable differential equations
+  dy/dx = f(x)g(y)
+  int dy/g(y) = int f(x) dx
+Then apply the initial condition to find
+the constant.

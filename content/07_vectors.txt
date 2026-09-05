@@ -1,0 +1,135 @@
+@CATEGORY Vectors and Matrices
+
+@ARTICLE Vector Basics
+# Notation
+  v = <a, b>  or  ai + bj
+Component form from P1 to P2:
+  <x2 - x1, y2 - y1>
+
+# Magnitude
+  |v| = sqrt(a^2 + b^2)
+  |v| = sqrt(a^2 + b^2 + c^2)  in 3D
+
+# Unit vector
+  u = v/|v|
+Same direction, length 1.
+
+# Operations
+  <a,b> + <c,d> = <a+c, b+d>
+  k<a,b> = <ka, kb>
+
+# Direction angle
+  t = arctan(b/a)
+Adjust by 180 degrees if the vector is
+in quadrant 2 or 3.
+
+# From magnitude and angle
+  v = <|v| cos t, |v| sin t>
+
+@ARTICLE Dot and Cross Product
+# Dot product
+  u . v = a1a2 + b1b2 (+ c1c2)
+  u . v = |u||v| cos t
+The result is a scalar.
+
+# Angle between vectors
+  cos t = (u . v)/(|u||v|)
+
+# Orthogonal test
+  u . v = 0  <=>  perpendicular
+
+# Projection
+  proj_v(u) = ((u.v)/|v|^2) * v
+
+# Cross product (3D only)
+  u x v = <b1c2 - c1b2,
+           c1a2 - a1c2,
+           a1b2 - b1a2>
+The result is a vector perpendicular to
+both u and v.
+  |u x v| = |u||v| sin t
+That magnitude is the area of the
+parallelogram they span.
+
+@ARTICLE Matrix Operations
+# Addition
+Only for matrices of the same size; add
+entry by entry.
+
+# Scalar multiplication
+Multiply every entry by the scalar.
+
+# Matrix multiplication
+  (m x n)(n x p) = (m x p)
+The inner dimensions must match. Entry
+(i,j) is row i of A dotted with column j
+of B.
+
+# Not commutative
+AB is generally not BA.
+
+# Identity matrix
+  I has 1s on the diagonal, 0 elsewhere
+  AI = IA = A
+
+# Transpose
+Swap rows and columns: A^T.
+
+# Powers
+A^n only makes sense for square A.
+
+@ARTICLE Determinants and Inverses
+# 2x2 determinant
+  det [a b; c d] = ad - bc
+
+# 2x2 inverse
+  A^-1 = (1/det)[d -b; -c a]
+Exists only when det is not 0.
+
+# 3x3 determinant
+Expand along a row using cofactors, with
+the checkerboard sign pattern:
+  + - +
+  - + -
+  + - +
+
+# Singular matrix
+det = 0 means no inverse exists, and the
+system has no unique solution.
+
+# Uses of the determinant
+- Area of a triangle with vertices
+(x1,y1), (x2,y2), (x3,y3):
+  A = (1/2)|det of the 3x3 with a
+  column of 1s|
+- Test for collinear points: det = 0
+
+# On the TI-84
+2nd MATRIX > MATH > det( and use the
+x^-1 key for the inverse.
+
+@ARTICLE Solving with Matrices
+# Matrix equation
+  AX = B  =>  X = A^-1 B
+A is the coefficient matrix, X the
+variables, B the constants.
+
+# Steps on the TI-84
+1. 2nd MATRIX > EDIT, enter [A] and [B]
+2. Quit, then compute [A]^-1[B]
+3. Read the solution down the column
+
+# Row reduction
+Build the augmented matrix [A|B] and use
+rref( from 2nd MATRIX > MATH. The last
+column holds the solution.
+
+# Interpreting rref
+- A row like [0 0 0 | 1]: no solution
+- A row of all zeros: infinitely many
+solutions (a free variable)
+
+# Cramer's rule
+  x = det(Ax)/det(A)
+Replace the x column of A with B to get
+Ax. Works only when det(A) is not 0.

@@ -1,0 +1,329 @@
+@CATEGORY Forms of a Function
+
+@ARTICLE Linear Functions
+# Slope-intercept form
+  y = mx + b
+m is the slope, b is the y-intercept.
+
+# Point-slope form
+  y - y1 = m(x - x1)
+Use when you know one point (x1,y1) and
+the slope. Best form for writing a line
+fast from a point.
+
+# Standard form
+  Ax + By = C
+A, B, C integers, A >= 0. Intercepts are
+easy: x-int = C/A, y-int = C/B.
+
+# Slope from two points
+  m = (y2 - y1)/(x2 - x1)
+
+# Facts
+- Parallel lines have equal slopes.
+- Perpendicular slopes are negative
+reciprocals: m1*m2 = -1.
+- Horizontal line: y = k, slope 0.
+- Vertical line: x = k, slope undefined.
+
+@ARTICLE Quadratic Functions
+# Standard form
+  f(x) = ax^2 + bx + c
+y-intercept is (0, c). Opens up if a > 0,
+down if a < 0.
+  vertex x = -b/(2a)
+
+# Vertex form
+  f(x) = a(x - h)^2 + k
+Vertex is (h, k), axis of symmetry x = h.
+Shows the transformation directly.
+
+# Factored (intercept) form
+  f(x) = a(x - r1)(x - r2)
+r1 and r2 are the x-intercepts (roots).
+  vertex x = (r1 + r2)/2
+
+# Converting
+Standard to vertex: complete the square.
+Vertex to standard: expand.
+Factored to standard: FOIL.
+
+# Quadratic formula
+  x = (-b +- sqrt(b^2 - 4ac))/(2a)
+
+# Discriminant D = b^2 - 4ac
+- D > 0: two real roots
+- D = 0: one repeated real root
+- D < 0: two complex conjugate roots
+
+@ARTICLE Polynomial Functions
+# General form
+  f(x) = a_n x^n + ... + a_1 x + a_0
+Degree n, leading coefficient a_n.
+
+# Factored form
+  f(x) = a(x-r1)^m1 (x-r2)^m2 ...
+m is the multiplicity of the root r.
+- Odd multiplicity: graph crosses at r.
+- Even multiplicity: graph touches and
+turns around at r.
+
+# End behavior
+Even degree, a > 0: up on both ends.
+Even degree, a < 0: down on both ends.
+Odd degree, a > 0: down left, up right.
+Odd degree, a < 0: up left, down right.
+
+# Counts
+A degree n polynomial has:
+- exactly n roots (with multiplicity, in
+the complex numbers)
+- at most n - 1 turning points
+
+@ARTICLE Rational Functions
+# General form
+  f(x) = P(x)/Q(x)
+P and Q are polynomials, Q(x) not 0.
+
+# Vertical asymptotes
+Zeros of Q that are NOT also zeros of P.
+A factor that cancels gives a hole, not
+an asymptote.
+
+# Horizontal asymptotes
+Let n = deg P, m = deg Q.
+- n < m:  y = 0
+- n = m:  y = (lead P)/(lead Q)
+- n > m:  none (slant if n = m + 1)
+
+# Slant (oblique) asymptote
+When n = m + 1, divide P by Q. The
+quotient (ignore remainder) is the line.
+
+# Finding a hole
+If (x - a) cancels top and bottom, there
+is a hole at x = a. Its y-value comes
+from the reduced function.
+
+@ARTICLE Exponential Functions
+# General form
+  f(x) = a*b^x     (a not 0, b > 0)
+- b > 1: growth
+- 0 < b < 1: decay
+- Horizontal asymptote y = 0
+- y-intercept (0, a)
+
+# Shifted form
+  f(x) = a*b^(x-h) + k
+Asymptote moves to y = k.
+
+# Growth and decay
+  A = A0(1 + r)^t     growth rate r
+  A = A0(1 - r)^t     decay rate r
+
+# Compound interest
+  A = P(1 + r/n)^(nt)
+  A = Pe^(rt)         continuous
+
+# Base e
+  e = 2.718281828...
+  f(x) = a*e^(kx)
+k > 0 growth, k < 0 decay.
+
+# Half-life / doubling
+  A = A0(1/2)^(t/h)   half-life h
+  doubling time = ln2 / k
+
+@ARTICLE Logarithmic Functions
+# General form
+  f(x) = a*log_b(x - h) + k
+Domain x > h, vertical asymptote x = h.
+Inverse of the exponential function.
+
+# Definition
+  y = log_b(x)  <=>  b^y = x
+  log = log_10,  ln = log_e
+
+# Key points (parent function)
+  log_b(1) = 0
+  log_b(b) = 1
+  log_b(b^x) = x
+  b^(log_b x) = x
+
+# Shape
+Increasing if b > 1, decreasing if
+0 < b < 1. Domain (0, inf), range all
+real numbers.
+
+@ARTICLE Radical Functions
+# General form
+  f(x) = a*sqrt(x - h) + k
+Starts at the point (h, k) and opens
+right if a > 0, left is not a function.
+
+# Domain
+Even index: radicand must be >= 0.
+Odd index: all real numbers.
+
+# Cube root form
+  f(x) = a*cbrt(x - h) + k
+Domain and range are all reals; the
+point (h, k) is the inflection point.
+
+@ARTICLE Absolute Value Functions
+# General form
+  f(x) = a|x - h| + k
+Vertex (h, k). Opens up if a > 0.
+
+# Piecewise definition
+  |x| = x   if x >= 0
+  |x| = -x  if x < 0
+
+# Solving
+  |X| = c  =>  X = c  or  X = -c
+  |X| < c  =>  -c < X < c
+  |X| > c  =>  X < -c or X > c
+(c must be positive; |X| = negative has
+no solution.)
+
+@ARTICLE Piecewise Functions
+# Form
+  f(x) = { rule 1, if domain 1
+         { rule 2, if domain 2
+Each rule applies only on its interval.
+
+# Evaluating
+Find which interval the input falls in,
+then use only that rule.
+
+# Continuity at a breakpoint x = a
+Continuous if the left rule and the
+right rule give the same value at a.
+
+# Graphing
+Closed dot for <= or >=, open dot for
+< or >. Only graph each piece over its
+own interval.
+
+@ARTICLE Trigonometric Form
+# Sine and cosine
+  y = A*sin(B(x - C)) + D
+  y = A*cos(B(x - C)) + D
+- |A| = amplitude
+- period = 2pi/B
+- C = phase (horizontal) shift
+- D = midline / vertical shift
+- max = D + |A|, min = D - |A|
+
+# Tangent
+  y = A*tan(B(x - C)) + D
+  period = pi/B
+Asymptotes where the argument equals
+pi/2 + pi*n.
+
+# Reading a graph
+  A = (max - min)/2
+  D = (max + min)/2
+  B = 2pi/period
+
+@ARTICLE Transformations
+Start with a parent function f(x).
+
+# Vertical
+  f(x) + k   up k
+  f(x) - k   down k
+  a*f(x)     stretch if |a| > 1
+             shrink if |a| < 1
+  -f(x)      reflect over x-axis
+
+# Horizontal (opposite of the sign)
+  f(x - h)   right h
+  f(x + h)   left h
+  f(bx)      shrink by 1/b horizontally
+  f(-x)      reflect over y-axis
+
+# Order of operations
+Horizontal shift and stretch happen
+inside; apply stretch, then reflect,
+then shift.
+
+# General template
+  g(x) = a*f(b(x - h)) + k
+
+@ARTICLE Inverse Functions
+# Definition
+  f(f^-1(x)) = x and f^-1(f(x)) = x
+The inverse undoes the function.
+
+# Finding it
+1. Write y = f(x)
+2. Swap x and y
+3. Solve for y
+4. Write y = f^-1(x)
+
+# Graph
+Reflection over the line y = x. The
+point (a, b) becomes (b, a).
+
+# Existence
+A function has an inverse only if it is
+one-to-one: it must pass the horizontal
+line test. Otherwise restrict the domain.
+
+# Domain and range
+  domain of f^-1 = range of f
+  range of f^-1 = domain of f
+
+@ARTICLE Even, Odd, and Symmetry
+# Even function
+  f(-x) = f(x)
+Symmetric about the y-axis.
+Examples: x^2, cos x, |x|
+
+# Odd function
+  f(-x) = -f(x)
+Symmetric about the origin (180 deg
+rotational symmetry).
+Examples: x^3, sin x, tan x, 1/x
+
+# Neither
+Most functions are neither. Test by
+substituting -x and comparing.
+
+@ARTICLE Composition of Functions
+# Definition
+  (f o g)(x) = f(g(x))
+Work from the inside out.
+
+# Domain
+x must be in the domain of g, AND g(x)
+must be in the domain of f.
+
+# Not commutative
+In general f(g(x)) is not g(f(x)).
+
+# Decomposing
+To write h(x) = sqrt(3x + 1) as f(g(x)):
+  g(x) = 3x + 1, f(x) = sqrt(x)
+
+@ARTICLE Domain and Range
+# Common domain restrictions
+- Denominator cannot be 0.
+- Even root: radicand >= 0.
+- Logarithm: argument > 0.
+
+# Interval notation
+  (a, b)  open, endpoints excluded
+  [a, b]  closed, endpoints included
+  [a, b)  half-open
+  (-inf, inf)  all real numbers
+Infinity always gets a parenthesis.
+
+# Parent function ranges
+  x^2:      [0, inf)
+  sqrt(x):  [0, inf)
+  |x|:      [0, inf)
+  1/x:      all reals except 0
+  e^x:      (0, inf)
+  ln(x):    all reals
+  sin, cos: [-1, 1]

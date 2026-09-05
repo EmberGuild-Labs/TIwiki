@@ -1,0 +1,255 @@
+@CATEGORY Algebra
+
+@ARTICLE Exponent Rules
+  x^m * x^n = x^(m+n)
+  x^m / x^n = x^(m-n)
+  (x^m)^n = x^(mn)
+  (xy)^n = x^n * y^n
+  (x/y)^n = x^n / y^n
+  x^0 = 1        (x not 0)
+  x^-n = 1/x^n
+  x^(1/n) = nth root of x
+  x^(m/n) = (nth root of x)^m
+
+# Warnings
+- (x + y)^n is NOT x^n + y^n
+- -x^2 means -(x^2); (-x)^2 is positive
+
+@ARTICLE Logarithm Rules
+  log_b(xy) = log_b x + log_b y
+  log_b(x/y) = log_b x - log_b y
+  log_b(x^n) = n*log_b x
+  log_b(1) = 0
+  log_b(b) = 1
+  log_b(b^x) = x
+  b^(log_b x) = x
+
+# Change of base
+  log_b(x) = ln(x)/ln(b)
+  log_b(x) = log(x)/log(b)
+Use this to graph any base on the TI-84.
+
+# Solving
+Exponential equation: take log of both
+sides, then bring the exponent down.
+Log equation: rewrite in exponential
+form, then check for extraneous roots
+(the argument must stay positive).
+
+@ARTICLE Factoring
+# Always first: GCF
+  6x^3 + 9x^2 = 3x^2(2x + 3)
+
+# Difference of squares
+  a^2 - b^2 = (a + b)(a - b)
+
+# Perfect square trinomials
+  a^2 + 2ab + b^2 = (a + b)^2
+  a^2 - 2ab + b^2 = (a - b)^2
+
+# Sum / difference of cubes
+  a^3 + b^3 = (a+b)(a^2 - ab + b^2)
+  a^3 - b^3 = (a-b)(a^2 + ab + b^2)
+Remember SOAP: Same, Opposite, Always
+Positive.
+
+# Trinomial x^2 + bx + c
+Find two numbers with product c and
+sum b.
+
+# Trinomial ax^2 + bx + c (AC method)
+Find two numbers with product a*c and
+sum b, split the middle term, then
+factor by grouping.
+
+# Grouping (4 terms)
+  ax + ay + bx + by = (a+b)(x+y)
+
+# Note
+a^2 + b^2 does not factor over the reals.
+
+@ARTICLE Special Products
+  (a + b)^2 = a^2 + 2ab + b^2
+  (a - b)^2 = a^2 - 2ab + b^2
+  (a + b)(a - b) = a^2 - b^2
+  (a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3
+  (a-b)^3 = a^3 - 3a^2b + 3ab^2 - b^3
+
+# Binomial theorem
+  (a+b)^n = sum C(n,k) a^(n-k) b^k
+Sum runs k = 0 to n.
+Term k+1 of (a+b)^n:
+  C(n,k) * a^(n-k) * b^k
+
+@ARTICLE Completing the Square
+Goal: turn ax^2 + bx + c into
+a(x - h)^2 + k.
+
+# Steps (a = 1)
+1. Move c: x^2 + bx = -c
+2. Add (b/2)^2 to both sides
+3. Factor the left as (x + b/2)^2
+4. Solve or rewrite
+
+# Example
+  x^2 + 6x + 1 = 0
+  x^2 + 6x = -1
+  x^2 + 6x + 9 = 8
+  (x + 3)^2 = 8
+  x = -3 +- 2sqrt(2)
+
+# If a is not 1
+Factor a out of the x terms first:
+  2x^2 + 8x + 3
+  2(x^2 + 4x) + 3
+  2(x^2 + 4x + 4) - 8 + 3
+  2(x + 2)^2 - 5
+
+@ARTICLE Polynomial Division
+# Long division
+Works for any divisor. Write missing
+degrees as 0 placeholders.
+  P(x) = D(x)*Q(x) + R(x)
+
+# Synthetic division
+Only for divisors of the form (x - a).
+Bring down, multiply by a, add, repeat.
+The last number is the remainder.
+
+# Remainder theorem
+  P(x) / (x - a) has remainder P(a)
+
+# Factor theorem
+  (x - a) is a factor  <=>  P(a) = 0
+So a is a root exactly when x - a
+divides P evenly.
+
+# Rational root theorem
+Any rational root p/q of a polynomial
+with integer coefficients satisfies:
+  p divides the constant term
+  q divides the leading coefficient
+
+@ARTICLE Rational Expressions
+# Simplify
+Factor everything, cancel common
+factors. Note the excluded values from
+the ORIGINAL denominator.
+
+# Multiply
+  (a/b)*(c/d) = (ac)/(bd)
+Factor and cancel before multiplying.
+
+# Divide
+  (a/b)/(c/d) = (a/b)*(d/c)
+
+# Add and subtract
+Need a common denominator (LCD):
+  a/b + c/d = (ad + bc)/(bd)
+
+# Complex fractions
+Multiply the top and bottom of the big
+fraction by the LCD of the little ones.
+
+# Solving rational equations
+Multiply through by the LCD, solve, then
+reject any answer that makes an original
+denominator zero.
+
+@ARTICLE Radicals
+  sqrt(ab) = sqrt(a)*sqrt(b)
+  sqrt(a/b) = sqrt(a)/sqrt(b)
+  nth root of x = x^(1/n)
+  (nth root of x)^m = x^(m/n)
+  sqrt(x^2) = |x|
+
+# Simplifying
+Pull out perfect nth powers:
+  sqrt(72) = sqrt(36*2) = 6sqrt(2)
+
+# Rationalizing a denominator
+  1/sqrt(a) = sqrt(a)/a
+Use the conjugate for two terms:
+  1/(a + sqrt b)
+    = (a - sqrt b)/(a^2 - b)
+
+# Solving radical equations
+Isolate the radical, raise both sides to
+the index power, solve, then CHECK: this
+step can create extraneous solutions.
+
+@ARTICLE Inequalities
+# Rules
+Same as equations, with one exception:
+multiplying or dividing by a negative
+number flips the inequality sign.
+
+# Compound
+  a < x < b       both must hold (AND)
+  x < a or x > b  either holds (OR)
+
+# Polynomial / rational inequalities
+1. Get one side to 0
+2. Find zeros and undefined points
+3. Split the number line into intervals
+4. Test one point per interval
+5. Include endpoints only if the sign is
+non-strict and the point is defined
+
+# Absolute value
+  |X| < c  =>  -c < X < c
+  |X| > c  =>  X < -c or X > c
+
+@ARTICLE Systems of Equations
+# Substitution
+Solve one equation for a variable, plug
+it into the other.
+
+# Elimination
+Scale equations so one variable cancels
+when you add them.
+
+# Number of solutions (2 lines)
+- Different slopes: one solution
+- Same slope, different intercept: none
+(parallel, inconsistent)
+- Same line: infinitely many
+
+# Matrix method
+  AX = B  =>  X = A^-1 B
+On the TI-84: enter [A] and [B], then
+compute [A]^-1[B], or use rref([A|B]).
+
+# Cramer's rule (2x2)
+  x = Dx/D,  y = Dy/D
+D is the coefficient determinant; Dx
+replaces the x column with the constants.
+
+@ARTICLE Complex Numbers
+  i = sqrt(-1),  i^2 = -1
+  i^3 = -i,  i^4 = 1
+Powers of i cycle with period 4: divide
+the exponent by 4 and use the remainder.
+
+# Standard form
+  z = a + bi
+
+# Arithmetic
+  (a+bi) + (c+di) = (a+c) + (b+d)i
+  (a+bi)(c+di) =
+    (ac - bd) + (ad + bc)i
+
+# Conjugate
+  conj(a + bi) = a - bi
+  z * conj(z) = a^2 + b^2
+
+# Division
+Multiply top and bottom by the
+conjugate of the denominator.
+
+# Modulus and polar form
+  |z| = sqrt(a^2 + b^2)
+  z = r(cos t + i sin t) = r*e^(it)
+
+# De Moivre's theorem
+  z^n = r^n (cos nt + i sin nt)

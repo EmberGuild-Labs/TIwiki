@@ -1,0 +1,9 @@
+obj/
+bin/*.obj
+bin/*.map
+bin/*.8xv
+tools/hostsim/*.o
+tools/hostsim/sim
+tools/hostsim/sim_asan
+tools/hostsim/*.dSYM/
+.DS_Store

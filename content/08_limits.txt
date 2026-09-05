@@ -1,0 +1,94 @@
+@CATEGORY Limits and Continuity
+
+@ARTICLE Limit Basics
+  lim as x->a of f(x) = L
+The value f approaches near a, whether
+or not f(a) itself exists.
+
+# One-sided limits
+  lim from the left:  x -> a^-
+  lim from the right: x -> a^+
+The two-sided limit exists only if both
+one-sided limits exist and are equal.
+
+# Evaluating
+1. Try direct substitution.
+2. If you get 0/0, factor and cancel, or
+rationalize, or use a known limit.
+3. If you get c/0 with c not 0, it is an
+infinite limit (vertical asymptote).
+
+# Indeterminate forms
+  0/0   inf/inf   0*inf   inf - inf
+  1^inf  0^0   inf^0
+These need more work; they are not
+answers.
+
+# Limit laws
+Limits distribute over sums, products,
+quotients (nonzero denominator), and
+powers.
+
+@ARTICLE Special Limits
+  lim x->0 of sin(x)/x = 1
+  lim x->0 of (1 - cos x)/x = 0
+  lim x->0 of (e^x - 1)/x = 1
+  lim n->inf of (1 + 1/n)^n = e
+
+# Limits at infinity of rationals
+Compare the degrees of top and bottom:
+- top < bottom: limit is 0
+- equal: ratio of leading coefficients
+- top > bottom: +-infinity
+
+# Squeeze theorem
+If g(x) <= f(x) <= h(x) near a and both
+g and h approach L, then f approaches L.
+
+# Derivative as a limit
+  f'(a) = lim h->0
+          (f(a+h) - f(a))/h
+
+@ARTICLE Continuity
+# Definition
+f is continuous at x = a if:
+1. f(a) is defined
+2. the limit as x->a exists
+3. the limit equals f(a)
+
+# Types of discontinuity
+- Removable (hole): the limit exists but
+does not equal f(a)
+- Jump: one-sided limits differ
+- Infinite: vertical asymptote
+
+# Intermediate value theorem
+If f is continuous on [a, b] and N is
+between f(a) and f(b), then f(c) = N for
+some c in (a, b). Used to prove a root
+exists when the sign changes.
+
+# Extreme value theorem
+A continuous function on a closed
+interval [a, b] attains an absolute max
+and an absolute min.
+
+@ARTICLE L'Hopital's Rule
+If the limit gives 0/0 or inf/inf, then
+  lim f(x)/g(x) = lim f'(x)/g'(x)
+provided the second limit exists.
+
+# Rules of use
+- Check the indeterminate form FIRST.
+- Differentiate the top and bottom
+separately, NOT with the quotient rule.
+- You may repeat if you get 0/0 again.
+
+# Other forms
+Rewrite them as a quotient first:
+  0*inf -> put one factor in the
+  denominator
+  inf - inf -> combine into a single
+  fraction
+  1^inf, 0^0 -> take ln, find the
+  limit, then exponentiate

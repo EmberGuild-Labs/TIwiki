@@ -1,0 +1,214 @@
+@CATEGORY Statistics and Probability
+
+@ARTICLE Descriptive Statistics
+# Center
+  mean = (sum of x)/n
+  median = middle value when sorted
+  mode = most frequent value
+The mean is pulled by outliers; the
+median is resistant.
+
+# Spread
+  range = max - min
+  IQR = Q3 - Q1
+  variance = sum(x - mean)^2/(n - 1)
+  standard deviation = sqrt(variance)
+Use n - 1 for a sample, n for a
+population.
+
+# Five number summary
+  min, Q1, median, Q3, max
+A box plot draws exactly these.
+
+# Outlier rule
+  below Q1 - 1.5*IQR
+  above Q3 + 1.5*IQR
+
+# Shape
+Skewed right: mean > median.
+Skewed left: mean < median.
+Symmetric: mean is about the median.
+
+# On the TI-84
+STAT > EDIT to type data into L1, then
+STAT > CALC > 1-Var Stats.
+
+@ARTICLE Normal Distribution
+Bell shaped, symmetric about the mean.
+
+# z-score
+  z = (x - mean)/sd
+How many standard deviations x is from
+the mean.
+
+# Empirical rule (68-95-99.7)
+  68% within 1 sd
+  95% within 2 sd
+  99.7% within 3 sd
+
+# TI-84 commands (2nd VARS DISTR)
+  normalpdf(x, mean, sd)
+  normalcdf(low, high, mean, sd)
+  invNorm(area, mean, sd)
+Use -1E99 and 1E99 for infinite bounds.
+
+# Sampling distribution of the mean
+  mean of xbar = mean
+  sd of xbar = sd/sqrt(n)
+The central limit theorem says xbar is
+roughly normal for large n (n >= 30),
+whatever the population shape.
+
+@ARTICLE Probability Rules
+  0 <= P(A) <= 1
+  P(not A) = 1 - P(A)
+
+# Addition rule
+  P(A or B) = P(A) + P(B) - P(A and B)
+If A and B are mutually exclusive the
+last term is 0.
+
+# Multiplication rule
+  P(A and B) = P(A)*P(B|A)
+If independent: P(A and B) = P(A)P(B)
+
+# Conditional probability
+  P(B|A) = P(A and B)/P(A)
+
+# Independence test
+A and B are independent if
+P(B|A) = P(B).
+
+# Complement trick
+"At least one" is usually easiest as
+1 - P(none).
+
+@ARTICLE Counting
+# Fundamental counting principle
+Multiply the number of choices at each
+stage.
+
+# Permutations (order matters)
+  P(n,r) = n!/(n - r)!
+
+# Combinations (order does not matter)
+  C(n,r) = n!/(r!(n - r)!)
+
+# Factorial
+  n! = n(n-1)(n-2)...1
+  0! = 1
+
+# With repetition
+  n^r arrangements of r items from n
+types when repeats are allowed.
+
+# Identical items
+Arrangements of n items where groups of
+size a, b, c repeat:
+  n!/(a! b! c!)
+
+# On the TI-84
+MATH > PRB has nPr, nCr, and !.
+
+@ARTICLE Discrete Distributions
+# Expected value
+  E(X) = sum of x*P(x)
+  Var(X) = sum (x - E(X))^2 P(x)
+
+# Binomial distribution
+n independent trials, each with
+probability p of success.
+  P(X = k) = C(n,k) p^k (1-p)^(n-k)
+  mean = np
+  sd = sqrt(np(1-p))
+TI-84: binompdf(n, p, k) and
+binomcdf(n, p, k).
+
+# Geometric distribution
+Number of trials until the first
+success.
+  P(X = k) = (1-p)^(k-1) * p
+  mean = 1/p
+
+# Requirements for binomial
+Fixed n, two outcomes, constant p,
+independent trials.
+
+@ARTICLE Regression
+# Linear regression
+  y = ax + b  (TI-84 form)
+Least squares minimizes the sum of the
+squared residuals.
+
+# Correlation coefficient r
+  -1 <= r <= 1
+Near +-1 is a strong linear pattern; 0
+means no linear pattern.
+
+# Coefficient of determination
+  r^2 = fraction of the variation in y
+explained by the model.
+
+# Residual
+  residual = observed - predicted
+A residual plot with no pattern means a
+linear model is appropriate.
+
+# On the TI-84
+1. STAT > EDIT: x in L1, y in L2
+2. STAT > CALC > 4:LinReg(ax+b)
+3. Turn on DiagnosticOn (2nd CATALOG) to
+see r and r^2
+
+# Other models
+QuadReg, CubicReg, ExpReg, LnReg,
+PwrReg, and SinReg are in the same menu.
+
+# Caution
+Correlation is not causation, and
+extrapolating far outside the data is
+unreliable.
+
+@ARTICLE Confidence and Tests
+# Confidence interval
+  estimate +- (critical value)(SE)
+A 95% interval means the method captures
+the true parameter 95% of the time.
+
+# Mean, sigma known (z-interval)
+  xbar +- z*(sd/sqrt n)
+  z* = 1.645 (90%), 1.96 (95%),
+       2.576 (99%)
+
+# Mean, sigma unknown (t-interval)
+  xbar +- t*(s/sqrt n),  df = n - 1
+
+# Proportion
+  phat +- z*sqrt(phat(1-phat)/n)
+
+# Margin of error
+Halving the margin requires four times
+the sample size.
+
+# Hypothesis test steps
+1. State H0 and Ha
+2. Check the conditions
+3. Compute the test statistic
+4. Find the p-value
+5. Compare to alpha and conclude in
+context
+
+# p-value
+The probability of a result at least as
+extreme as the one observed, assuming H0
+is true. Small p-value: reject H0.
+
+# Errors
+Type I: rejecting a true H0 (probability
+alpha). Type II: failing to reject a
+false H0.
+
+# On the TI-84
+STAT > TESTS has Z-Test, T-Test,
+2-SampTTest, 1-PropZTest, chi-square,
+and the matching intervals.

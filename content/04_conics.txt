@@ -1,0 +1,116 @@
+@CATEGORY Conic Sections
+
+@ARTICLE Circle
+# Standard form
+  (x - h)^2 + (y - k)^2 = r^2
+Center (h, k), radius r.
+
+# General form
+  x^2 + y^2 + Dx + Ey + F = 0
+Complete the square in x and in y to get
+back to standard form.
+
+# From general form
+  center = (-D/2, -E/2)
+  r = sqrt(D^2/4 + E^2/4 - F)
+
+@ARTICLE Parabola
+# Vertical axis (opens up/down)
+  (x - h)^2 = 4p(y - k)
+  vertex (h, k)
+  focus (h, k + p)
+  directrix y = k - p
+Opens up if p > 0, down if p < 0.
+
+# Horizontal axis (opens left/right)
+  (y - k)^2 = 4p(x - h)
+  focus (h + p, k)
+  directrix x = h - p
+
+# Function form
+  y = a(x - h)^2 + k
+  a = 1/(4p),  so p = 1/(4a)
+
+# Definition
+The set of points equidistant from the
+focus and the directrix.
+
+# Latus rectum
+Width through the focus = |4p|.
+
+@ARTICLE Ellipse
+# Horizontal major axis
+  (x-h)^2/a^2 + (y-k)^2/b^2 = 1,  a > b
+  center (h, k)
+  vertices (h +- a, k)
+  co-vertices (h, k +- b)
+  foci (h +- c, k)
+
+# Vertical major axis
+  (x-h)^2/b^2 + (y-k)^2/a^2 = 1
+  vertices (h, k +- a)
+  foci (h, k +- c)
+
+# Relationship
+  c^2 = a^2 - b^2
+a is always the larger denominator, and
+it goes with the major axis direction.
+
+# Definition
+Sum of distances to the two foci is
+constant and equals 2a.
+
+# Eccentricity
+  e = c/a,  0 < e < 1
+Closer to 0 is more circular.
+
+# Area
+  A = pi*a*b
+
+@ARTICLE Hyperbola
+# Horizontal transverse axis
+  (x-h)^2/a^2 - (y-k)^2/b^2 = 1
+  center (h, k)
+  vertices (h +- a, k)
+  foci (h +- c, k)
+  asymptotes y - k = +-(b/a)(x - h)
+
+# Vertical transverse axis
+  (y-k)^2/a^2 - (x-h)^2/b^2 = 1
+  vertices (h, k +- a)
+  asymptotes y - k = +-(a/b)(x - h)
+
+# Relationship
+  c^2 = a^2 + b^2
+The positive term tells you the
+direction; a^2 is always under it.
+
+# Definition
+Difference of distances to the two foci
+is constant and equals 2a.
+
+# Eccentricity
+  e = c/a > 1
+
+@ARTICLE Identifying a Conic
+General second degree equation:
+  Ax^2 + Cy^2 + Dx + Ey + F = 0
+
+# Quick test (no xy term)
+- A = C: circle
+- A or C is 0 (one squared term):
+parabola
+- A and C same sign, not equal: ellipse
+- A and C opposite signs: hyperbola
+
+# With an xy term
+  Ax^2 + Bxy + Cy^2 + ... = 0
+Use the discriminant B^2 - 4AC:
+- < 0: ellipse (or circle)
+- = 0: parabola
+- > 0: hyperbola
+
+# Strategy
+Group x terms and y terms, complete the
+square on each, then divide to make the
+right side 1.

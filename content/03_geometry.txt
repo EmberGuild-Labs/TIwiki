@@ -1,0 +1,183 @@
+@CATEGORY Geometry
+
+@ARTICLE Area and Perimeter
+# Rectangle
+  A = lw,  P = 2l + 2w
+
+# Square
+  A = s^2,  P = 4s
+
+# Triangle
+  A = (1/2)bh
+  A = (1/2)ab*sin(C)
+  P = a + b + c
+
+# Heron's formula
+  s = (a + b + c)/2
+  A = sqrt(s(s-a)(s-b)(s-c))
+
+# Parallelogram
+  A = bh
+
+# Trapezoid
+  A = (1/2)(b1 + b2)h
+
+# Rhombus
+  A = (1/2)d1*d2
+
+# Circle
+  A = pi*r^2
+  C = 2pi*r = pi*d
+
+# Regular polygon
+  A = (1/2)*apothem*perimeter
+  interior angle sum = (n-2)*180
+  each interior angle = (n-2)*180/n
+  each exterior angle = 360/n
+
+@ARTICLE Volume and Surface Area
+# Rectangular prism
+  V = lwh
+  SA = 2(lw + lh + wh)
+
+# Cube
+  V = s^3,  SA = 6s^2
+
+# Cylinder
+  V = pi*r^2*h
+  SA = 2pi*r^2 + 2pi*r*h
+
+# Cone
+  V = (1/3)pi*r^2*h
+  SA = pi*r^2 + pi*r*l
+  slant height l = sqrt(r^2 + h^2)
+
+# Sphere
+  V = (4/3)pi*r^3
+  SA = 4pi*r^2
+
+# Pyramid
+  V = (1/3)*B*h
+B is the area of the base.
+
+# Any prism
+  V = B*h
+
+# Scaling
+If lengths scale by k, then areas scale
+by k^2 and volumes scale by k^3.
+
+@ARTICLE Triangles
+# Angle sum
+  A + B + C = 180 degrees
+An exterior angle equals the sum of the
+two remote interior angles.
+
+# Triangle inequality
+Any two sides must sum to more than the
+third side.
+
+# Pythagorean theorem
+  a^2 + b^2 = c^2   (right triangles)
+c is the hypotenuse.
+- a^2 + b^2 > c^2: acute
+- a^2 + b^2 < c^2: obtuse
+
+# Common Pythagorean triples
+  3-4-5    5-12-13   8-15-17
+  7-24-25  9-40-41   20-21-29
+Any multiple of a triple is a triple.
+
+# Special right triangles
+  45-45-90:  x, x, x*sqrt(2)
+  30-60-90:  x, x*sqrt(3), 2x
+The short leg is opposite the 30 degree
+angle.
+
+# Congruence
+  SSS, SAS, ASA, AAS, HL
+SSA is not a congruence criterion.
+
+# Similarity
+  AA, SSS~, SAS~
+Similar triangles have proportional
+sides and equal angles.
+
+# Centers
+- Centroid: medians meet, 2:1 from vertex
+- Circumcenter: perpendicular bisectors
+- Incenter: angle bisectors
+- Orthocenter: altitudes
+
+@ARTICLE Circles
+# Basics
+  C = 2pi*r,  A = pi*r^2
+
+# Arc length and sector
+  s = r*theta        (theta in radians)
+  s = (n/360)*2pi*r  (n in degrees)
+  sector A = (1/2)r^2*theta
+  sector A = (n/360)*pi*r^2
+
+# Angle rules
+- Central angle = its arc
+- Inscribed angle = half its arc
+- Angle inscribed in a semicircle = 90
+- Tangent meets a radius at 90 degrees
+
+# Two chords intersecting inside
+  a*b = c*d
+
+# Two secants from an outside point
+  whole*outside = whole*outside
+
+# Equation of a circle
+  (x - h)^2 + (y - k)^2 = r^2
+Center (h, k), radius r.
+
+@ARTICLE Coordinate Geometry
+# Distance
+  d = sqrt((x2-x1)^2 + (y2-y1)^2)
+
+# Midpoint
+  M = ((x1+x2)/2, (y1+y2)/2)
+
+# Slope
+  m = (y2 - y1)/(x2 - x1)
+
+# Point dividing a segment
+Point k of the way from P1 to P2:
+  (x1 + k(x2-x1), y1 + k(y2-y1))
+
+# Line equations
+  y = mx + b
+  y - y1 = m(x - x1)
+  Ax + By = C
+
+# Parallel and perpendicular
+  parallel:      m1 = m2
+  perpendicular: m1*m2 = -1
+
+# Distance from a point to a line
+  d = |Ax0 + By0 - C| / sqrt(A^2+B^2)
+For the line Ax + By = C.
+
+# 3D distance
+  d = sqrt(dx^2 + dy^2 + dz^2)
+
+@ARTICLE Angles and Lines
+# Pairs
+- Complementary: sum to 90
+- Supplementary: sum to 180
+- Vertical angles are equal
+- Linear pair sums to 180
+
+# Parallel lines cut by a transversal
+- Corresponding angles: equal
+- Alternate interior: equal
+- Alternate exterior: equal
+- Co-interior (same side): sum to 180
+
+# Polygon angle sums
+  interior sum = (n - 2)*180
+  exterior sum = 360 (any polygon)

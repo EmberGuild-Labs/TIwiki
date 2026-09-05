@@ -1,0 +1,246 @@
+@CATEGORY Trigonometry
+
+@ARTICLE Right Triangle Trig
+# SOH CAH TOA
+  sin = opposite / hypotenuse
+  cos = adjacent / hypotenuse
+  tan = opposite / adjacent
+
+# Reciprocals
+  csc = 1/sin = hyp/opp
+  sec = 1/cos = hyp/adj
+  cot = 1/tan = adj/opp
+
+# Quotient identities
+  tan = sin/cos
+  cot = cos/sin
+
+# Angle of elevation / depression
+Elevation is measured up from the
+horizontal, depression is measured down.
+They are equal alternate interior angles.
+
+@ARTICLE Unit Circle
+The unit circle has radius 1, so a point
+on it is (cos t, sin t).
+
+# Degrees to radians
+  radians = degrees * pi/180
+  degrees = radians * 180/pi
+
+# Common angles
+  0    = 0
+  30   = pi/6
+  45   = pi/4
+  60   = pi/3
+  90   = pi/2
+  180  = pi
+  270  = 3pi/2
+  360  = 2pi
+
+# Quadrant signs: ASTC
+  Q1: All positive
+  Q2: Sine positive
+  Q3: Tangent positive
+  Q4: Cosine positive
+"All Students Take Calculus"
+
+# Reference angles
+  Q1: t
+  Q2: 180 - t   (pi - t)
+  Q3: t - 180   (t - pi)
+  Q4: 360 - t   (2pi - t)
+
+@ARTICLE Exact Values
+# First quadrant
+  t      sin      cos      tan
+  0      0        1        0
+  pi/6   1/2      r3/2     r3/3
+  pi/4   r2/2     r2/2     1
+  pi/3   r3/2     1/2      r3
+  pi/2   1        0        undef
+(r2 = sqrt 2, r3 = sqrt 3)
+
+# The pattern
+sin goes 0, 1/2, r2/2, r3/2, 1 as the
+angle increases; cos runs backwards.
+Think sqrt(0)/2, sqrt(1)/2, sqrt(2)/2,
+sqrt(3)/2, sqrt(4)/2.
+
+# Coordinates on the unit circle
+  pi/6:  (r3/2, 1/2)
+  pi/4:  (r2/2, r2/2)
+  pi/3:  (1/2, r3/2)
+Use the reference angle plus the ASTC
+signs for the other quadrants.
+
+@ARTICLE Pythagorean Identities
+  sin^2 t + cos^2 t = 1
+  1 + tan^2 t = sec^2 t
+  1 + cot^2 t = csc^2 t
+
+# Rearranged
+  sin^2 t = 1 - cos^2 t
+  cos^2 t = 1 - sin^2 t
+  tan^2 t = sec^2 t - 1
+
+# Even / odd identities
+  sin(-t) = -sin t
+  cos(-t) = cos t
+  tan(-t) = -tan t
+
+# Cofunction identities
+  sin(90 - t) = cos t
+  tan(90 - t) = cot t
+  sec(90 - t) = csc t
+(Use pi/2 - t in radians.)
+
+@ARTICLE Sum and Difference
+  sin(A+B) = sinA cosB + cosA sinB
+  sin(A-B) = sinA cosB - cosA sinB
+  cos(A+B) = cosA cosB - sinA sinB
+  cos(A-B) = cosA cosB + sinA sinB
+
+  tan(A+B) = (tanA + tanB)
+             / (1 - tanA tanB)
+  tan(A-B) = (tanA - tanB)
+             / (1 + tanA tanB)
+
+# Memory aid
+Sine keeps the sign, cosine flips it.
+
+# Use
+Find exact values of angles like 15 deg
+= 45 - 30, or 75 = 45 + 30.
+
+@ARTICLE Double and Half Angle
+# Double angle
+  sin(2t) = 2 sin t cos t
+  cos(2t) = cos^2 t - sin^2 t
+  cos(2t) = 2cos^2 t - 1
+  cos(2t) = 1 - 2sin^2 t
+  tan(2t) = 2tan t/(1 - tan^2 t)
+
+# Power reducing
+  sin^2 t = (1 - cos 2t)/2
+  cos^2 t = (1 + cos 2t)/2
+These matter a lot in integration.
+
+# Half angle
+  sin(t/2) = +-sqrt((1 - cos t)/2)
+  cos(t/2) = +-sqrt((1 + cos t)/2)
+  tan(t/2) = (1 - cos t)/sin t
+The sign depends on the quadrant of t/2.
+
+@ARTICLE Law of Sines and Cosines
+# Law of sines
+  a/sin A = b/sin B = c/sin C
+Use for AAS, ASA, and SSA.
+
+# The ambiguous case (SSA)
+Given two sides and a non-included
+angle there may be 0, 1, or 2 triangles.
+Check whether 180 - (found angle) still
+leaves a positive third angle.
+
+# Law of cosines
+  a^2 = b^2 + c^2 - 2bc cos A
+  b^2 = a^2 + c^2 - 2ac cos B
+  c^2 = a^2 + b^2 - 2ab cos C
+Use for SAS and SSS.
+
+# Solving for an angle
+  cos A = (b^2 + c^2 - a^2)/(2bc)
+
+# Area
+  A = (1/2)ab sin C
+
+@ARTICLE Graphs of Trig Functions
+# Sine and cosine
+  y = A sin(B(x - C)) + D
+  amplitude = |A|
+  period = 2pi/B
+  phase shift = C
+  midline y = D
+
+sin starts at the midline going up;
+cos starts at the maximum.
+
+# Tangent
+  period = pi/B
+  asymptotes at B(x - C) = pi/2 + pi*n
+No amplitude (range is all reals).
+
+# Domains and ranges
+  sin, cos: domain all reals,
+            range [-1, 1]
+  tan: range all reals
+  sec, csc: range |y| >= 1
+
+# Five point method
+Divide one period into four equal parts
+to get the key points of a sine or
+cosine graph.
+
+@ARTICLE Inverse Trig
+# Restricted ranges
+  arcsin: [-pi/2, pi/2]
+  arccos: [0, pi]
+  arctan: (-pi/2, pi/2)
+These restrictions make the inverses
+functions.
+
+# Meaning
+  arcsin(x) = the angle whose sine is x
+
+# Composition
+  sin(arcsin x) = x for x in [-1, 1]
+  arcsin(sin t) = t only if t is in the
+restricted range
+
+# Evaluating expressions
+For something like cos(arcsin(3/5)),
+draw a right triangle with opposite 3
+and hypotenuse 5, find the third side
+(4), then read off the cosine: 4/5.
+
+@ARTICLE Solving Trig Equations
+# Basic strategy
+1. Isolate the trig function
+2. Find the reference angle
+3. Use ASTC to find all quadrant
+solutions in [0, 2pi)
+4. Add the period times n for the
+general solution
+
+# General solutions
+  sin t = k:  t = a + 2pi*n
+              t = pi - a + 2pi*n
+  cos t = k:  t = +-a + 2pi*n
+  tan t = k:  t = a + pi*n
+
+# Techniques
+- Factor (treat sin t as a variable)
+- Use identities to get one function
+- Square both sides, then check for
+extraneous solutions
+
+@ARTICLE Polar Coordinates
+# Conversion
+  x = r cos t
+  y = r sin t
+  r^2 = x^2 + y^2
+  tan t = y/x
+
+# Common polar graphs
+  r = a           circle, radius a
+  r = 2a cos t    circle through origin
+  r = a + b cos t limacon
+  r = a cos(nt)   rose
+  r^2 = a^2 sin2t lemniscate
+
+# Rose petals
+n odd: n petals. n even: 2n petals.
+
+# Cardioid
+  r = a(1 + cos t)   when a = b

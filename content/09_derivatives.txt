@@ -1,0 +1,185 @@
+@CATEGORY Derivatives
+
+@ARTICLE Definition and Meaning
+# Limit definition
+  f'(x) = lim h->0
+          (f(x+h) - f(x))/h
+
+# Alternate form at a point
+  f'(a) = lim x->a
+          (f(x) - f(a))/(x - a)
+
+# What it means
+- The slope of the tangent line
+- The instantaneous rate of change
+- Velocity, if the function is position
+
+# Average vs instantaneous
+  average rate = (f(b)-f(a))/(b-a)
+  instantaneous rate = f'(a)
+
+# Tangent line at x = a
+  y = f(a) + f'(a)(x - a)
+
+# Normal line
+Same point, slope -1/f'(a).
+
+# Differentiability
+Differentiable implies continuous, but
+not the reverse. No derivative at a
+corner, cusp, vertical tangent, or a
+discontinuity.
+
+@ARTICLE Differentiation Rules
+# Constant and power
+  d/dx [c] = 0
+  d/dx [x^n] = n*x^(n-1)
+  d/dx [cf(x)] = c*f'(x)
+
+# Sum and difference
+  (f +- g)' = f' +- g'
+
+# Product rule
+  (fg)' = f'g + fg'
+
+# Quotient rule
+  (f/g)' = (f'g - fg')/g^2
+"Low d-high minus high d-low, over the
+square of what's below."
+
+# Chain rule
+  d/dx f(g(x)) = f'(g(x)) * g'(x)
+Outside derivative times inside
+derivative.
+
+# Common chain forms
+  d/dx [u^n] = n*u^(n-1)*u'
+  d/dx [e^u] = e^u * u'
+  d/dx [ln u] = u'/u
+  d/dx [sin u] = cos(u)*u'
+
+@ARTICLE Common Derivatives
+  d/dx [e^x] = e^x
+  d/dx [a^x] = a^x * ln a
+  d/dx [ln x] = 1/x
+  d/dx [log_a x] = 1/(x ln a)
+
+# Trig
+  d/dx [sin x] = cos x
+  d/dx [cos x] = -sin x
+  d/dx [tan x] = sec^2 x
+  d/dx [csc x] = -csc x cot x
+  d/dx [sec x] = sec x tan x
+  d/dx [cot x] = -csc^2 x
+
+# Inverse trig
+  d/dx [arcsin x] = 1/sqrt(1 - x^2)
+  d/dx [arccos x] = -1/sqrt(1 - x^2)
+  d/dx [arctan x] = 1/(1 + x^2)
+  d/dx [arcsec x] = 1/(|x|sqrt(x^2-1))
+
+# Roots and reciprocals
+  d/dx [sqrt x] = 1/(2 sqrt x)
+  d/dx [1/x] = -1/x^2
+
+@ARTICLE Implicit Differentiation
+Use when y is not isolated.
+
+# Method
+1. Differentiate both sides with respect
+to x.
+2. Every time you differentiate a y,
+multiply by dy/dx.
+3. Collect the dy/dx terms on one side.
+4. Factor and solve for dy/dx.
+
+# Example
+  x^2 + y^2 = 25
+  2x + 2y(dy/dx) = 0
+  dy/dx = -x/y
+
+# Second derivative
+Differentiate dy/dx again, then
+substitute the expression for dy/dx back
+in to remove it.
+
+# Related use
+This is how you get derivatives of
+inverse functions:
+  (f^-1)'(x) = 1/f'(f^-1(x))
+
+@ARTICLE Applications
+# Critical points
+Where f'(x) = 0 or f'(x) is undefined.
+
+# First derivative test
+  f' > 0: f increasing
+  f' < 0: f decreasing
+Sign change + to -: local maximum.
+Sign change - to +: local minimum.
+
+# Second derivative test
+  f'' > 0 at a critical pt: local min
+  f'' < 0 at a critical pt: local max
+  f'' = 0: inconclusive
+
+# Concavity
+  f'' > 0: concave up
+  f'' < 0: concave down
+Inflection point where f'' changes sign.
+
+# Absolute extrema on [a, b]
+Evaluate f at every critical point and
+at both endpoints; compare the values.
+
+# Mean value theorem
+If f is continuous on [a,b] and
+differentiable on (a,b), then for some c
+  f'(c) = (f(b) - f(a))/(b - a)
+Rolle's theorem is the case f(a) = f(b),
+giving f'(c) = 0.
+
+@ARTICLE Motion and Related Rates
+# Motion along a line
+  s(t) = position
+  v(t) = s'(t) = velocity
+  a(t) = v'(t) = s''(t)
+  speed = |v(t)|
+
+# Reading motion
+- Moving right when v > 0
+- At rest when v = 0
+- Speeding up when v and a have the same
+sign; slowing down when they differ
+- Total distance: integrate |v(t)|
+
+# Related rates method
+1. Draw and label; name the variables.
+2. Write an equation relating them.
+3. Differentiate with respect to t
+(every variable gets a d/dt).
+4. Substitute the known values LAST.
+5. Solve for the unknown rate.
+
+# Common relations
+  A = pi r^2      dA/dt = 2pi r dr/dt
+  V = (4/3)pi r^3
+  x^2 + y^2 = z^2 (ladders, distances)
+
+@ARTICLE Linearization and Newton
+# Linear approximation
+  L(x) = f(a) + f'(a)(x - a)
+Use a nearby, easy value of a.
+
+# Differentials
+  dy = f'(x) dx
+Approximates the change in y for a small
+change in x.
+
+# Error estimates
+  percent error = |dy/y| * 100
+
+# Newton's method
+  x_(n+1) = x_n - f(x_n)/f'(x_n)
+Repeats to approximate a root. It can
+fail if f'(x_n) is near 0.
