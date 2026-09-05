@@ -1,0 +1,159 @@
+@CATEGORY Organic Chemistry
+
+@ARTICLE Hydrocarbons
+Compounds of carbon and hydrogen only.
+Carbon forms 4 bonds, which is what makes
+the enormous variety possible.
+
+# Alkanes: single bonds, saturated
+  CnH(2n+2)
+  methane  CH4     pentane  C5H12
+  ethane   C2H6    hexane   C6H14
+  propane  C3H8    heptane  C7H16
+  butane   C4H10   octane   C8H18
+Suffix -ane. Relatively unreactive; they
+burn and undergo substitution.
+
+# Alkenes: at least one C=C
+  CnH2n
+  ethene C2H4, propene C3H6
+Suffix -ene. Unsaturated and much more
+reactive; they undergo addition.
+
+# Alkynes: at least one triple bond
+  CnH(2n-2)
+  ethyne C2H2 (acetylene)
+Suffix -yne.
+
+# Aromatics
+Benzene C6H6 is a flat ring with
+delocalized electrons, drawn as a hexagon
+with a circle. Unusually stable, so it
+substitutes rather than adds.
+
+# Saturated vs unsaturated
+Saturated means all single bonds and the
+maximum hydrogen. Unsaturated has double
+or triple bonds. Bromine water is
+decolorized by unsaturated compounds,
+which is the standard test.
+
+@ARTICLE Naming Organic Compounds
+# Steps
+1. Find the longest continuous carbon
+chain; that gives the root name.
+2. Number from the end that gives the
+substituents the lowest numbers.
+3. Name and number each branch.
+4. Use di-, tri-, tetra- for repeats.
+5. List the branches alphabetically,
+ignoring the multiplying prefixes.
+
+# Root by carbon count
+  1 meth   5 pent   8 oct
+  2 eth    6 hex    9 non
+  3 prop   7 hept  10 dec
+  4 but
+
+# Branch names
+  CH3-  methyl
+  C2H5- ethyl
+  C3H7- propyl
+
+# Example
+  CH3-CH(CH3)-CH2-CH3
+  2-methylbutane
+
+# Double bond position
+Number so the double bond gets the
+lowest possible number:
+  but-2-ene or 2-butene
+
+# Isomers
+Same molecular formula, different
+structure.
+- Structural: different connectivity
+(butane and 2-methylpropane)
+- Geometric (cis/trans): different
+arrangement across a rigid double bond
+- Optical: mirror images that cannot be
+superimposed
+
+@ARTICLE Functional Groups
+The reactive part of a molecule; it
+determines the chemistry far more than
+the carbon skeleton does.
+
+# The main groups
+  alcohol      -OH        -ol
+  aldehyde     -CHO       -al
+  ketone       -CO-       -one
+  carboxylic   -COOH      -oic acid
+  ester        -COO-      -oate
+  ether        -O-        ether
+  amine        -NH2       -amine
+  amide        -CONH2     -amide
+  halide       -X         halo-
+
+# Alcohols
+  methanol CH3OH, ethanol C2H5OH
+Hydrogen bond, so they boil high and
+dissolve in water.
+
+# Carboxylic acids
+  ethanoic (acetic) acid CH3COOH
+Weak acids, sour, hydrogen bonded.
+
+# Esters
+Made from an acid plus an alcohol,
+releasing water. Sweet smelling; they
+give fruits their scents.
+
+# Amines
+Weak bases, derived from ammonia, and
+they smell of fish.
+
+# Why boiling points differ
+  alkane < ether < aldehyde/ketone
+  < alcohol < carboxylic acid
+Rising with the strength of the
+intermolecular forces.
+
+@ARTICLE Organic Reactions
+# Combustion
+  hydrocarbon + O2 -> CO2 + H2O
+Incomplete combustion gives CO and soot.
+
+# Substitution
+An atom replaces another. Typical of
+alkanes, and it needs UV light.
+  CH4 + Cl2 -> CH3Cl + HCl
+
+# Addition
+Something adds across a double or triple
+bond, which opens. Typical of alkenes.
+  C2H4 + Br2 -> C2H4Br2
+  C2H4 + H2 -> C2H6  (hydrogenation)
+
+# Elimination
+The reverse of addition; a small molecule
+leaves and a double bond forms.
+
+# Esterification
+  acid + alcohol <-> ester + water
+Reversible, and acid catalyzed.
+
+# Polymerization
+Many monomers join into a chain.
+- Addition: alkene monomers open their
+double bonds. Polyethene, PVC,
+polystyrene.
+- Condensation: monomers join and
+release a small molecule, usually water.
+Nylon, polyester, and proteins from
+amino acids.
+
+# Biological polymers
+  starch and cellulose from glucose
+  proteins from amino acids
+  DNA from nucleotides

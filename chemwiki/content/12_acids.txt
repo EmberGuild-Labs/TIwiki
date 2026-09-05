@@ -1,0 +1,201 @@
+@CATEGORY Acids and Bases
+
+@ARTICLE Definitions
+# Arrhenius
+Acid produces H+ in water; base produces
+OH-. Narrow, but simple.
+
+# Bronsted-Lowry
+Acid is a proton DONOR; base is a proton
+ACCEPTOR. Works without water.
+  HCl + H2O -> H3O+ + Cl-
+  acid  base   acid   base
+
+# Conjugate pairs
+Differ by exactly one H+.
+  HCl/Cl-       H2O/OH-
+  H3O+/H2O      NH4+/NH3
+A strong acid has a very weak conjugate
+base.
+
+# Lewis
+Acid is an electron pair ACCEPTOR; base
+is an electron pair DONOR. The broadest
+definition, and it covers reactions with
+no protons at all, such as BF3 with NH3.
+
+# Amphoteric
+Can act as either. Water is the classic
+case, as are HCO3- and HSO4-.
+
+# Properties
+Acids taste sour, turn litmus red, react
+with metals to give H2, and react with
+carbonates to give CO2. Bases taste
+bitter, feel slippery, and turn litmus
+blue.
+
+@ARTICLE Strong and Weak
+# The strong acids (memorize)
+  HCl   hydrochloric
+  HBr   hydrobromic
+  HI    hydroiodic
+  HNO3  nitric
+  H2SO4 sulfuric
+  HClO4 perchloric
+  HClO3 chloric
+Everything else is weak.
+
+# The strong bases
+Group 1 hydroxides: LiOH, NaOH, KOH,
+RbOH, CsOH.
+Heavy group 2 hydroxides: Ca(OH)2,
+Sr(OH)2, Ba(OH)2.
+
+# Strong means fully ionized
+A strong acid dissociates 100%, so
+  0.10 M HCl has [H+] = 0.10 M
+Use a single arrow.
+
+# Weak means partial
+A weak acid reaches an equilibrium, so
+  0.10 M CH3COOH has [H+] << 0.10 M
+Use a double arrow and Ka.
+
+# Strong vs concentrated
+Different words. Concentrated describes
+how much is dissolved; strong describes
+how completely it ionizes. Concentrated
+acetic acid is still weak.
+
+# Common weak acids
+  HF, CH3COOH (acetic), H2CO3, H3PO4,
+  HNO2, HCN
+Common weak base: NH3.
+
+@ARTICLE pH and pOH
+  pH = -log[H+]
+  pOH = -log[OH-]
+  pH + pOH = 14   (at 25 C)
+
+# Reverse
+  [H+] = 10^(-pH)
+  [OH-] = 10^(-pOH)
+
+# Water autoionization
+  Kw = [H+][OH-] = 1.0e-14 at 25 C
+
+# The scale
+  pH < 7  acidic
+  pH = 7  neutral (at 25 C)
+  pH > 7  basic
+Each pH unit is a factor of 10 in [H+],
+so pH 3 is 100 times more acidic than
+pH 5.
+
+# Worked example
+0.010 M HCl is strong, so
+[H+] = 0.010 = 1.0e-2 and pH = 2.00.
+
+# Sig figs in logs
+Only the digits after the decimal point
+count. [H+] = 1.0e-2 with 2 sig figs
+gives pH = 2.00.
+
+# On the TI-84
+Use LOG for pH and 10^x (2nd LOG) to go
+back. Watch the negative sign key: use
+(-), not the subtraction key.
+
+@ARTICLE Ka, Kb and Weak Equilibria
+# Acid dissociation
+  HA <-> H+ + A-
+  Ka = [H+][A-]/[HA]
+Larger Ka means a stronger acid.
+
+# Base ionization
+  B + H2O <-> BH+ + OH-
+  Kb = [BH+][OH-]/[B]
+
+# The relationship
+  Ka * Kb = Kw = 1.0e-14
+for a conjugate pair. A strong acid
+gives a negligibly weak conjugate base.
+
+# pKa
+  pKa = -log(Ka)
+Lower pKa means a stronger acid.
+
+# Finding pH of a weak acid
+Set up an ICE table:
+  Ka = x^2/([HA]0 - x)
+Assume x is small compared with [HA]0:
+  x = sqrt(Ka * [HA]0)
+Then pH = -log(x). Check that x is under
+5% of [HA]0; if not, solve the quadratic.
+
+# Percent ionization
+  % = (x/[HA]0) * 100
+It rises as the solution gets more
+dilute.
+
+# Salt hydrolysis
+- Salt of strong acid + strong base:
+neutral (NaCl)
+- Strong acid + weak base: acidic
+(NH4Cl)
+- Weak acid + strong base: basic
+(NaC2H3O2)
+
+@ARTICLE Titration and Buffers
+# Neutralization
+  acid + base -> salt + water
+  H+ + OH- -> H2O   (net ionic)
+
+# Titration calculation
+  M_a*V_a*n_a = M_b*V_b*n_b
+n is the protons or hydroxides per
+formula unit.
+
+# Titration curves
+- Strong acid with strong base:
+equivalence at pH 7, a very steep jump.
+- Weak acid with strong base:
+equivalence ABOVE 7, because the
+conjugate base is basic.
+- Weak base with strong acid:
+equivalence BELOW 7.
+
+# Half-equivalence point
+Half the acid is neutralized, so
+  pH = pKa
+This is the fastest way to read a pKa
+off a curve, and it is the center of the
+buffer region.
+
+# Indicators
+Choose one whose color change spans the
+equivalence pH.
+  methyl orange  3.1 - 4.4
+  litmus         5.0 - 8.0
+  phenolphthalein 8.3 - 10.0
+  (colorless to pink)
+
+# Buffers
+A weak acid with its conjugate base (or
+a weak base with its conjugate acid).
+They resist pH change because one
+component neutralizes added acid and the
+other neutralizes added base.
+
+# Henderson-Hasselbalch
+  pH = pKa + log([base]/[acid])
+The buffer is most effective when the
+two concentrations are equal, so pH is
+pKa, and it works well within about one
+pH unit of pKa.
+
+# Buffer capacity
+The amount of acid or base a buffer can
+absorb. It is exhausted once one
+component runs out.

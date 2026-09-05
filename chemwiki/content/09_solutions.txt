@@ -1,0 +1,176 @@
+@CATEGORY Solutions
+
+@ARTICLE Solutions and Solubility
+# Terms
+  solute    the substance dissolved
+  solvent   what does the dissolving
+  solution  the homogeneous mixture
+
+# Like dissolves like
+Polar and ionic solutes dissolve in
+polar solvents such as water. Nonpolar
+solutes dissolve in nonpolar solvents
+such as hexane. Oil and water separate
+for this reason.
+
+# How dissolving works
+Water molecules surround an ion and pull
+it away from the lattice. The ion ends
+up hydrated, with the partial negative
+oxygens facing cations.
+
+# Saturation
+  unsaturated  more can dissolve
+  saturated    at the limit, with
+               solid in equilibrium
+  supersaturated  more than the limit,
+               unstable, crystallizes
+               when disturbed
+
+# Electrolytes
+  strong: fully ionizes, conducts well
+  (soluble salts, strong acids/bases)
+  weak: partly ionizes, conducts poorly
+  (weak acids and bases)
+  nonelectrolyte: does not ionize
+  (sugar, ethanol)
+
+# Factors affecting solubility
+- Solids: usually more soluble in hot
+solvent
+- Gases: LESS soluble when hot, and more
+soluble at high pressure (Henry's law).
+Warm soda goes flat.
+
+@ARTICLE Concentration
+# Molarity (the main one)
+  M = moles solute/liters solution
+Note: liters of SOLUTION, not of
+solvent.
+
+# Molality
+  m = moles solute/kg solvent
+Uses kilograms of SOLVENT. Preferred for
+colligative properties because it does
+not change with temperature.
+
+# Percent by mass
+  % = (mass solute/mass solution)*100
+
+# Percent by volume
+  % = (vol solute/vol solution)*100
+
+# Parts per million
+  ppm = (mass solute/mass solution)*1e6
+For dilute water solutions, 1 ppm is
+about 1 mg per liter.
+
+# Mole fraction
+  X_A = n_A/n_total
+
+# Getting moles from molarity
+  moles = M * V(L)
+This is the bridge into stoichiometry
+for anything in solution.
+
+@ARTICLE Dilution
+  M1*V1 = M2*V2
+Adding solvent changes the volume and
+the concentration but NOT the moles of
+solute.
+
+# Using it
+1 and 2 are the concentrated and dilute
+states. Any volume unit works as long as
+both sides match.
+
+# Example
+How much 12.0 M HCl makes 500. mL of
+0.100 M?
+  V1 = (0.100)(500.)/12.0 = 4.17 mL
+Then add water up to 500 mL.
+
+# Safety
+Always add ACID to WATER, never the
+reverse. The mixing is strongly
+exothermic and can spatter.
+
+# Serial dilution
+Repeated dilutions multiply:
+  a 1:10 done three times is 1:1000
+
+# Mixing two solutions
+  M_final = (M1*V1 + M2*V2)/(V1 + V2)
+
+@ARTICLE Solution Stoichiometry
+Solutions enter the mole map through
+molarity.
+
+  volume * molarity -> MOLES -> ratio
+  -> moles of the other substance
+
+# Titration
+A measured reaction used to find an
+unknown concentration.
+
+# Endpoint vs equivalence point
+The equivalence point is where the moles
+match stoichiometrically. The endpoint is
+where the indicator changes. A good
+indicator makes them nearly identical.
+
+# Acid-base titration
+  M_a*V_a*n_a = M_b*V_b*n_b
+n is the number of H+ or OH- per
+formula unit. For a monoprotic acid with
+a single hydroxide base this reduces to
+  M_a*V_a = M_b*V_b
+
+# Example
+25.0 mL of HCl needs 32.0 mL of 0.100 M
+NaOH:
+  M_a = (0.100)(32.0)/25.0 = 0.128 M
+
+# Standard solution
+A solution of accurately known
+concentration, used as the reference.
+
+@ARTICLE Colligative Properties
+Properties that depend on the NUMBER of
+dissolved particles, not their identity.
+
+# Boiling point elevation
+  dTb = i*Kb*m
+  water Kb = 0.512 C/m
+
+# Freezing point depression
+  dTf = i*Kf*m
+  water Kf = 1.86 C/m
+This is why salt melts ice and antifreeze
+protects an engine.
+
+# Van't Hoff factor i
+The number of particles one formula unit
+produces.
+  sugar (nonelectrolyte)  i = 1
+  NaCl                    i = 2
+  CaCl2                   i = 3
+  Al2(SO4)3               i = 5
+Real values run slightly below these
+because of ion pairing.
+
+# Vapor pressure lowering
+  P_solution = X_solvent * P_pure
+Raoult's law. A nonvolatile solute
+lowers the vapor pressure, which is what
+raises the boiling point.
+
+# Osmotic pressure
+  pi = i*M*R*T
+Water flows through a semipermeable
+membrane toward the more concentrated
+side.
+
+# Comparing solutions
+For the same molality, the solute with
+the largest i has the biggest effect.

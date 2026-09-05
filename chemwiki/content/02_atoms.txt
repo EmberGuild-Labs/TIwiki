@@ -1,0 +1,139 @@
+@CATEGORY Atomic Structure
+
+@ARTICLE Subatomic Particles
+  particle  charge  mass (u)  location
+  proton      +1     1.007    nucleus
+  neutron      0     1.009    nucleus
+  electron    -1     0.00055  outside
+
+# Key facts
+- The electron is about 1836 times
+lighter than the proton, so essentially
+all the mass is in the nucleus.
+- The nucleus is about 1/100,000 the
+diameter of the atom, so the atom is
+overwhelmingly empty space.
+- A neutral atom has equal numbers of
+protons and electrons.
+
+# What each determines
+  protons   -> which element it is
+  neutrons  -> which isotope
+  electrons -> chemical behavior and
+               charge
+
+# History
+- Dalton: indivisible atoms
+- Thomson: found the electron, plum
+pudding model
+- Rutherford: gold foil experiment,
+found the tiny dense nucleus
+- Bohr: electrons in quantized orbits
+- Modern: probability clouds, orbitals
+
+@ARTICLE Isotopes and Atomic Mass
+# Notation
+  A = mass number = protons + neutrons
+  Z = atomic number = protons
+  neutrons = A - Z
+
+Written as carbon-14, or with A on top
+and Z on the bottom left.
+
+# Isotopes
+Same element, different neutron count.
+Same chemistry, different mass, and
+sometimes radioactive.
+  C-12, C-13, C-14 all have 6 protons
+
+# Average atomic mass
+  sum of (mass * fractional abundance)
+This is the number on the periodic
+table, which is why it is rarely a whole
+number.
+
+# Example
+Chlorine is 75.77% Cl-35 and 24.23%
+Cl-37:
+  0.7577(34.97) + 0.2423(36.97)
+  = 35.45 u
+
+# Ions
+Adding or removing electrons makes an
+ion; it does NOT change the element or
+the mass number.
+  cation  = positive = lost electrons
+  anion   = negative = gained electrons
+
+@ARTICLE Electron Configuration
+# Order of filling
+  1s 2s 2p 3s 3p 4s 3d 4p 5s 4d 5p
+  6s 4f 5d 6p 7s 5f 6d 7p
+
+# Capacity
+  s holds 2    p holds 6
+  d holds 10   f holds 14
+
+# The three rules
+- Aufbau: fill the lowest energy orbital
+first.
+- Pauli exclusion: at most 2 electrons
+per orbital, and they must have opposite
+spins.
+- Hund's rule: fill every orbital in a
+subshell singly before pairing any.
+
+# Examples
+  O  (8):  1s2 2s2 2p4
+  Na (11): 1s2 2s2 2p6 3s1
+  Fe (26): [Ar] 4s2 3d6
+
+# Noble gas shorthand
+Replace the inner electrons with the
+previous noble gas in brackets.
+  Cl: [Ne] 3s2 3p5
+
+# Two famous exceptions
+  Cr: [Ar] 4s1 3d5
+  Cu: [Ar] 4s1 3d10
+Half-filled and filled d subshells are
+extra stable.
+
+# Ions
+Take electrons from the highest n first.
+For transition metals that means the s
+electrons go BEFORE the d electrons.
+  Fe2+: [Ar] 3d6
+
+@ARTICLE Quantum Numbers and Orbitals
+# The four quantum numbers
+  n  principal: shell, 1, 2, 3...
+     sets size and energy
+  l  angular: subshell, 0 to n-1
+     0=s, 1=p, 2=d, 3=f
+  m_l  magnetic: orientation, -l to +l
+  m_s  spin: +1/2 or -1/2
+
+No two electrons in one atom share all
+four.
+
+# Orbital shapes
+  s: sphere, 1 orientation
+  p: dumbbell, 3 orientations
+  d: cloverleaf mostly, 5 orientations
+  f: complex, 7 orientations
+
+# Electrons per shell
+  max = 2n^2
+  n=1: 2   n=2: 8   n=3: 18   n=4: 32
+
+# Valence electrons
+The electrons in the outermost shell.
+They determine bonding. For main group
+elements, the group number gives the
+count (group 1 has 1, group 17 has 7).
+
+# Orbital diagrams
+Boxes or lines with arrows. Hund's rule
+means all arrows point up in a subshell
+before any pair off.

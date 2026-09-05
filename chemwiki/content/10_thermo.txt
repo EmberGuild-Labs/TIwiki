@@ -1,0 +1,175 @@
+@CATEGORY Thermochemistry
+
+@ARTICLE Energy and Heat
+# Definitions
+  system       what you are studying
+  surroundings everything else
+  heat q       energy transferred by a
+               temperature difference
+  work w       energy transferred by a
+               force
+
+# Units
+  1 cal = 4.184 J
+  1 Cal (food) = 1 kcal = 4184 J
+
+# Exothermic
+Releases heat to the surroundings.
+  q is negative, dH < 0
+The container feels HOT. Products are
+lower in energy than reactants.
+Combustion, neutralization, freezing.
+
+# Endothermic
+Absorbs heat from the surroundings.
+  q is positive, dH > 0
+The container feels COLD. Products are
+higher in energy.
+Melting, boiling, most instant cold
+packs, photosynthesis.
+
+# First law
+Energy is conserved.
+  dE = q + w
+
+# Common confusion
+Heat and temperature are different. Heat
+is energy in transit; temperature
+measures average kinetic energy. A
+bathtub of warm water holds more heat
+than a spark that is far hotter.
+
+@ARTICLE Calorimetry
+  q = m*c*dT
+  dT = T_final - T_initial
+
+# Specific heat
+Energy to raise 1 g by 1 degree.
+  water   4.184 J/(g*C)
+  ethanol 2.44
+  aluminum 0.897
+  iron    0.449
+  gold    0.129
+Water's unusually high value moderates
+climate and makes it a good coolant.
+
+# Heat capacity
+  C = m*c
+For the whole object, in J/C.
+
+# Coffee cup calorimeter
+Constant pressure, so it measures dH.
+  q_released = -q_absorbed
+  q_reaction = -q_water
+
+# Bomb calorimeter
+Constant volume, so it measures dE.
+  q = C_cal * dT
+
+# Phase changes
+  q = m*dH_fus  (melting/freezing)
+  q = m*dH_vap  (boiling/condensing)
+The temperature does NOT change during a
+phase change.
+  water dH_fus = 334 J/g
+  water dH_vap = 2260 J/g
+
+# Heating curve
+Sloped segments use q = mcdT; flat
+segments use q = m*dH. Solve a multi-step
+problem one segment at a time.
+
+@ARTICLE Enthalpy and Hess's Law
+# Enthalpy change
+  dH = H_products - H_reactants
+Heat at constant pressure.
+  dH < 0 exothermic
+  dH > 0 endothermic
+
+# Thermochemical equations
+  CH4 + 2O2 -> CO2 + 2H2O
+  dH = -890 kJ
+The value is per mole of the equation as
+written, so it scales with the
+coefficients.
+
+# Manipulation rules
+- Reverse the equation: flip the sign
+of dH.
+- Multiply the equation by n: multiply
+dH by n.
+- Add equations: add the dH values.
+
+# Hess's law
+dH is a state function, so it depends
+only on the start and end points, not
+the route. Any set of steps that sums to
+the target reaction gives the right dH.
+
+# Method
+Line up the given equations, flipping
+and scaling until the intermediates
+cancel and the target remains, then add
+the enthalpies.
+
+# Formation enthalpies
+  dH_rxn = sum(n*dHf products)
+           - sum(n*dHf reactants)
+dHf of any ELEMENT in its standard state
+is exactly 0.
+
+# Bond energies
+  dH = sum(bonds broken)
+       - sum(bonds formed)
+Breaking bonds costs energy; forming
+them releases it.
+
+@ARTICLE Entropy and Free Energy
+# Entropy S
+A measure of disorder, or the number of
+ways to arrange the energy. Units
+J/(mol*K).
+
+# Entropy increases when
+- solid -> liquid -> gas
+- moles of gas increase
+- a solid dissolves
+- temperature rises
+Gases have far more entropy than solids.
+
+# Predicting the sign of dS
+Count moles of gas on each side. More
+gas on the right means dS is positive.
+
+# Gibbs free energy
+  dG = dH - T*dS
+T must be in kelvin, and dS is usually
+given in J while dH is in kJ, so watch
+the units.
+
+# Spontaneity
+  dG < 0  spontaneous
+  dG = 0  at equilibrium
+  dG > 0  nonspontaneous (the reverse
+          is spontaneous)
+
+# The four cases
+  dH < 0, dS > 0: always spontaneous
+  dH > 0, dS < 0: never spontaneous
+  dH < 0, dS < 0: spontaneous at LOW T
+  dH > 0, dS > 0: spontaneous at HIGH T
+
+# Crossover temperature
+  T = dH/dS
+The temperature where dG changes sign.
+
+# Spontaneous is not fast
+Diamond turning to graphite is
+spontaneous and takes geological time.
+Spontaneity is thermodynamics; speed is
+kinetics.
+
+# Second and third laws
+The entropy of the universe always
+increases. A perfect crystal at 0 K has
+zero entropy.

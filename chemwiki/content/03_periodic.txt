@@ -1,0 +1,168 @@
+@CATEGORY The Periodic Table
+
+@ARTICLE Organization of the Table
+# Layout
+  period = row = shell number
+  group  = vertical column = same
+           valence electrons
+Elements in a group behave alike because
+they have the same valence arrangement.
+
+# Blocks
+  groups 1-2   s block
+  groups 13-18 p block
+  groups 3-12  d block (transition)
+  bottom rows  f block (lanthanides and
+               actinides)
+
+# Metals, nonmetals, metalloids
+Metals are on the left and center;
+nonmetals on the upper right; metalloids
+form the staircase between them (B, Si,
+Ge, As, Sb, Te).
+
+# Metal properties
+Shiny, conduct heat and electricity,
+malleable, ductile, LOSE electrons to
+form cations.
+
+# Nonmetal properties
+Dull, brittle, poor conductors, GAIN or
+share electrons to form anions.
+
+# Mendeleev
+Arranged by mass and left gaps for
+undiscovered elements, predicting their
+properties. Moseley later reordered by
+atomic number, fixing the anomalies.
+
+@ARTICLE Groups and Families
+# Group 1: alkali metals
+Li Na K Rb Cs Fr
+One valence electron, form 1+ ions, very
+reactive, soft, react vigorously with
+water. Reactivity INCREASES down the
+group. Never found free in nature.
+
+# Group 2: alkaline earth metals
+Be Mg Ca Sr Ba Ra
+Two valence electrons, form 2+ ions,
+reactive but less so than group 1.
+
+# Groups 3-12: transition metals
+Form colored compounds, often have
+multiple oxidation states (hence Roman
+numerals in names), many are good
+catalysts, generally hard with high
+melting points.
+
+# Group 17: halogens
+F Cl Br I At
+Seven valence electrons, form 1- ions,
+very reactive nonmetals, diatomic.
+Reactivity DECREASES down the group.
+Fluorine is the most reactive nonmetal.
+
+# Group 18: noble gases
+He Ne Ar Kr Xe Rn
+Full valence shell, essentially inert,
+monatomic gases.
+
+# Diatomic elements
+  H2 N2 O2 F2 Cl2 Br2 I2
+Remember "HONClBrIF" or the "7 up"
+pattern on the table.
+
+@ARTICLE Periodic Trends
+# Atomic radius
+  decreases across a period ->
+  increases down a group
+Across a period the nuclear charge grows
+while the shell stays the same, so
+electrons are pulled in tighter. Down a
+group a whole new shell is added.
+
+# Ionization energy
+Energy to remove an electron.
+  increases across a period ->
+  decreases down a group
+Opposite of radius: smaller atoms hold
+their electrons more tightly. Noble
+gases have the highest.
+
+# Electronegativity
+Pull on shared electrons in a bond.
+  increases across a period ->
+  decreases down a group
+Fluorine is the highest at 4.0. Noble
+gases are usually not assigned values.
+
+# Electron affinity
+Energy change when an electron is added.
+Roughly follows electronegativity;
+halogens are the most favorable.
+
+# Metallic character
+  decreases across a period ->
+  increases down a group
+The exact opposite of electronegativity.
+
+# The one-line summary
+Everything except radius and metallic
+character increases up and to the right,
+toward fluorine.
+
+@ARTICLE Ionic Radius and Shielding
+# Cations are smaller
+Losing electrons often removes an entire
+shell, and the remaining electrons are
+pulled in harder.
+  Na is 186 pm, Na+ is 102 pm
+
+# Anions are larger
+Adding electrons increases repulsion and
+spreads the cloud out.
+  Cl is 99 pm, Cl- is 181 pm
+
+# Isoelectronic series
+Species with the same electron count.
+Radius shrinks as nuclear charge rises:
+  N3- > O2- > F- > Ne > Na+ > Mg2+
+
+# Effective nuclear charge
+  Z_eff = Z - (shielding electrons)
+Inner electrons shield the outer ones
+from the nucleus. Across a period Z_eff
+rises, which drives most trends.
+
+# Successive ionization energies
+Each removal costs more. A huge jump
+appears once you break into a full
+shell, which reveals the valence count.
+
+@ARTICLE Common Ions by Group
+# Predictable charges
+  group 1   1+   Na+, K+
+  group 2   2+   Mg2+, Ca2+
+  group 13  3+   Al3+
+  group 14  4+/4-  (usually covalent)
+  group 15  3-   N3-, P3-
+  group 16  2-   O2-, S2-
+  group 17  1-   F-, Cl-, Br-, I-
+  group 18  none
+
+# Why
+Atoms gain or lose electrons to reach a
+noble gas configuration: the octet rule.
+
+# Always these charges
+  Ag+     Zn2+    Cd2+
+  Al3+    Sc3+
+
+# Multiple charges (Roman numerals)
+  Fe2+ Fe3+     iron(II), iron(III)
+  Cu+  Cu2+     copper(I), copper(II)
+  Pb2+ Pb4+     lead(II), lead(IV)
+  Sn2+ Sn4+     tin(II), tin(IV)
+  Cr2+ Cr3+     Mn2+ Mn4+
+  Co2+ Co3+     Hg2^2+ Hg2+

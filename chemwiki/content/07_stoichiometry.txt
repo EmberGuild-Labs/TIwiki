@@ -1,0 +1,182 @@
+@CATEGORY Stoichiometry
+
+@ARTICLE The Mole
+  1 mol = 6.022e23 particles
+  N_A = 6.022e23 /mol
+Avogadro's number. A mole is just a
+count, like a dozen, chosen so that
+atomic mass units scale up to grams.
+
+# The three faces of a mole
+  1 mol = 6.022e23 particles
+  1 mol = molar mass in grams
+  1 mol gas = 22.4 L at STP
+
+# Molar mass
+Add the atomic masses from the periodic
+table, in g/mol.
+  H2O = 2(1.008) + 16.00 = 18.02 g/mol
+  Ca(NO3)2 = 40.08 + 2(14.01)
+           + 6(16.00) = 164.10 g/mol
+
+# Conversions
+  mol = mass/molar mass
+  mass = mol * molar mass
+  particles = mol * 6.022e23
+
+# Particles vs atoms
+One mole of H2O contains 6.022e23
+MOLECULES but 3 times that many atoms.
+Read the question carefully.
+
+@ARTICLE Mole Conversions
+Everything routes through moles. Draw
+the map before calculating.
+
+  mass <-> MOLES <-> particles
+            ^
+            |
+      volume of gas (22.4 L at STP)
+      or volume of solution (M = mol/L)
+
+# The four bridges
+  grams to moles:  divide by molar mass
+  moles to grams:  multiply
+  moles to particles: * 6.022e23
+  moles of gas to L at STP: * 22.4
+
+# Between two substances
+Use the coefficients from the BALANCED
+equation as a mole ratio. This is the
+only step that crosses from one
+substance to another.
+
+# Example
+How many grams of H2O from 10.0 g CH4?
+  CH4 + 2O2 -> CO2 + 2H2O
+  10.0 g CH4 * (1 mol/16.04 g)
+    = 0.623 mol CH4
+  * (2 mol H2O/1 mol CH4)
+    = 1.247 mol H2O
+  * (18.02 g/mol) = 22.5 g H2O
+
+# The universal recipe
+grams of A -> moles of A -> moles of B
+-> grams of B
+
+@ARTICLE Limiting Reactant
+The reactant that runs out first sets
+how much product you can make.
+
+# Method 1: make the product
+Convert EACH reactant to moles of the
+same product. The smaller answer is
+correct, and that reactant is limiting.
+
+# Method 2: compare ratios
+Divide each reactant's moles by its
+coefficient. The smallest value is
+limiting.
+
+# Excess reactant left over
+  used = moles limiting * ratio
+  left = initial - used
+Convert back to grams if asked.
+
+# Example
+2.0 mol H2 with 2.0 mol O2:
+  2H2 + O2 -> 2H2O
+  H2: 2.0/2 = 1.0
+  O2: 2.0/1 = 2.0
+H2 is limiting, giving 2.0 mol H2O and
+leaving 1.0 mol O2 unused.
+
+# Warning
+You cannot tell by mass alone which
+runs out. Always convert to moles first.
+
+@ARTICLE Percent Yield
+  % yield = (actual/theoretical) * 100
+
+# Theoretical yield
+The maximum from the stoichiometry,
+starting from the limiting reactant.
+
+# Actual yield
+What was really collected in the lab.
+Always measured, never calculated.
+
+# Why yields fall short
+- The reaction does not go to completion
+- Side reactions consume reactants
+- Product is lost transferring or
+filtering
+- Impure reactants
+
+# Over 100%
+Not physically possible. It means the
+product is still wet or contaminated.
+
+# Percent error
+  % error = |actual - accepted|
+            /accepted * 100
+
+@ARTICLE Percent Composition
+  % element = (mass of element in
+              1 mol/molar mass) * 100
+
+# Example: water
+  H: 2(1.008)/18.02 = 11.2%
+  O: 16.00/18.02 = 88.8%
+The percentages must add to 100.
+
+# From experimental mass
+  % = (mass of element/total mass)*100
+
+# Uses
+- Comparing fertilizers by nitrogen
+content
+- Checking purity
+- The first step toward an empirical
+formula
+
+# Percent water in a hydrate
+  % = (mass H2O/mass hydrate) * 100
+Found by heating until the mass stops
+changing.
+
+@ARTICLE Empirical and Molecular Formulas
+# Empirical formula
+The simplest whole-number ratio of
+atoms. CH2O for glucose.
+
+# Molecular formula
+The actual count. C6H12O6 for glucose.
+  molecular = (empirical) * n
+  n = molar mass/empirical mass
+
+# Finding the empirical formula
+1. Assume 100 g, so percents become
+grams.
+2. Convert each to moles.
+3. Divide every result by the smallest.
+4. If a value is near .5, .33 or .25,
+multiply all of them by 2, 3 or 4.
+5. Round to whole numbers.
+
+# Example
+40.0% C, 6.7% H, 53.3% O
+  C: 40.0/12.01 = 3.33
+  H: 6.7/1.008  = 6.65
+  O: 53.3/16.00 = 3.33
+Divide by 3.33: 1, 2, 1 -> CH2O
+
+# Then the molecular formula
+If the molar mass is 180 g/mol:
+  180/30.03 = 6, so C6H12O6
+
+# Combustion analysis
+All the carbon ends up in CO2 and all
+the hydrogen in H2O. Work back to moles
+of C and H, then get oxygen by
+subtracting from the sample mass.

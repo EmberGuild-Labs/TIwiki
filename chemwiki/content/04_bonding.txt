@@ -1,0 +1,244 @@
+@CATEGORY Chemical Bonding
+
+@ARTICLE Ionic Bonding
+Metal plus nonmetal. Electrons are
+TRANSFERRED, making cations and anions
+that attract electrostatically.
+
+# Formation
+  Na loses 1 e- -> Na+
+  Cl gains 1 e- -> Cl-
+  attraction gives NaCl
+
+# Properties of ionic compounds
+- High melting and boiling points
+- Hard and brittle: shifting the lattice
+puts like charges together and it
+shatters
+- Conduct electricity when molten or
+dissolved, NOT as a solid
+- Usually soluble in water
+- Form crystal lattices, not molecules
+
+# Formula units
+There is no such thing as an NaCl
+molecule. The formula gives the simplest
+whole-number ratio in the lattice.
+
+# Lattice energy
+Energy released forming the lattice from
+gaseous ions. It grows with larger
+charges and smaller ions, so MgO melts
+far higher than NaCl.
+
+# Predicting formulas
+Balance the charges with the crossover
+rule, then reduce:
+  Al3+ and O2- -> Al2O3
+
+@ARTICLE Covalent Bonding
+Nonmetal plus nonmetal. Electrons are
+SHARED.
+
+# Types
+  single bond   1 shared pair
+  double bond   2 shared pairs
+  triple bond   3 shared pairs
+More bonds means shorter and stronger.
+
+# Bond length and strength
+  C-C > C=C > C(triple)C in length
+  and the reverse in strength
+
+# Properties of molecular compounds
+- Low melting and boiling points
+- Often gases or liquids at room
+temperature
+- Do not conduct electricity
+- Soluble in nonpolar solvents if
+nonpolar themselves
+
+# Polar vs nonpolar bonds
+From the electronegativity difference:
+  0 to 0.4     nonpolar covalent
+  0.4 to 1.7   polar covalent
+  above 1.7    mostly ionic
+These cutoffs are guidelines, not laws.
+
+# Network covalent
+Diamond, quartz and silicon carbide are
+giant covalent lattices: extremely hard
+with very high melting points.
+
+@ARTICLE Lewis Structures
+# Steps
+1. Count total valence electrons. Add
+one per negative charge, subtract one
+per positive charge.
+2. Put the least electronegative atom in
+the center. Never hydrogen.
+3. Connect with single bonds.
+4. Complete octets on the outer atoms.
+5. Put leftovers on the central atom.
+6. If the center is short, make double
+or triple bonds using outer lone pairs.
+
+# The octet rule
+Most atoms want 8 valence electrons.
+Hydrogen wants 2.
+
+# Exceptions
+- H and He: 2 electrons
+- Be: often 4, B and Al: often 6
+- Period 3 and beyond can expand past 8
+(PCl5, SF6) using d orbitals
+- Odd electron counts (NO, NO2) cannot
+satisfy every octet
+
+# Formal charge
+  FC = valence - lone - (bonds)
+The best structure keeps formal charges
+near zero, and any negative charge on
+the most electronegative atom.
+
+# Resonance
+When several equivalent structures are
+possible (ozone, nitrate, benzene), the
+real molecule is an average of them, not
+a flicker between them.
+
+@ARTICLE VSEPR and Molecular Shapes
+Electron groups repel and spread as far
+apart as possible. Count bonding groups
+(a double bond counts once) plus lone
+pairs on the central atom.
+
+# 2 groups: linear, 180
+  0 lone: linear (CO2)
+
+# 3 groups: trigonal planar, 120
+  0 lone: trigonal planar (BF3)
+  1 lone: bent, about 118 (SO2)
+
+# 4 groups: tetrahedral, 109.5
+  0 lone: tetrahedral (CH4)
+  1 lone: trigonal pyramidal (NH3, 107)
+  2 lone: bent (H2O, 104.5)
+
+# 5 groups: trig. bipyramidal, 90/120
+  0 lone: trigonal bipyramidal (PCl5)
+  1 lone: seesaw
+  2 lone: T-shaped
+  3 lone: linear
+
+# 6 groups: octahedral, 90
+  0 lone: octahedral (SF6)
+  1 lone: square pyramidal
+  2 lone: square planar
+
+# Lone pairs squeeze
+Lone pairs take more room than bonding
+pairs, so each one shrinks the bond
+angles by roughly 2 degrees.
+
+@ARTICLE Polarity
+A molecule is polar if it has polar
+bonds AND they do not cancel.
+
+# Two-step test
+1. Are the bonds polar? Check the
+electronegativity differences.
+2. Do the dipoles cancel by symmetry?
+
+# Symmetric, so nonpolar
+  CO2 (linear)
+  CH4, CCl4 (tetrahedral)
+  BF3 (trigonal planar)
+  SF6 (octahedral)
+Identical outer atoms arranged
+symmetrically always cancel.
+
+# Asymmetric, so polar
+  H2O (bent)
+  NH3 (trigonal pyramidal)
+  CHCl3 (different outer atoms)
+A lone pair on the central atom almost
+always makes a molecule polar.
+
+# Dipole moment
+Points from the positive toward the
+negative end. Measured in debyes.
+
+# Why it matters
+Like dissolves like. Polar solvents
+dissolve polar and ionic solutes;
+nonpolar solvents dissolve nonpolar
+solutes.
+
+@ARTICLE Intermolecular Forces
+Forces BETWEEN molecules, far weaker
+than the bonds inside them. They set
+melting and boiling points.
+
+# Weakest to strongest
+1. London dispersion forces
+2. Dipole-dipole
+3. Hydrogen bonding
+4. Ion-dipole
+
+# London dispersion
+Present in everything. Caused by
+momentary uneven electron distribution.
+Stronger for larger, heavier, more
+polarizable molecules, which is why
+boiling point rises down the halogens.
+
+# Dipole-dipole
+Between permanent dipoles in polar
+molecules.
+
+# Hydrogen bonding
+A special strong dipole-dipole when H is
+bonded to N, O or F and attracted to a
+lone pair on another N, O or F.
+Responsible for water's high boiling
+point, ice floating, and the shape of
+DNA and proteins.
+
+# Ion-dipole
+Between an ion and a polar molecule.
+This is what dissolves salt in water.
+
+# Consequences
+Stronger intermolecular forces mean
+higher boiling point, higher viscosity,
+higher surface tension and lower vapor
+pressure.
+
+@ARTICLE Metallic Bonding
+A lattice of cations in a "sea" of
+delocalized valence electrons that
+belong to the whole crystal.
+
+# Explains the properties
+- Conducts electricity: the electrons
+move freely, as a solid AND as a liquid
+- Conducts heat: mobile electrons carry
+energy
+- Malleable and ductile: layers slide
+without breaking bonds, unlike brittle
+ionic solids
+- Shiny: free electrons re-emit light
+
+# Strength
+More valence electrons and smaller
+cations give stronger bonding and higher
+melting points. Sodium melts at 98 C,
+tungsten at 3422 C.
+
+# Alloys
+Solid solutions of metals. Different
+sized atoms disrupt the sliding layers,
+so alloys are usually harder than the
+pure metals. Steel is iron plus carbon;
+brass is copper plus zinc.

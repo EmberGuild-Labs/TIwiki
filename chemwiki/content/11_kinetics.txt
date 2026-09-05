@@ -1,0 +1,226 @@
+@CATEGORY Kinetics and Equilibrium
+
+@ARTICLE Reaction Rates
+  rate = change in concentration/time
+Units usually M/s.
+
+# From a balanced equation
+Rates relate through the coefficients:
+  aA + bB -> cC
+  -(1/a)d[A]/dt = (1/c)d[C]/dt
+Reactants are consumed, so their rate is
+written with a minus sign.
+
+# Collision theory
+A reaction needs collisions that are
+1. energetic enough to reach the
+activation energy, and
+2. correctly oriented.
+Most collisions fail on one or both
+counts.
+
+# Activation energy Ea
+The energy barrier between reactants and
+products. A higher barrier means a slower
+reaction.
+
+# Energy diagrams
+Reactants on the left, products on the
+right, the peak is the transition state.
+  Ea = peak - reactants
+  dH = products - reactants
+Exothermic diagrams end lower than they
+start.
+
+# Arrhenius equation
+  k = A*e^(-Ea/(RT))
+Raising the temperature increases k
+sharply because it puts far more
+molecules above Ea.
+
+@ARTICLE Factors Affecting Rate
+# Temperature
+The biggest effect. A rough rule is that
+a 10 C rise roughly doubles the rate.
+More collisions, and far more of them
+above Ea.
+
+# Concentration
+More particles per volume means more
+collisions per second. For gases,
+increasing the pressure does the same.
+
+# Surface area
+Only for heterogeneous reactions. Powder
+reacts much faster than a lump, which is
+why grain dust can explode.
+
+# Catalyst
+Provides a different pathway with a
+LOWER activation energy. It is not
+consumed and does not change dH, dG or
+the position of equilibrium; it just
+gets there faster, and speeds the forward
+and reverse reactions equally.
+
+# Nature of the reactants
+Ionic reactions in solution are nearly
+instant; reactions that break covalent
+bonds are slower.
+
+# Enzymes
+Biological catalysts, highly specific,
+and sensitive to temperature and pH.
+
+@ARTICLE Rate Laws
+  rate = k[A]^m[B]^n
+m and n are the ORDERS. They must be
+found experimentally and are NOT the
+coefficients from the equation.
+
+# Overall order
+  m + n
+
+# Reading experimental data
+Compare two trials where only one
+concentration changes.
+- Double [A], rate unchanged: order 0
+- Double [A], rate doubles: order 1
+- Double [A], rate quadruples: order 2
+
+# Integrated rate laws
+  zero order:  [A] = -kt + [A]0
+    straight line on [A] vs t
+  first order: ln[A] = -kt + ln[A]0
+    straight line on ln[A] vs t
+  second order: 1/[A] = kt + 1/[A]0
+    straight line on 1/[A] vs t
+
+# Half-life
+  first order: t = 0.693/k
+Only for first order is the half-life
+independent of concentration, which is
+why radioactive decay works that way.
+
+# Units of k
+  zero order:   M/s
+  first order:  1/s
+  second order: 1/(M*s)
+
+# Mechanisms
+The slowest elementary step is the rate
+determining step, and its molecularity
+does set the rate law.
+
+@ARTICLE Equilibrium and Keq
+Equilibrium is reached when the forward
+and reverse rates are EQUAL. The
+concentrations stop changing but both
+reactions continue: it is dynamic, not
+stopped.
+
+# Equilibrium constant
+For aA + bB <-> cC + dD
+  K = [C]^c[D]^d / ([A]^a[B]^b)
+Products over reactants, each raised to
+its coefficient.
+
+# What to leave out
+Pure solids and pure liquids are omitted
+because their concentrations do not
+change. Solvent water in dilute solution
+is omitted too.
+
+# Reading K
+  K >> 1  products favored
+  K << 1  reactants favored
+  K near 1  both significant
+
+# Kp and Kc
+  Kp = Kc(RT)^dn
+dn is the change in moles of gas.
+
+# Manipulating K
+- Reverse the reaction: K becomes 1/K
+- Multiply coefficients by n: K^n
+- Add reactions: multiply the K values
+
+# ICE tables
+Initial, Change, Equilibrium. Put in the
+initial values, express the change with
+x scaled by the coefficients, then solve.
+If K is very small, assume x is
+negligible against the initial value and
+check that it is under 5%.
+
+@ARTICLE Le Chatelier's Principle
+A system at equilibrium responds to a
+stress by shifting to partly relieve it.
+
+# Concentration
+Add a substance and the system shifts
+AWAY from it. Remove one and it shifts
+TOWARD it. Removing a product as it
+forms drives a reaction forward.
+
+# Pressure and volume
+Only affects gases. Increasing the
+pressure (smaller volume) shifts toward
+the side with FEWER moles of gas. If the
+gas moles are equal on both sides, there
+is no shift.
+
+# Adding an inert gas
+At constant volume, no effect: the
+partial pressures do not change.
+
+# Temperature
+The only stress that changes K itself.
+Treat heat as a reactant or product.
+- Exothermic: heat is a product, so
+raising T shifts LEFT and lowers K
+- Endothermic: raising T shifts RIGHT
+and raises K
+
+# Catalyst
+No shift at all. It only shortens the
+time to reach equilibrium.
+
+# Reaction quotient Q
+Same expression as K, using current
+concentrations.
+  Q < K  shifts right (toward products)
+  Q > K  shifts left
+  Q = K  at equilibrium
+
+@ARTICLE Solubility Product
+For a slightly soluble salt:
+  AgCl(s) <-> Ag+ + Cl-
+  Ksp = [Ag+][Cl-]
+The solid is not in the expression.
+
+# General form
+  AxBy <-> xA + yB
+  Ksp = [A]^x[B]^y
+
+# Molar solubility s
+For AgCl: [Ag+] = [Cl-] = s, so
+  Ksp = s^2 and s = sqrt(Ksp)
+For CaF2: [Ca2+] = s, [F-] = 2s, so
+  Ksp = s(2s)^2 = 4s^3
+
+# Comparing salts
+You can only compare Ksp values directly
+for salts with the same ion ratio.
+
+# Common ion effect
+Adding an ion already in the equilibrium
+pushes it left and LOWERS the solubility.
+AgCl is far less soluble in NaCl solution
+than in pure water.
+
+# Predicting a precipitate
+Compute Q with the mixed concentrations.
+  Q > Ksp  precipitate forms
+  Q = Ksp  saturated
+  Q < Ksp  no precipitate

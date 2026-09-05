@@ -1,0 +1,179 @@
+@CATEGORY Gases
+
+@ARTICLE Gas Laws
+Temperature must be in KELVIN for every
+one of these.
+
+# Boyle's law (T, n fixed)
+  P1*V1 = P2*V2
+Pressure and volume are inversely
+related. Squeeze it and the pressure
+rises.
+
+# Charles's law (P, n fixed)
+  V1/T1 = V2/T2
+Heat a balloon and it expands.
+
+# Gay-Lussac's law (V, n fixed)
+  P1/T1 = P2/T2
+Heating a sealed can raises the
+pressure, which is why aerosols warn
+against fire.
+
+# Avogadro's law (P, T fixed)
+  V1/n1 = V2/n2
+Equal volumes of gas hold equal numbers
+of molecules.
+
+# Combined gas law
+  P1*V1/T1 = P2*V2/T2
+Covers all of the above; drop whatever
+stays constant.
+
+# Pressure units
+  1 atm = 760 mmHg = 760 torr
+  1 atm = 101.3 kPa = 101325 Pa
+  1 atm = 14.7 psi
+
+@ARTICLE Ideal Gas Law
+  PV = nRT
+
+# R depends on the pressure unit
+  0.0821 L*atm/(mol*K)
+  8.314 J/(mol*K)
+  62.4 L*mmHg/(mol*K)
+Pick the R whose units match your data.
+
+# Rearrangements
+  n = PV/(RT)
+  molar mass = mRT/(PV)
+  density = PM/(RT)
+That last one shows gas density rises
+with pressure and molar mass and falls
+with temperature.
+
+# STP
+  0 C (273.15 K) and 1 atm
+  1 mol of any gas = 22.4 L
+
+# SATP
+  25 C and 1 bar, molar volume 24.8 L
+Check which your course uses.
+
+# Assumptions of an ideal gas
+- Particles have negligible volume
+- No attractive forces between them
+- Collisions are perfectly elastic
+- Average kinetic energy is proportional
+to the kelvin temperature
+
+@ARTICLE Partial Pressures
+# Dalton's law
+  P_total = P1 + P2 + P3 + ...
+Each gas in a mixture exerts pressure
+independently of the others.
+
+# Mole fraction
+  X_A = n_A/n_total
+  P_A = X_A * P_total
+Mole fractions add to 1.
+
+# Collecting a gas over water
+The gas is mixed with water vapor:
+  P_gas = P_total - P_water
+The vapor pressure of water depends only
+on the temperature and is looked up in a
+table (23.8 mmHg at 25 C).
+
+# Why it matters
+Forgetting to subtract the water vapor
+is the most common error in gas
+collection labs.
+
+@ARTICLE Kinetic Theory and Effusion
+# Average kinetic energy
+  KE_avg = (3/2)*k_B*T
+Depends ONLY on temperature. At the same
+temperature, every gas has the same
+average kinetic energy.
+
+# Root mean square speed
+  u_rms = sqrt(3RT/M)
+M is the molar mass in kg/mol. Lighter
+molecules move faster at the same
+temperature.
+
+# Graham's law
+  rate1/rate2 = sqrt(M2/M1)
+Rate of effusion is inversely
+proportional to the square root of the
+molar mass. Helium escapes a balloon
+much faster than air.
+
+# Diffusion vs effusion
+Diffusion is spreading through another
+gas; effusion is escaping through a tiny
+hole. Graham's law describes both.
+
+# Maxwell-Boltzmann distribution
+A curve of molecular speeds. Raising the
+temperature flattens and widens it and
+shifts the peak to the right; the area
+under it stays constant.
+
+@ARTICLE Real Gases
+Real gases deviate from ideal behavior
+at HIGH pressure and LOW temperature.
+
+# Why
+- At high pressure the molecules' own
+volume is no longer negligible.
+- At low temperature the attractions
+between molecules matter, so they hit
+the walls less hard.
+
+# Van der Waals equation
+  (P + a*n^2/V^2)(V - n*b) = nRT
+a corrects for attraction, b for
+molecular volume. Both are larger for
+bigger, more polar molecules.
+
+# Which gases behave most ideally
+Small, nonpolar, light gases: He, H2,
+Ne. Gases like NH3 and H2O deviate the
+most because they hydrogen bond.
+
+# Rule of thumb
+The ideal gas law is good to within a
+few percent at ordinary temperatures and
+pressures near 1 atm.
+
+@ARTICLE Gas Stoichiometry
+Gases join the usual mole map through
+volume.
+
+# At STP
+  1 mol = 22.4 L
+Use it exactly like molar mass, as a
+conversion factor.
+
+# Not at STP
+Convert with the ideal gas law:
+  n = PV/(RT)
+then continue with mole ratios.
+
+# Volume-volume shortcut
+At the same temperature and pressure,
+volumes of gases combine in the same
+ratio as the coefficients.
+  N2 + 3H2 -> 2NH3
+So 1 L of N2 needs 3 L of H2 and gives
+2 L of NH3, with no mole conversion
+needed.
+
+# Example
+Liters of O2 at STP to burn 5.00 g CH4?
+  CH4 + 2O2 -> CO2 + 2H2O
+  5.00/16.04 = 0.312 mol CH4
+  * 2 = 0.623 mol O2
+  * 22.4 L/mol = 14.0 L

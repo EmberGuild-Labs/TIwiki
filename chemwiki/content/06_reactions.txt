@@ -1,0 +1,214 @@
+@CATEGORY Chemical Reactions
+
+@ARTICLE Balancing Equations
+Mass is conserved, so every element must
+have the same atom count on both sides.
+
+# Rules
+- Change only COEFFICIENTS, never
+subscripts. Changing a subscript changes
+the substance.
+- Coefficients must end in the smallest
+whole-number ratio.
+
+# Strategy
+1. Balance metals first.
+2. Then nonmetals other than O and H.
+3. Then hydrogen.
+4. Then oxygen last.
+5. If an odd/even conflict blocks you,
+double everything.
+6. Treat a polyatomic ion that survives
+intact as one unit.
+
+# Example
+  __C3H8 + __O2 -> __CO2 + __H2O
+  C: 3 -> coefficient 3 on CO2
+  H: 8 -> coefficient 4 on H2O
+  O: 6 + 4 = 10, so 5 on O2
+  C3H8 + 5O2 -> 3CO2 + 4H2O
+
+# State symbols
+  (s) solid    (l) liquid
+  (g) gas      (aq) dissolved in water
+
+@ARTICLE Types of Reactions
+# Synthesis (combination)
+  A + B -> AB
+  2Na + Cl2 -> 2NaCl
+
+# Decomposition
+  AB -> A + B
+  2H2O -> 2H2 + O2
+Metal carbonates give the oxide plus
+CO2; metal hydroxides give the oxide
+plus water.
+
+# Single replacement
+  A + BC -> AC + B
+  Zn + 2HCl -> ZnCl2 + H2
+Only happens if A is more reactive than
+B, which the activity series decides.
+
+# Double replacement
+  AB + CD -> AD + CB
+The ions swap partners. It only proceeds
+if a precipitate, a gas or water forms.
+
+# Combustion
+A hydrocarbon plus O2 gives CO2 and H2O.
+  CH4 + 2O2 -> CO2 + 2H2O
+Incomplete combustion gives CO or soot
+instead.
+
+# Acid-base neutralization
+  acid + base -> salt + water
+  HCl + NaOH -> NaCl + H2O
+
+# Recognizing them
+Count the reactants and products. Two
+into one is synthesis; one into two is
+decomposition; an element plus a
+compound is single replacement; two
+compounds is double replacement.
+
+@ARTICLE Solubility Rules
+Used to predict precipitates. Read them
+in order; the first rule that applies
+wins.
+
+# Always soluble
+- Group 1 ions (Li+, Na+, K+...)
+- Ammonium, NH4+
+- Nitrate, NO3-
+- Acetate, C2H3O2-
+- Chlorate, ClO3-
+
+# Soluble with exceptions
+- Cl-, Br-, I- soluble EXCEPT with
+Ag+, Pb2+, Hg2^2+
+- Sulfate SO4 2- soluble EXCEPT with
+Ba2+, Pb2+, Ca2+, Sr2+, Ag+
+
+# Generally insoluble
+- Carbonate CO3 2-
+- Phosphate PO4 3-
+- Chromate CrO4 2-
+- Sulfide S2-
+- Hydroxide OH-
+except when paired with group 1 or
+ammonium. Ca(OH)2, Sr(OH)2 and Ba(OH)2
+are slightly soluble.
+
+# The short version
+Nitrates, group 1 and ammonium salts
+always dissolve. Carbonates, phosphates,
+sulfides and hydroxides usually do not.
+
+# Using them
+Swap the ions, then check each product.
+If either is insoluble, a precipitate
+forms and the reaction happens.
+
+@ARTICLE Net Ionic Equations
+# The three forms
+- Molecular: everything written as whole
+compounds.
+- Complete ionic: every soluble ionic
+compound split into its ions.
+- Net ionic: spectator ions removed.
+
+# What splits
+Split only strong electrolytes that are
+(aq): soluble ionic compounds, strong
+acids and strong bases.
+
+# What does NOT split
+Solids, liquids, gases, weak acids, weak
+bases, and anything insoluble. Write
+those as whole formulas.
+
+# Example
+Molecular:
+  AgNO3(aq) + NaCl(aq)
+  -> AgCl(s) + NaNO3(aq)
+Complete ionic:
+  Ag+ + NO3- + Na+ + Cl-
+  -> AgCl(s) + Na+ + NO3-
+Net ionic:
+  Ag+(aq) + Cl-(aq) -> AgCl(s)
+
+# Spectator ions
+Ions that appear unchanged on both
+sides. Here Na+ and NO3-.
+
+# Check
+Both the atoms and the total charge must
+balance in a net ionic equation.
+
+@ARTICLE Activity Series
+A more active metal will replace a less
+active one from a compound.
+
+# Metals, most to least active
+  Li K Ba Ca Na Mg Al Zn Cr Fe Cd
+  Co Ni Sn Pb  H  Cu Ag Hg Pt Au
+
+# Reading it
+- A metal above another replaces it.
+- Metals above H displace hydrogen from
+acids; metals below H (Cu, Ag, Au) do
+not react with HCl.
+- Li through Na react with cold water.
+- Mg through Fe react with steam.
+
+# Example
+  Zn + CuSO4 -> ZnSO4 + Cu   works
+  Cu + ZnSO4 -> no reaction
+
+# Halogens, most to least active
+  F2 > Cl2 > Br2 > I2
+  Cl2 + 2NaBr -> 2NaCl + Br2
+
+# Connection to redox
+The activity series is just an ordering
+of how readily a metal is oxidized. The
+most active metals are the strongest
+reducing agents.
+
+@ARTICLE Oxidation Numbers
+# Rules in order
+1. Free element: 0 (including O2, Na)
+2. Monatomic ion: equal to its charge
+3. Group 1 is +1, group 2 is +2
+4. Fluorine is always -1
+5. Hydrogen is +1 (but -1 with metals,
+in hydrides like NaH)
+6. Oxygen is -2 (but -1 in peroxides,
+and +2 in OF2)
+7. The sum equals 0 for a compound, or
+the charge for a polyatomic ion
+
+# Example
+In SO4 2-, oxygen contributes 4(-2) =
+-8. The total must be -2, so sulfur is
++6.
+
+# Redox definitions
+  OIL RIG
+  Oxidation Is Loss of electrons
+  Reduction Is Gain of electrons
+Oxidation raises the oxidation number,
+reduction lowers it.
+
+# Agents
+The oxidizing agent is REDUCED, and the
+reducing agent is OXIDIZED. They are
+always opposite to what the name sounds
+like.
+
+# Spotting a redox reaction
+If any element's oxidation number
+changes, it is redox. Single replacement
+and combustion always are; double
+replacement never is.

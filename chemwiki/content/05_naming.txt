@@ -1,0 +1,204 @@
+@CATEGORY Naming and Formulas
+
+@ARTICLE Polyatomic Ions
+Memorize these; almost every naming and
+reaction problem uses them.
+
+# Charge 1-
+  acetate          C2H3O2-
+  bicarbonate      HCO3-
+  bisulfate        HSO4-
+  chlorate         ClO3-
+  chlorite         ClO2-
+  cyanide          CN-
+  dihydrogen phos. H2PO4-
+  hydroxide        OH-
+  hypochlorite     ClO-
+  nitrate          NO3-
+  nitrite          NO2-
+  perchlorate      ClO4-
+  permanganate     MnO4-
+
+# Charge 2-
+  carbonate        CO3 2-
+  chromate         CrO4 2-
+  dichromate       Cr2O7 2-
+  hydrogen phos.   HPO4 2-
+  oxalate          C2O4 2-
+  peroxide         O2 2-
+  sulfate          SO4 2-
+  sulfite          SO3 2-
+  thiosulfate      S2O3 2-
+
+# Charge 3-
+  phosphate        PO4 3-
+  phosphite        PO3 3-
+
+# Charge 1+
+  ammonium         NH4+
+  hydronium        H3O+
+
+# The -ate / -ite pattern
+The -ite ion has ONE fewer oxygen than
+the -ate ion, with the same charge.
+  sulfate SO4 2-, sulfite SO3 2-
+
+# The per- / hypo- pattern
+  perchlorate   ClO4-   (one more O)
+  chlorate      ClO3-
+  chlorite      ClO2-
+  hypochlorite  ClO-    (one fewer O)
+
+# Adding hydrogen
+Each H added raises the charge by 1.
+  PO4 3- -> HPO4 2- -> H2PO4-
+
+@ARTICLE Naming Ionic Compounds
+Metal first, then nonmetal. The name
+never uses prefixes.
+
+# Simple binary
+Name the metal, then the nonmetal root
+plus -ide.
+  NaCl    sodium chloride
+  MgO     magnesium oxide
+  Al2S3   aluminum sulfide
+
+# With a polyatomic ion
+Keep the polyatomic name as it is.
+  Na2SO4  sodium sulfate
+  CaCO3   calcium carbonate
+  NH4Cl   ammonium chloride
+
+# Transition metals: Roman numerals
+The numeral gives the charge on the
+metal, NOT the number of atoms.
+  FeCl2   iron(II) chloride
+  FeCl3   iron(III) chloride
+  Cu2O    copper(I) oxide
+
+# Finding the charge
+Work backwards from the anion.
+  Fe2O3: 3 oxygens at 2- is 6-, so two
+  irons share 6+, giving Fe3+
+  = iron(III) oxide
+
+# No numeral needed
+Group 1, group 2, Al, Zn, Ag and Cd have
+only one common charge.
+
+# Writing formulas from names
+Balance total positive against total
+negative, then reduce the subscripts.
+Use parentheses around a polyatomic ion
+that needs a subscript:
+  calcium nitrate = Ca(NO3)2
+
+@ARTICLE Naming Covalent Compounds
+Two nonmetals. Here you DO use prefixes.
+
+# Prefixes
+  1 mono    6 hexa
+  2 di      7 hepta
+  3 tri     8 octa
+  4 tetra   9 nona
+  5 penta  10 deca
+
+# Rules
+- First element keeps its name; skip
+"mono" on the first element.
+- Second element gets the -ide ending
+and always takes a prefix.
+- Drop a trailing vowel before oxide:
+monooxide becomes monoxide.
+
+# Examples
+  CO     carbon monoxide
+  CO2    carbon dioxide
+  N2O4   dinitrogen tetroxide
+  PCl5   phosphorus pentachloride
+  SF6    sulfur hexafluoride
+  P4O10  tetraphosphorus decoxide
+
+# Common names that stay
+  H2O   water
+  NH3   ammonia
+  CH4   methane
+  H2O2  hydrogen peroxide
+
+# The big distinction
+Metal + nonmetal: ionic, no prefixes,
+maybe a Roman numeral.
+Nonmetal + nonmetal: covalent, prefixes,
+never a Roman numeral.
+
+@ARTICLE Naming Acids
+An acid starts with H in the formula.
+
+# No oxygen: hydro- ...-ic acid
+  HCl    hydrochloric acid
+  HBr    hydrobromic acid
+  HI     hydroiodic acid
+  HF     hydrofluoric acid
+  H2S    hydrosulfuric acid
+  HCN    hydrocyanic acid
+
+# With oxygen, from an -ate ion: -ic
+  HNO3    nitric acid      (nitrate)
+  H2SO4   sulfuric acid    (sulfate)
+  H3PO4   phosphoric acid  (phosphate)
+  H2CO3   carbonic acid    (carbonate)
+  HClO3   chloric acid     (chlorate)
+  HC2H3O2 acetic acid      (acetate)
+
+# With oxygen, from an -ite ion: -ous
+  HNO2   nitrous acid      (nitrite)
+  H2SO3  sulfurous acid    (sulfite)
+  HClO2  chlorous acid     (chlorite)
+
+# The memory line
+  -ate becomes -ic
+  -ite becomes -ous
+  no oxygen becomes hydro- ...-ic
+
+# Bases
+Metal hydroxides, named as ordinary
+ionic compounds.
+  NaOH   sodium hydroxide
+  Ca(OH)2 calcium hydroxide
+
+@ARTICLE Hydrates and Formula Writing
+# Hydrates
+Ionic compounds with water trapped in
+the crystal. Use a prefix plus
+"hydrate".
+  CuSO4 * 5H2O
+  copper(II) sulfate pentahydrate
+  CoCl2 * 6H2O
+  cobalt(II) chloride hexahydrate
+
+# Anhydrous
+The same compound with the water driven
+off by heating. The color often changes:
+blue CuSO4*5H2O turns white.
+
+# Percent water in a hydrate
+  % = (mass of water/total mass)*100
+
+# Crossover rule
+Write each ion with its charge, then
+swap the charge numbers to become the
+subscripts, then reduce.
+  Al3+ and O2-  ->  Al2O3
+  Mg2+ and O2-  ->  Mg2O2  ->  MgO
+
+# Parentheses
+Needed only when a polyatomic ion takes
+a subscript greater than one.
+  Fe(NO3)3, (NH4)2SO4, Ca(OH)2
+
+# Checking a formula
+The total positive charge must exactly
+cancel the total negative charge, and
+the subscripts must be in lowest terms
+for an ionic compound.

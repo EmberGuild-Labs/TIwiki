@@ -1,0 +1,214 @@
+@WIKI CHEMWIKI
+@CATEGORY Matter and Measurement
+
+@ARTICLE Classifying Matter
+# Pure substances
+Fixed composition, cannot be separated
+by physical means.
+- Element: one kind of atom. Cannot be
+broken down chemically.
+- Compound: two or more elements
+chemically bonded in a fixed ratio. Can
+be broken down only chemically.
+
+# Mixtures
+Variable composition, separated by
+physical means.
+- Homogeneous (solution): uniform
+throughout, one visible phase. Air,
+salt water, brass.
+- Heterogeneous: visibly different
+regions. Sand and water, salad, granite.
+
+# The test
+If you can separate it by filtering,
+evaporating or a magnet, it is a
+mixture. If you need a chemical reaction,
+it is a compound.
+
+# Law of definite proportions
+A compound always contains the same
+elements in the same mass ratio. Water
+is always 11.2% H and 88.8% O by mass.
+
+@ARTICLE Physical and Chemical Change
+# Physical properties
+Observed without changing the identity
+of the substance.
+  color, odor, density, melting point,
+  boiling point, solubility, hardness,
+  conductivity, malleability
+
+# Chemical properties
+Describe how a substance reacts.
+  flammability, reactivity with acid,
+  toxicity, ability to rust
+
+# Physical change
+Identity is unchanged. Phase changes,
+dissolving, crushing, cutting.
+
+# Chemical change
+New substances form. Signs to look for:
+- gas produced (bubbling)
+- precipitate forms
+- unexpected color change
+- heat or light given off or absorbed
+- change is hard to reverse
+
+# Careful
+Dissolving salt is physical; the salt is
+recoverable by evaporation. Boiling
+water is physical, even though it looks
+dramatic.
+
+@ARTICLE Intensive and Extensive
+# Intensive properties
+Do not depend on how much you have.
+  density, temperature, color, melting
+  point, boiling point, concentration
+Useful for identifying a substance.
+
+# Extensive properties
+Depend on the amount present.
+  mass, volume, length, total energy,
+  moles
+
+# The test
+Cut the sample in half. Anything that
+changes is extensive.
+
+# Why it matters
+Density identifies a substance because
+it is intensive: a gold ring and a gold
+bar have the same density.
+
+@ARTICLE Measurement and SI Units
+# Base units
+  mass          kilogram   kg
+  length        meter      m
+  time          second     s
+  temperature   kelvin     K
+  amount        mole       mol
+  current       ampere     A
+
+# Common derived units
+  volume        L, mL, cm^3
+  density       g/mL or g/cm^3
+  energy        joule J, calorie cal
+  pressure      atm, kPa, mmHg, torr
+  concentration mol/L (M)
+
+# Prefixes
+  nano   n   1e-9
+  micro  u   1e-6
+  milli  m   1e-3
+  centi  c   1e-2
+  kilo   k   1e3
+  mega   M   1e6
+
+# Useful equalities
+  1 mL = 1 cm^3
+  1 L = 1000 mL = 1000 cm^3
+  1 kg = 1000 g
+  1 m = 100 cm = 1000 mm
+
+# Temperature
+  K = C + 273.15
+  C = (5/9)(F - 32)
+Kelvin is required in all gas law and
+thermodynamics calculations.
+
+@ARTICLE Significant Figures
+# Counting rules
+1. All nonzero digits count.
+2. Zeros BETWEEN nonzero digits count.
+3. Leading zeros never count.
+4. Trailing zeros count only if there is
+a decimal point.
+
+# Examples
+  0.00340    3 sig figs
+  1200       2 sig figs
+  1200.      4 sig figs
+  1.200e3    4 sig figs
+  100.0      4 sig figs
+
+# Multiplying and dividing
+The answer takes the FEWEST sig figs of
+any factor.
+  4.56 * 1.4 = 6.4
+
+# Adding and subtracting
+The answer takes the fewest DECIMAL
+PLACES.
+  12.11 + 18.0 = 30.1
+
+# Exact numbers
+Counted objects and defined conversions
+(1 in = 2.54 cm) have infinite sig figs
+and never limit the answer.
+
+# Rounding
+Round only at the very end. Rounding in
+the middle of a multi-step problem
+introduces error.
+
+@ARTICLE Dimensional Analysis
+The single most useful technique in
+chemistry: multiply by conversion
+factors until the unwanted units cancel.
+
+# Setup
+  given * (want/have) = answer
+Put the unit you want to cancel on the
+bottom.
+
+# Example
+Convert 25.0 g of water to moles:
+  25.0 g * (1 mol/18.02 g) = 1.39 mol
+
+# Multi-step
+  g -> mol -> particles
+  g * (1 mol/molar mass)
+    * (6.022e23/1 mol)
+
+# Percent as a factor
+A 5.0% solution by mass gives
+  (5.0 g solute/100 g solution)
+
+# Checking
+If the units of your answer are wrong,
+the setup is wrong. Do the unit algebra
+first, then reach for the calculator.
+
+@ARTICLE Density
+  d = m/V
+  water = 1.00 g/mL at 4 C
+
+# Rearranged
+  m = d*V
+  V = m/d
+
+# Units
+Solids and liquids in g/mL or g/cm^3;
+gases in g/L, because gases are about a
+thousand times less dense.
+
+# Floating
+An object floats in a liquid if its
+density is lower. Ice (0.92 g/mL) floats
+on water.
+
+# Water displacement
+Volume of an irregular solid:
+  V = V_final - V_initial
+
+# Some densities (g/mL)
+  cork      0.24
+  ethanol   0.789
+  water     1.00
+  aluminum  2.70
+  iron      7.87
+  lead      11.3
+  gold      19.3

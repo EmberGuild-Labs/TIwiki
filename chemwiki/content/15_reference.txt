@@ -1,0 +1,265 @@
+@CATEGORY Reference and Lab
+
+@ARTICLE Constants and Conversions
+  N_A = 6.022e23 /mol
+  R = 0.0821 L*atm/(mol*K)
+  R = 8.314 J/(mol*K)
+  Kw = 1.0e-14 at 25 C
+  F = 96485 C/mol e-
+  c = 3.00e8 m/s
+  h = 6.626e-34 J*s
+  molar volume at STP = 22.4 L/mol
+
+# Pressure
+  1 atm = 760 mmHg = 760 torr
+  1 atm = 101.3 kPa = 14.7 psi
+
+# Energy
+  1 cal = 4.184 J
+  1 Cal (food) = 1000 cal
+  1 kJ = 1000 J
+
+# Temperature
+  K = C + 273.15
+  C = (5/9)(F - 32)
+
+# Water
+  density  1.00 g/mL
+  c        4.184 J/(g*C)
+  dH_fus   334 J/g
+  dH_vap   2260 J/g
+  Kf       1.86 C/m
+  Kb       0.512 C/m
+
+# Common molar masses (g/mol)
+  H2O   18.02     CO2   44.01
+  NaCl  58.44     O2    32.00
+  NH3   17.03     H2SO4 98.08
+  CaCO3 100.09    C6H12O6 180.16
+
+@ARTICLE Common Formulas
+# Moles
+  n = m/M
+  n = N/6.022e23
+  n = V(L)/22.4   (gas at STP)
+  n = M*V(L)      (solution)
+
+# Gases
+  PV = nRT
+  P1V1/T1 = P2V2/T2
+  P_total = sum of partial pressures
+
+# Solutions
+  M = mol/L
+  M1V1 = M2V2
+  dTf = i*Kf*m
+  dTb = i*Kb*m
+
+# Thermochemistry
+  q = m*c*dT
+  q = m*dH_phase
+  dH = sum(dHf prod) - sum(dHf react)
+  dG = dH - T*dS
+
+# Acids and bases
+  pH = -log[H+]
+  pH + pOH = 14
+  Kw = [H+][OH-] = 1.0e-14
+  Ka*Kb = Kw
+  pH = pKa + log([base]/[acid])
+
+# Equilibrium
+  K = products/reactants, each to its
+      coefficient
+  Ksp = ion product for a solid
+
+# Electrochemistry
+  E_cell = E_cathode - E_anode
+  dG = -nFE
+
+# Percent
+  % yield = actual/theoretical * 100
+  % comp = part/whole * 100
+
+@ARTICLE Lab Safety and Equipment
+# Always
+- Wear goggles the entire time
+- Tie back long hair, no loose sleeves
+- Know where the eyewash, shower and
+extinguisher are
+- Never eat, drink or taste anything
+- Never return unused chemical to the
+stock bottle
+
+# Never
+- Work alone
+- Point a heated test tube at anyone
+- Add water to concentrated acid; always
+add ACID TO WATER
+- Look directly down into a container
+being heated
+
+# Wafting
+To smell something, fan the vapor toward
+your nose with your hand rather than
+inhaling directly.
+
+# Glassware and precision
+  beaker         rough volume only
+  graduated cyl. good volume
+  volumetric flask very precise
+  burette        precise delivery
+  pipette        precise transfer
+
+# Reading a meniscus
+Read the BOTTOM of the curve at eye
+level, for water and most liquids.
+
+# Common apparatus
+Bunsen burner, ring stand, crucible and
+tongs, watch glass, evaporating dish,
+funnel and filter paper, wash bottle.
+
+# Separation techniques
+  filtration     solid from liquid
+  evaporation    dissolved solid
+  distillation   liquids by boiling pt
+  chromatography dissolved substances
+  magnet         magnetic material
+  decanting      pour off the liquid
+
+@ARTICLE Chemistry on the TI-84
+# Scientific notation
+Use the 2nd , (EE) key, not "x10^".
+  6.022e23 is typed 6.022 EE 23
+Typing *10^23 works but is slower and
+easier to mis-parenthesize.
+
+# pH calculations
+  pH:  (-) LOG ( [H+] )
+  [H+]: 2nd LOG ( (-) pH )
+Use the blue (-) key for negatives, not
+the gray subtraction key.
+
+# Logs
+LOG is base 10 for pH work. LN is base e
+for kinetics and the Nernst equation.
+
+# Solving the quadratic in equilibrium
+When the 5% approximation fails, use
+the Polynomial Root Finder app
+(PlySmlt2), or MATH > Solve(.
+
+# Lists for repeated calculations
+Put your masses in L1 and divide the
+whole list by a molar mass at once:
+  L1/18.02 -> L2
+Great for processing a whole lab data
+table.
+
+# Linear regression for lab data
+STAT > EDIT to enter x in L1 and y in
+L2, then STAT > CALC > 4:LinReg(ax+b).
+Turn DiagnosticOn to see r and r^2. Use
+it for Beer's law plots and rate data.
+
+# Straightening rate data
+Plot ln[A] vs t for first order, or
+1/[A] vs t for second order. Whichever
+gives the straighter line (r closest to
+-1 or 1) identifies the order.
+
+# Watch the MODE
+Set FLOAT for full precision while
+working, and check that you are not
+stuck in a fixed decimal setting that
+hides sig figs.
+
+@ARTICLE Common Mistakes
+# Units and conversions
+- Forgetting to convert to KELVIN in
+gas laws and thermodynamics
+- Using mL instead of L in molarity
+- Mixing up molarity (per L solution)
+and molality (per kg solvent)
+
+# Stoichiometry
+- Skipping the balancing step
+- Using the coefficient ratio on grams
+instead of moles
+- Assuming the reactant with the smaller
+mass is limiting
+
+# Formulas and naming
+- Changing subscripts to balance an
+equation
+- Using prefixes on an ionic compound
+- Forgetting the Roman numeral for a
+transition metal
+- Forgetting parentheses around a
+polyatomic ion with a subscript
+
+# Acids and bases
+- Treating a weak acid as fully ionized
+- Confusing strong with concentrated
+- Assuming pH 7 at every equivalence
+point
+
+# Equilibrium
+- Including solids or pure liquids in K
+- Forgetting to raise a concentration to
+its coefficient
+- Assuming a catalyst shifts equilibrium
+
+# General
+- Rounding in the middle of a multi-step
+calculation
+- Answering with the wrong number of sig
+figs
+- Not checking whether the answer is
+physically reasonable
+
+@ARTICLE About This App
+CHEMWIKI is an offline chemistry
+reference for the TI-84 Plus CE Python,
+built from the same engine as MATHWIKI
+and PHYSWIKI.
+
+# Controls
+  UP / DOWN     move the selection
+  LEFT / RIGHT  page up / page down
+  2ND or ENTER  open the selection
+  CLEAR or DEL  go back
+  Y=            search all articles
+  ZOOM          list every article
+  MODE          quit to the OS
+
+In any list, pressing a letter key jumps
+to the first entry starting with it.
+
+# In an article
+  UP / DOWN     scroll one line
+  LEFT / RIGHT  scroll one screen
+  WINDOW        jump to the top
+  GRAPH         jump to the end
+  TRACE         next article
+  CLEAR or DEL  back to the list
+
+# In search
+Type letters with the ordinary ALPHA
+key labels (no need to press ALPHA).
+  DEL     backspace
+  0       space
+  CLEAR   exit search
+Search matches article and category
+titles, so SOLUB finds the solubility
+rules and GAS finds every gas law
+article. It does not yet search inside
+article text.
+
+# Adding your own articles
+Edit the plain text files in
+chemwiki/content/, rebuild, and send the
+new .8xp back to the calculator. The
+format is documented in the project
+README.

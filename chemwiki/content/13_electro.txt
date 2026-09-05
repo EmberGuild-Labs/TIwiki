@@ -1,0 +1,172 @@
+@CATEGORY Electrochemistry and Nuclear
+
+@ARTICLE Balancing Redox
+# Half reactions
+Split into oxidation and reduction, then
+balance each separately.
+
+# Steps in acidic solution
+1. Balance all atoms except O and H.
+2. Balance O by adding H2O.
+3. Balance H by adding H+.
+4. Balance charge by adding electrons.
+5. Scale the halves so the electrons
+cancel.
+6. Add them together and simplify.
+
+# In basic solution
+Do all of the above, then add enough OH-
+to BOTH sides to neutralize every H+,
+turning them into water. Cancel any
+water that appears on both sides.
+
+# Check
+Both the atoms and the total charge must
+balance in the final equation.
+
+# Terms
+The oxidized species loses electrons and
+is the reducing agent. The reduced
+species gains electrons and is the
+oxidizing agent.
+
+@ARTICLE Galvanic Cells
+A spontaneous redox reaction that pushes
+electrons through a wire.
+
+# The electrodes
+  ANODE:   OXIDATION, negative in a
+           galvanic cell
+  CATHODE: REDUCTION, positive
+Remember "AN OX" and "RED CAT", and that
+the vowels match: Anode/Oxidation,
+Cathode/Reduction.
+
+# Electron flow
+Always from anode to cathode through the
+external wire.
+
+# Salt bridge
+Carries ions to keep both halves
+electrically neutral. Anions travel
+toward the anode, cations toward the
+cathode. Without it the cell stops
+almost at once.
+
+# Cell notation
+  anode | anode ion || cathode ion
+  | cathode
+  Zn | Zn2+ || Cu2+ | Cu
+The double line is the salt bridge.
+
+# Cell potential
+  E_cell = E_cathode - E_anode
+using standard reduction potentials for
+both.
+  E > 0  spontaneous (galvanic)
+  E < 0  needs an external supply
+
+# Some standard potentials (V)
+  F2 + 2e- -> 2F-        +2.87
+  Cl2 + 2e- -> 2Cl-      +1.36
+  Ag+ + e- -> Ag         +0.80
+  Cu2+ + 2e- -> Cu       +0.34
+  2H+ + 2e- -> H2         0.00
+  Zn2+ + 2e- -> Zn       -0.76
+  Li+ + e- -> Li         -3.04
+
+# Important
+Do NOT multiply E by the number of
+electrons when scaling a half reaction.
+Potential is intensive.
+
+@ARTICLE Electrolysis and Free Energy
+# Electrolytic cells
+Use electricity to force a
+nonspontaneous reaction. The signs of
+the electrodes flip: the anode is
+positive and the cathode is negative,
+but oxidation still happens at the anode.
+
+# Uses
+Electroplating, refining aluminum from
+bauxite, splitting water into H2 and O2,
+recharging a battery.
+
+# Faraday's laws
+  1 F = 96485 C/mol of electrons
+  Q = I*t   (coulombs)
+  moles of e- = I*t/96485
+Then use the half reaction ratio to get
+moles of product.
+
+# Linking to thermodynamics
+  dG = -n*F*E
+n is moles of electrons transferred.
+A positive E means a negative dG, so
+spontaneous.
+
+# Nernst equation
+  E = E0 - (0.0592/n)*log(Q)  at 25 C
+Cell potential falls as the reaction
+proceeds and Q rises. At equilibrium
+E = 0 and the battery is dead.
+
+# Relating E0 and K
+  log K = n*E0/0.0592
+
+# Corrosion
+Rusting is iron oxidized by oxygen.
+Galvanizing coats steel with zinc, which
+is more active and corrodes first as a
+sacrificial anode.
+
+@ARTICLE Nuclear Chemistry
+# Types of decay
+  alpha: emits He-4
+    A drops by 4, Z drops by 2
+  beta minus: neutron -> proton + e-
+    A unchanged, Z rises by 1
+  beta plus (positron)
+    A unchanged, Z drops by 1
+  gamma: photon only
+    A and Z unchanged
+  electron capture: p + e- -> n
+    A unchanged, Z drops by 1
+
+# Penetrating power
+  alpha: stopped by paper or skin
+  beta: stopped by thin aluminum
+  gamma: needs thick lead or concrete
+Alpha is the least penetrating but the
+most damaging if inhaled or swallowed.
+
+# Balancing nuclear equations
+The mass numbers must sum equally on
+both sides, and so must the atomic
+numbers. Use that to identify the
+missing particle.
+
+# Half-life
+  N = N0*(1/2)^(t/t_half)
+After n half-lives, (1/2)^n remains.
+Half-life is unaffected by temperature,
+pressure or chemical form.
+
+# Band of stability
+Light nuclei are stable near a 1:1
+neutron to proton ratio; heavy ones need
+about 1.5:1. Everything above bismuth-83
+is radioactive.
+
+# Fission and fusion
+Fission splits a heavy nucleus, releasing
+neutrons that can sustain a chain
+reaction. Fusion joins light nuclei and
+powers stars. Both convert mass to energy
+by E = mc^2.
+
+# Uses
+Carbon-14 dating (5730 y), medical
+tracers, radiation therapy, smoke
+detectors (americium-241).

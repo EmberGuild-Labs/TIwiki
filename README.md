@@ -8,9 +8,10 @@ typing on the ALPHA key labels — all offline, in flash.
 |---|---|---|---|
 | **MATHWIKI** | `mathwiki/bin/MATHWIKI.8xp` | 93 across 13 categories | 35 KB |
 | **PHYSWIKI** | `physicswiki/bin/PHYSWIKI.8xp` | 89 across 14 categories | 42 KB |
+| **CHEMWIKI** | `chemwiki/bin/CHEMWIKI.8xp` | 80 across 15 categories | 45 KB |
 
-Both are built from **one shared engine** (`engine/main.c`); only the content
-differs. Written in C with the
+All three are built from **one shared engine** (`engine/main.c`); only the
+content differs. Written in C with the
 [CE C/C++ toolchain](https://ce-programming.github.io/toolchain/), so these are
 real native programs, not TI-BASIC — which is what makes the full-screen text
 rendering, instant search and smooth scrolling possible.
@@ -52,8 +53,9 @@ wikis and any other CE program share it.
 - Both programs are flagged archived, so they live in flash and survive a RAM
   clear. Keep the `clibs` AppVars archived too.
 - They ship zx7-compressed and expand in RAM to run: MATHWIKI to ~63 KB,
-  PHYSWIKI to ~78 KB, against roughly 150 KB of user RAM. Both fit with room to
-  spare, but `2nd + (MEM) > 2` will tell you what you have.
+  PHYSWIKI to ~78 KB, CHEMWIKI to ~82 KB, against roughly 150 KB of user RAM.
+  Each fits with room to spare (only one runs at a time), but
+  `2nd + (MEM) > 2` will tell you what you have.
 - Neither writes anything to the calculator — they only read their own flash,
   so they cannot disturb your variables or programs.
 
@@ -90,7 +92,8 @@ Type using the letters *printed on the keys* — `MATH` is A, `APPS` is B, `SIN`
 is E, and so on. You do **not** press `ALPHA` first; the app reads the raw
 keypad. `0` types a space, `DEL` backspaces, `CLEAR` exits. Matching is
 case-insensitive, matches anywhere inside a title, and also matches category
-names (so `INTEGRAL` finds everything in the Integrals category).
+names (so `INTEGRAL` finds everything in the Integrals category). It does not
+search inside article bodies — see *Known limits* below.
 
 ---
 
@@ -133,6 +136,41 @@ names (so `INTEGRAL` finds everything in the Integrals category).
 | Modern Physics | 6 | photoelectric effect, duality, atomic models & spectra, nuclear physics, radioactive decay, relativity |
 | Reference and Constants | 7 | constants, SI units, conversions, dimensional analysis, vectors, problem solving, in-app help |
 
+### CHEMWIKI — 80 articles
+
+| Category | N | Covers |
+|---|---|---|
+| Matter and Measurement | 7 | classifying matter, physical/chemical change, intensive vs extensive, SI units, sig figs, dimensional analysis, density |
+| Atomic Structure | 4 | subatomic particles, isotopes & atomic mass, electron configuration, quantum numbers |
+| The Periodic Table | 5 | organization, groups & families, periodic trends, ionic radius & shielding, common ions by group |
+| Chemical Bonding | 7 | ionic, covalent, Lewis structures, VSEPR, polarity, intermolecular forces, metallic |
+| Naming and Formulas | 5 | polyatomic ions, ionic naming, covalent naming, acids, hydrates & formula writing |
+| Chemical Reactions | 6 | balancing, reaction types, solubility rules, net ionic equations, activity series, oxidation numbers |
+| Stoichiometry | 6 | the mole, mole conversions, limiting reactant, percent yield, percent composition, empirical & molecular formulas |
+| Gases | 6 | gas laws, ideal gas law, partial pressures, kinetic theory & effusion, real gases, gas stoichiometry |
+| Solutions | 5 | solubility, concentration, dilution, solution stoichiometry & titration, colligative properties |
+| Thermochemistry | 4 | energy & heat, calorimetry, enthalpy & Hess's law, entropy & free energy |
+| Kinetics and Equilibrium | 6 | reaction rates, rate factors, rate laws, Keq, Le Chatelier, Ksp |
+| Acids and Bases | 5 | definitions, strong vs weak, pH & pOH, Ka/Kb, titration & buffers |
+| Electrochemistry and Nuclear | 4 | balancing redox, galvanic cells, electrolysis & free energy, nuclear chemistry |
+| Organic Chemistry | 4 | hydrocarbons, naming, functional groups, reactions |
+| Reference and Lab | 6 | constants, formula sheet, lab safety & equipment, TI-84 tips, common mistakes, in-app help |
+
+---
+
+## Known limits
+
+- **Search covers titles and category names, not article bodies.** Chemistry
+  shows this off worst: `SOLUB` finds the solubility rules, but `NITRATE` finds
+  nothing even though the nitrate ion is in the polyatomic ion table. Full-text
+  search is the obvious next engine feature.
+- **Content is compiled into each program**, so it decompresses into RAM at
+  launch (63–82 KB). Moving content into archived AppVars read through
+  `fileioc` would drop that to near zero and let one launcher host every
+  subject.
+- **No persistence** — no bookmarks, no resume-where-you-left-off. That needs
+  an AppVar too.
+
 ---
 
 ## Repo layout
@@ -154,6 +192,7 @@ mathwiki/
   bin/MATHWIKI.8xp    the built program
 
 physicswiki/          same shape, NAME=PHYSWIKI
+chemwiki/             same shape, NAME=CHEMWIKI
 
 clibs.8xg             C libraries to send to the calculator
 ```
@@ -181,6 +220,7 @@ python3 engine/tools/build_content.py mathwiki   # or just one
 
 cd mathwiki && make          # -> bin/MATHWIKI.8xp
 cd physicswiki && make       # -> bin/PHYSWIKI.8xp
+cd chemwiki && make          # -> bin/CHEMWIKI.8xp
 ```
 
 `build_content.py` with no arguments compiles every directory that has a
@@ -296,14 +336,15 @@ whose positions are not guaranteed across font variants.
 
 ### Testing
 
-- Every article in both wikis was opened, scrolled to the end, paged back and
-  forth and advanced through — 877 frames for MATHWIKI, 844 for PHYSWIKI — plus
-  search overflow, backspace-past-empty and list wraparound, all under
-  AddressSanitizer and UndefinedBehaviorSanitizer in the host simulator. Clean.
+- Every article in all three wikis was opened, scrolled to the end, paged back
+  and forth and advanced through — 877 frames for MATHWIKI, 844 for PHYSWIKI,
+  766 for CHEMWIKI — plus search overflow, backspace-past-empty and list
+  wraparound, all under AddressSanitizer and UndefinedBehaviorSanitizer in the
+  host simulator. Clean.
 - The content build fails loudly on any heading or formula wider than 37
   columns, so layout regressions can't reach a release.
 - The `.8xp` files were built and their RAM footprints checked against the map
-  files (63 KB and 78 KB against ~150 KB available), but they have **not** been
+  files (63, 78 and 82 KB against ~150 KB available), but they have **not** been
   run on real hardware or in an emulator (CEmu needs a ROM dump from your own
   calculator). If something looks wrong on device, the simulator is the fastest
   place to reproduce it.
